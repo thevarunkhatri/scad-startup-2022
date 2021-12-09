@@ -1,8 +1,8 @@
 {
   "private": true,
-  "name": "sanity-gatsby-portfolio-web",
+  "name": "scad-startup-2022-web",
   "version": "1.0.3",
-  "author": "Sanity <hello@sanity.io>",
+  "author": "Varun Khatri <varunmk05@gmail.com>",
   "scripts": {
     "build": "gatsby build",
     "clean-cache": "gatsby clean",
