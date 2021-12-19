@@ -60,31 +60,31 @@ const DeliverablesPage = props => {
             <div class="deliverablesCard" id="content1">
               <h2>Presentation Deck</h2>
               <p> "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo." </p>
-              <button class="pastExamplesButton">Past Examples</button>
+              <button class="pastExamplesButton">Past Examples &nbsp; {String.fromCharCode(10230)}</button>
             </div>
 
             <div class="deliverablesCard" id="content2">
               <h2>Visual Prototype</h2>
               <p> ""Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo." </p>
-              <button class="pastExamplesButton">Past Examples</button>
+              <button class="pastExamplesButton">Past Examples &nbsp; {String.fromCharCode(10230)}</button>
             </div>
 
             <div class="deliverablesCard" id="content3">
               <h2>Business Model</h2>
               <p> ""Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo." </p>
-              <button class="pastExamplesButton">Past Examples</button>
+              <button class="pastExamplesButton">Past Examples &nbsp; {String.fromCharCode(10230)}</button>
             </div>
 
             <div class="deliverablesCard" id="content4">
               <h2>WOW FACTOR!!</h2>
               <p> ""Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo." </p>
-              <button class="pastExamplesButton">Past Examples</button>
+              <button class="pastExamplesButton">Past Examples &nbsp; {String.fromCharCode(10230)} </button>
             </div>
 
             <div class="deliverablesCard" id="content5">
               <h2>Still not sure? Here's some more examples.</h2>
               <p> ""Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo." </p>
-              <button class="pastExamplesButton">Past Examples</button>
+              <button class="pastExamplesButton">Past Pitches &nbsp; {String.fromCharCode(10230)}</button>
             </div>
           </div>
         </Container>
