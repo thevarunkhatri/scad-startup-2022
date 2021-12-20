@@ -20,6 +20,9 @@ module.exports = {
         overlayDrafts: !isProd && token
       }
     },
-    'gatsby-plugin-sass'
+    'gatsby-plugin-sass',
+    `gatsby-plugin-image`,
+    `gatsby-plugin-sharp`,
+    `gatsby-transformer-sharp`
   ]
 }
