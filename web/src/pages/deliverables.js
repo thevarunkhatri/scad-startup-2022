@@ -10,7 +10,7 @@ import GraphQLErrorList from "../components/graphql-error-list";
 import SEO from "../components/seo";
 import Layout from "../containers/layout";
 
-import '../styles/deliverables.css';
+import '../styles/deliverables.scss';
 
 export const query = graphql`
   query DeliverablesPageQuery {
