@@ -1,5 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@300;500&family=IBM+Plex+Sans:wght@300;400;500&display=swap');
+
 :root {
-  --font-family-sans: -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-family-sans: 'IBM Plex Sans', sans-serif;
+  --font-family-mono: 'IBM Plex Mono', sans-serif
 
   --color-black: #202123;
   --color-dark-gray: #32373e;
@@ -7,7 +10,11 @@
   --color-light-gray: #b4bcc7;
   --color-very-light-gray: #e7ebed;
   --color-white: #fff;
-  --color-accent: #156dff;
+  --color-accent: #156dff; 
+
+  --color-yellow: #FCE986;
+  --color-yellow-dark: #BFB166;
+  --color-teal: #01AEC4;
 
   /* Typography */
   --unit: 16;

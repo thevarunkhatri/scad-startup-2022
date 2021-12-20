@@ -4,6 +4,7 @@ html {
   font-family: var(--font-family-sans);
   font-size: var(--font-base-size);
   line-height: var(--font-base-line-height);
+  font-weight: 400;
 }
 
 body {
@@ -16,4 +17,8 @@ body {
 html,
 body {
   height: 100%;
+}
+
+.navSpacer {
+  padding-top: 80px;
 }
