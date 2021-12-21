@@ -6,8 +6,11 @@ import schemaTypes from 'all:part:@sanity/base/schema-type'
 
 // Document types
 import siteSettings from './documents/siteSettings'
+import sessions from './documents/sessions'
 
 // Object types
+import resources from './objects/resources'
+import demoFiles from './objects/demoFiles'
 import figure from './objects/figure' 
 
 // Then we give our schema to the builder and provide the result to Sanity
@@ -20,8 +23,11 @@ export default createSchema({
     // When added to this list, object types can be used as
     // { type: 'typename' } in other document schemas
     figure,
+    resources,
+    demoFiles,
     // The following are document types which will appear
     // in the studio.
-    siteSettings
+    siteSettings,
+    sessions
   ])
 })
