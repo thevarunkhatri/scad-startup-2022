@@ -4,5 +4,7 @@
 # Dependency directories
 /node_modules
 
+/build
+
 # lerna files
 /lerna-debug.log
