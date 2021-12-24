@@ -1,0 +1,113 @@
+:root {
+  --light-yellow: #FCE986;
+  --electric-blue: #01AEC4;
+}
+
+/* * {
+  outline: solid 1px red;
+} */
+
+body { /*delete ASAP*/
+  background: #0A0A0A;
+}
+
+.deliverablesHeader {
+  text-align: center;
+  padding: 64px;
+}
+
+.cardContainer {
+  display: grid;
+  gap: 30px;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-areas:
+    " content1 content2"
+    " content3 content4"
+    " content5 content5";
+  color: #fff;
+  text-align: left;
+}
+
+.deliverablesCard {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  background-color: rgba(255, 255, 255, 0.05);
+  border-radius: 25px;
+  padding: 48px 64px 48px 64px;
+  outline: solid 1px #01AEC4; /*having trouble finding a working gradient outline solution*/
+}
+
+.pastExamplesButton {
+  width: fit-content;
+  background: none;
+  border: 1px solid var(--electric-blue);
+  border-radius: 8px;
+  color: var(--electric-blue);
+  text-transform: uppercase;
+  font-size: 16px;
+  text-align: left;
+  text-decoration: none;
+  padding: 8px 32px;
+}
+
+
+h1 {
+  font-size: 56px;
+  font-weight: 600;
+  line-height: 0px;
+  color: var(--light-yellow);
+}
+
+h2 {
+  font-size: 36px;
+  font-weight: 500;
+  line-height: 0px;
+}
+
+h3 {
+  font-size: 24px;
+  font-weight: 400;
+  color: #959595;
+}
+
+p {
+  font-size: 16px;
+  font-weight: 300;
+  opacity: 100%;
+  padding-bottom: 15%;
+}
+
+#content1 {
+  grid-area: content1;
+}
+
+#content2 {
+  grid-area: content2;
+}
+
+#content3 {
+  grid-area: content3;
+}
+
+#content4 {
+  grid-area: content4;
+}
+
+#content5 {
+  grid-area: content5;
+}
+
+@media only screen and (max-width: 550px) {
+  .cardContainer {
+    grid-template-columns: auto;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas:
+      "content1"
+      "content2"
+      "content3"
+      "content4"
+      "content5";
+  }
+}

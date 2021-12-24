@@ -1,7 +1,10 @@
+import { MdSchool } from "react-icons/md";
+
 export default {
     name: 'sessions',
     title: 'Sessions',
     type: 'document',
+    icon: MdSchool,
     fields: [
       {
         name: 'name',
