@@ -40,13 +40,6 @@ const SessionsSchedule = () => {
                     }
                     videoURL
                     zoomURL
-                    heroImage {
-                      _key
-                      _type
-                      _rawAsset
-                      _rawHotspot
-                      _rawCrop
-                    }
                   }
                 }
             }
