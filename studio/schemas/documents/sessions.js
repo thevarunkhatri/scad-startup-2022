@@ -7,16 +7,47 @@ export default {
     icon: MdSchool,
     fields: [
       {
+        name: 'heroImage',
+        title: 'Hero Image',
+        type: 'image',
+        options: {
+          hotspot: true
+        }
+      },
+      {
         name: 'name',
         title: 'Name',
         type: 'string'
       },
       {
         name: 'excerpt',
-        title: 'Excerpt',
+        title: 'excerpt',
         description: 'A quick (elevator-pitch style) description of the product',
         type: 'string',
-        validation: Rule => Rule.min(30).max(75)
+        validation: Rule => Rule.min(30).max(100)
+      },
+      {
+        name: 'locationName',
+        title: 'Location Name',
+        type: 'string',
+        validation: Rule => Rule.min(1).max(25)
+      },
+      {
+        name: 'location',
+        title: 'Location',
+        type: 'geopoint'
+      },
+      {
+        title: 'Zoom URL', 
+        name: 'zoomURL',
+        description: 'Link to the Zoom call for the session',
+        type: 'url'
+      },
+      {
+        title: 'Registration URL', 
+        name: 'registrationURL',
+        description: 'Link to registering for the Zoom session',
+        type: 'url'
       },
       {
         title: 'Difficulty',
@@ -61,56 +92,57 @@ export default {
         validation: Rule => Rule.required().min(15).max(120)
       },
       {
-        title: 'Full Description', 
-        name: 'description',
-        description: 'Describe the project more in depth. A little more about the functionality, design intent, etc.',
-        type: 'array', 
-        of: [{type: 'block'}]
+        title: 'Club Partner',
+        name: 'clubPartner',
+        type: 'reference',
+        to: [{type: 'club'}]
       },
       {
-        title: 'Category', 
-        name: 'categories',
-        description: 'Add one or more categories',
-        type: 'array', 
+        title: 'Host',
+        name: 'host',
+        type: 'array',
         of: [
-            {
-                type: 'string',
-                options: {
-                    list: [
-                        {title: 'Basics', value: 'basics'},
-                        {title: 'Visual', value: 'visual'},
-                        {title: 'Physical', value: 'physical'},
-                        {title: 'Game', value: 'game'},
-                        {title: 'Amp', value: 'amp'},
-                        {title: 'One-Off', value: 'one-off'}
-                    ]
-                }
-            }
+          {
+            type: 'reference',
+            to: [{type: 'hosts'}]
+          }
         ]
       },
       {
-        name: 'locationName',
-        title: 'Location Name',
-        type: 'string',
-        validation: Rule => Rule.min(1).max(25)
+        title: 'Topics/Category', 
+        name: 'Topics',
+        description: 'High-level overview of what the session will cover',
+        type: 'array', 
+        of: [{type: 'string'}]
       },
       {
-        name: 'location',
-        title: 'Location',
-        type: 'geopoint'
+        title: 'Flow', 
+        name: 'Flow',
+        description: 'In-depth overview of what the session will cover',
+        type: 'array', 
+        of: [{type: 'block'}]
       },
-      {
-        title: 'Zoom URL', 
-        name: 'zoomURL',
-        description: 'Link to the Zoom call for the session',
-        type: 'url'
-      },
-      {
-        title: 'Registration URL', 
-        name: 'registrationURL',
-        description: 'Link to registering for the Zoom session',
-        type: 'url'
-      },
+      // {
+      //   title: 'Category', 
+      //   name: 'categories',
+      //   description: 'Add one or more categories',
+      //   type: 'array', 
+      //   of: [
+      //       {
+      //           type: 'string',
+      //           options: {
+      //               list: [
+      //                   {title: 'Basics', value: 'basics'},
+      //                   {title: 'Visual', value: 'visual'},
+      //                   {title: 'Physical', value: 'physical'},
+      //                   {title: 'Game', value: 'game'},
+      //                   {title: 'Amp', value: 'amp'},
+      //                   {title: 'One-Off', value: 'one-off'}
+      //               ]
+      //           }
+      //       }
+      //   ]
+      // },
       {
         title: 'Video Embed URL', 
         name: 'videoURL',
@@ -130,6 +162,18 @@ export default {
         description: '',
         type: 'array', 
         of: [{type: 'demoFiles'}]
+      },
+      {
+        title: 'Prerequisites',
+        name: 'prerequisites',
+        type: 'reference',
+        to: [{type: 'sessions'}]
+      },
+      {
+        title: 'Related Sessions',
+        name: 'relatedSession',
+        type: 'reference',
+        to: [{type: 'sessions'}]
       },
       {
         title: 'Slug',

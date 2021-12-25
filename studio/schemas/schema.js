@@ -7,11 +7,14 @@ import schemaTypes from 'all:part:@sanity/base/schema-type'
 // Document types
 import siteSettings from './documents/siteSettings'
 import sessions from './documents/sessions'
+import club from './documents/club'
+import hosts from './documents/hosts'
 
 // Object types
 import resources from './objects/resources'
 import demoFiles from './objects/demoFiles'
 import figure from './objects/figure' 
+
 
 // Then we give our schema to the builder and provide the result to Sanity
 export default createSchema({
@@ -22,6 +25,8 @@ export default createSchema({
     figure,
     resources,
     demoFiles,
+    club,
+    hosts,
     // Documents
     siteSettings,
     sessions
