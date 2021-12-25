@@ -47,12 +47,6 @@ const SessionsSchedule = () => {
                       _rawHotspot
                       _rawCrop
                     }
-                    prerequisites {
-                      id
-                    }
-                    relatedSession {
-                      id
-                    }
                   }
                 }
             }
