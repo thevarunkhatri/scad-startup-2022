@@ -70,3 +70,89 @@
         }
     }  
 }
+
+.sessionsGrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 32px;
+
+    .sessionsCard {
+        background: #161616;
+        border-radius: 12px;
+
+        .heroImage {
+            height: 200px;
+            background-size: cover;
+            border-radius: 12px 12px 0 0;
+        }
+
+        .cardContent {
+            padding: 20px;
+
+            h4, p, div {
+                margin: 0;
+                padding: 0;
+            }
+
+            h4 {
+                font-size: 21px;
+                margin-bottom: 8px;
+            }
+
+            .difficulty {
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                gap: 10px;
+                margin-bottom: 8px;
+
+                .difficultyCircles {
+                    display: flex;
+                    flex-direction: row;
+                    gap: 4px;
+
+                    span {
+                        height: 10px;
+                        width: 10px;
+                        border-radius: 5px;
+                        background: #333333;
+                    }
+                }
+
+                .difficultyText {
+                    font-weight: 300;
+                }
+            }
+
+            .timeLocation {
+                display: flex;
+                flex-direction: row;
+                gap: 20px;
+                font-weight: 300;
+                color: #01AEC4;
+                margin-bottom: 8px;
+            }
+
+            .description {
+                margin-bottom: 16px;
+                font-size: 14px;
+                font-weight: 300;
+            }
+
+            .cardButtons {
+                display: flex;
+                flex-direction: row;
+                gap: 12px;
+
+                button {
+                    border: 1px solid #01AEC4;
+                    color: #01AEC4;
+                    font-weight: 300;
+                    background: none;
+                    border-radius: 8px;
+                    padding: 12px 20px;
+                }
+            }
+        }
+    }
+}
