@@ -40,58 +40,6 @@ const SessionsCard = props => {
 };
 
 const SessionsSchedule = props => {
-    // const sessionsData = useStaticQuery(graphql`
-    //     query sessionsQuery {
-    //         allSanitySessions {
-    //             edges {
-    //               node {
-    //                 heroImage {
-    //                   _rawAsset
-    //                   asset {
-    //                     url
-    //                   }
-    //                 }
-    //                 demoFiles {
-    //                   _key
-    //                   _type
-    //                   fileTitle
-    //                   fileLink
-    //                 }
-    //                 difficulty
-    //                 duration
-    //                 excerpt
-    //                 location {
-    //                   _key
-    //                   _type
-    //                   lat
-    //                   lng
-    //                   alt
-    //                 }
-    //                 locationName
-    //                 name
-    //                 registrationURL
-    //                 resources {
-    //                   _key
-    //                   _type
-    //                   resourceTitle
-    //                   resourceLink
-    //                 }
-    //                 sessionDateTime
-    //                 slug {
-    //                   _key
-    //                   _type
-    //                   current
-    //                 }
-    //                 videoURL
-    //                 zoomURL
-    //               }
-    //             }
-    //         }
-    //     }       
-    // `)
-
-    // const sessionsArray = sessionsData.allSanitySessions.edges;
-    // console.log(sessionsArray)
 
     const sessionsArray = props.sanityData;
     console.log(sessionsArray) 
@@ -105,8 +53,8 @@ const SessionsSchedule = props => {
                     {
                       //console.log(edge)
                       return(
-                        <SessionsCard name={edge.name} imageUrl={edge.heroImage.asset.url}/>
-                        // 
+                        <SessionsCard name={edge.name} imageUrl={edge._rawHeroImage.asset.url}/>
+                        //
                       )       
                     }
                 )

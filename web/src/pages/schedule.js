@@ -24,11 +24,7 @@ export const query = graphql`
     sessions: allSanitySessions {
       edges {
         node {
-          heroImage {
-            asset {
-              url
-            }
-          }
+          _rawHeroImage(resolveReferences: {maxDepth: 10})
           demoFiles {
             _key
             _type
