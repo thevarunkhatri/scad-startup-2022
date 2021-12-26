@@ -25,7 +25,6 @@ export const query = graphql`
       edges {
         node {
           heroImage {
-            _rawAsset
             asset {
               url
             }

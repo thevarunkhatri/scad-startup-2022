@@ -9,7 +9,7 @@ export default {
       {
         name: 'heroImage',
         title: 'Hero Image',
-        type: 'image',
+        type: 'figure',
         options: {
           hotspot: true
         }

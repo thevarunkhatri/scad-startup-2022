@@ -106,6 +106,7 @@ const SessionsSchedule = props => {
                       //console.log(edge)
                       return(
                         <SessionsCard name={edge.name} imageUrl={edge.heroImage.asset.url}/>
+                        // 
                       )       
                     }
                 )
