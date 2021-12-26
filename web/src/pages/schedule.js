@@ -21,6 +21,51 @@ export const query = graphql`
       description
       keywords
     }
+    sessions: allSanitySessions {
+      edges {
+        node {
+          heroImage {
+            _rawAsset
+            asset {
+              url
+            }
+          }
+          demoFiles {
+            _key
+            _type
+            fileTitle
+            fileLink
+          }
+          difficulty
+          duration
+          excerpt
+          location {
+            _key
+            _type
+            lat
+            lng
+            alt
+          }
+          locationName
+          name
+          registrationURL
+          resources {
+            _key
+            _type
+            resourceTitle
+            resourceLink
+          }
+          sessionDateTime
+          slug {
+            _key
+            _type
+            current
+          }
+          videoURL
+          zoomURL
+        }
+      }
+    }
   }
 `;
 
@@ -37,8 +82,8 @@ const SchedulePage = props => {
   }
 
   const site = (data || {}).site;
-  const projectNodes = (data || {}).projects
-    ? mapEdgesToNodes(data.projects)
+  const sessionNodes = (data || {}).sessions
+    ? mapEdgesToNodes(data.sessions)
         .filter(filterOutDocsWithoutSlugs)
         .filter(filterOutDocsPublishedInTheFuture)
     : [];
@@ -67,7 +112,7 @@ const SchedulePage = props => {
                 Filter
               </div>
             </div>
-            { activeCalendar ? <GeneralSchedule/> : <SessionsSchedule/>}
+            { activeCalendar ? <GeneralSchedule/> : <SessionsSchedule sanityData={sessionNodes}/>}
           </Container>
         </main>
     </Layout>
