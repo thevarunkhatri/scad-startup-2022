@@ -46,6 +46,7 @@ const SessionsSchedule = () => {
                 edges {
                   node {
                     heroImage {
+                      _rawAsset
                       asset {
                         url
                       }
