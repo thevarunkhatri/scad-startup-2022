@@ -1,0 +1,101 @@
+:root {
+    --light-yellow: #FCE986;
+    --electric-blue: #01AEC4;
+  }
+
+  h1 {
+    font-size: 56px;
+    font-weight: 600;
+    line-height: 0px;
+    color: var(--light-yellow);
+  }
+  
+  
+  h3 {
+    font-size: 24px;
+    font-weight: 400;
+    color: #959595;
+  }
+  
+  /* * {
+    outline: solid 1px red;
+  } */
+  
+  body { /*delete ASAP*/
+    background: #0A0A0A;
+  }
+  
+  .sponsersHeader {
+    text-align: center;
+    padding: 64px;
+  }
+  
+  .sponsersContainer {
+    display: grid;
+    gap: 48px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas:
+      " content1 content2"
+      " content3 content4"
+      " content5 content6";
+    color: #fff;
+    text-align: left;
+  }
+
+  .sponserLogo {
+    display: block;
+    margin: auto;
+    width: 25vw;
+  }
+  
+  .sponsersCard {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    background-color: rgba(255, 255, 255, 0.05);
+    border-radius: 25px;
+    padding: 48px 64px 48px 64px;
+  }
+  
+  
+// #sponsersBG {
+//     background-image: url("https://www.downloadclipart.net/large/lines-png-clipart-background.png");
+// }
+
+
+  
+  #content1 {
+    grid-area: content1;
+  }
+  
+  #content2 {
+    grid-area: content2;
+  }
+  
+  #content3 {
+    grid-area: content3;
+  }
+  
+  #content4 {
+    grid-area: content4;
+  }
+  
+  #content5 {
+    grid-area: content5;
+  }
+  
+  @media only screen and (max-width: 550px) {
+    .sponsersContainer {
+      grid-template-columns: auto;
+      grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+      grid-template-areas:
+        "content1"
+        "content2"
+        "content3"
+        "content4"
+        "content5"
+        "content6";
+    }
+  }
+  
