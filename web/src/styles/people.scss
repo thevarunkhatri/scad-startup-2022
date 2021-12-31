@@ -3,36 +3,38 @@
   --electric-blue: #01AEC4;
 }
 
-/* * {
-  outline: solid 1px red;
-} */
+//  * {
+//   outline: solid 1px red;
+// } 
 
 // body { /*delete ASAP*/
 //   background: #0A0A0A;
 // }
 
-// .buttonWrapper {
-//   display:inline-block;
-//   margin-right:5px;
-// }
+.buttonWrapper {
+  width: fit-content;
+  display: flexbox;
+  justify-content: space-between;
+}
 
 .peopleHeader {
   text-align: center;
   padding: 64px;
 }
 
-// .cardContainer {
-//   display: grid;
-//   gap: 30px;
-//   grid-template-columns: 1fr 1fr 1fr;
-//   grid-template-rows: 1fr 1fr 1fr;
-//   // grid-template-areas:
-//   //   " content1 content2 content3"
-//   //   " content4 content5 content6"
-//   //   " content7 content8 content9";
-//   color: #fff;
-//   text-align: left;
-// }
+
+.cardContainer {
+  display: grid;
+  gap: 30px;
+  grid-template-columns: repeat(3, 1fr);
+  // grid-template-rows: 1fr 1fr 1fr;
+  // grid-template-areas:
+  //   " content1 content2 content3"
+  //   " content4 content5 content6"
+  //   " content7 content8 content9";
+  color: #fff;
+  text-align: left;
+}
 
 .peopleCard {
   background-color: rgba(255, 255, 255, 0.228);
@@ -43,6 +45,7 @@
 .entireWrapperCards {
     display: flex;
     flex-direction: row;
+    // background-color: violet;
 }
 
 .externalButton {
@@ -54,7 +57,7 @@
   font-size: 11px;
   text-align: left;
   text-decoration: none;
-  padding: 8px 16px;
+  padding: 8px 4px;
 }
 
 .profileHalf {
