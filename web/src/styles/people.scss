@@ -1,52 +1,42 @@
-:root {
-  --light-yellow: #FCE986;
-  --electric-blue: #01AEC4;
-}
+// :root {
+//   --light-yellow: #FCE986;
+//   --electric-blue: #01AEC4;
+// }
 
 //  * {
 //   outline: solid 1px red;
 // } 
-
-// body { /*delete ASAP*/
-//   background: #0A0A0A;
-// }
-
-.buttonWrapper {
-  width: fit-content;
-  display: flexbox;
-  justify-content: space-between;
-}
 
 .peopleHeader {
   text-align: center;
   padding: 64px;
 }
 
-
 .cardContainer {
   display: grid;
-  gap: 30px;
+  gap: 26px;
   grid-template-columns: repeat(3, 1fr);
-  // grid-template-rows: 1fr 1fr 1fr;
-  // grid-template-areas:
-  //   " content1 content2 content3"
-  //   " content4 content5 content6"
-  //   " content7 content8 content9";
-  color: #fff;
-  text-align: left;
-}
-
-.peopleCard {
-  background-color: rgba(255, 255, 255, 0.228);
-  border-radius: 0px 25px 25px 0px;
-  // padding: 48px 64px 48px 64px;
 }
 
 .entireWrapperCards {
-    display: flex;
-    flex-direction: row;
-    // background-color: violet;
+  display: flex;
+  flex-direction: row;
 }
+
+.profileHalf {
+  height: 200px;
+  width: 150px;
+  overflow: hidden;
+  border-radius: 15px 0px 0px 15px;
+}
+
+.cardContent {
+  padding-left: 8px;
+  width: 204px;
+  border-radius: 0px 15px 15px 0px;
+  background-color: rgba(255, 255, 255, 0.05);
+}
+
 
 .externalButton {
   background: none;
@@ -58,14 +48,10 @@
   text-align: left;
   text-decoration: none;
   padding: 8px 4px;
+  margin-right: 8px;
 }
 
-.profileHalf {
-  height: 200px;
-  width: 170px;
-  overflow: hidden;
-  border-radius: 25px 0px 0px 25px;
-}
+
 
 h1 {
   font-size: 56px;
@@ -91,38 +77,38 @@ p {
   font-size: 16px;
   font-weight: 300;
   opacity: 100%;
-  padding-bottom: 0%;
+  padding-bottom: 2%;
 }
 
-#content1 {
-  grid-area: content1;
-}
+// #content1 {
+//   grid-area: content1;
+// }
 
-#content2 {
-  grid-area: content2;
-}
+// #content2 {
+//   grid-area: content2;
+// }
 
-#content3 {
-  grid-area: content3;
-}
+// #content3 {
+//   grid-area: content3;
+// }
 
-#content4 {
-  grid-area: content4;
-}
+// #content4 {
+//   grid-area: content4;
+// }
 
-#content5 {
-  grid-area: content5;
-}
+// #content5 {
+//   grid-area: content5;
+// }
 
-@media only screen and (max-width: 550px) {
-  .cardContainer {
-    grid-template-columns: auto;
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
-    grid-template-areas:
-      "content1"
-      "content2"
-      "content3"
-      "content4"
-      "content5";
-  }
-}
+// @media only screen and (max-width: 550px) {
+//   .cardContainer {
+//     grid-template-columns: auto;
+//     grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+//     grid-template-areas:
+//       "content1"
+//       "content2"
+//       "content3"
+//       "content4"
+//       "content5";
+//   }
+// }

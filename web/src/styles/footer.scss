@@ -2,6 +2,7 @@
 //     border: 1px solid red;
 // }
 
+
 .footerContainer {
     padding: 64px 24px 64px 24px;
     // margin: 0px 64px;
@@ -14,14 +15,20 @@
     .footerRight {
         display: flexbox;
         justify-content: space-between;
-        width: 400px;
+        width: 300px;
     }
 
     .footerLeft {
-        display: flexbox;
-        justify-content: space-between;
-        width: 400px;
+        width: 300px;
+
+        .leftWrapper {
+            display: flex;
+            width: 150px;
+            justify-content: space-between;
+        }
     }
+    
+
 
     Link {
         display: flex;

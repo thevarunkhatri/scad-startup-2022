@@ -10,15 +10,14 @@ const Footer = () => {
             <div className="footerContainer">
 
                 <ul className="footerLeft">
-                     <Link to=""><li>
-                       <img src={"https://placeholder.pics/svg/60/75F3FF"}></img>
-                    </li></Link>
-                    <Link to=""><li>
-                       <img src={"https://placeholder.pics/svg/60/75F3FF"}></img>
-                    </li></Link>
-                    <Link to=""><li>
-                       {/* <img src={"https://placeholder.pics/svg/60/75F3FF"}></img> */}
-                    </li></Link>
+                    <div className="leftWrapper">
+                        <Link to=""><li>
+                        <img src={"https://placeholder.pics/svg/60/75F3FF"}></img>
+                        </li></Link>
+                        <Link to=""><li>
+                        <img src={"https://placeholder.pics/svg/60/75F3FF"}></img>
+                        </li></Link>
+                    </div>
                 </ul>
 
                 <Link to="/">
@@ -34,7 +33,7 @@ const Footer = () => {
                     </li></Link>
                     <button class="footerButton">Sign up &nbsp; {String.fromCharCode(10230)}</button>
                 </ul>
-                
+
             </div>
         </footer>
     );

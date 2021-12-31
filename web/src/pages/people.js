@@ -117,8 +117,8 @@ function Card (props) {
           <p className="cardRole">{props.role}</p>
           <p className="cardMajor">{props.major}</p>
           <div class="buttonWrapper">
-          <button className="externalButton">LinkedIn &nbsp; {String.fromCharCode(10230)}</button>
-          <button className="externalButton">Portfolio &nbsp; {String.fromCharCode(10230)}</button>
+            <button className="externalButton">LinkedIn &nbsp; {String.fromCharCode(10230)}</button>
+            <button className="externalButton">Portfolio &nbsp; {String.fromCharCode(10230)}</button>
           </div>
         </div>
       </div>
