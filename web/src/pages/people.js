@@ -58,8 +58,8 @@ const PeoplePage = props => {
             <h1>Startup 2022 Core Team</h1>
           </div>
 
-          <div class="cardContainer">
 
+          <div class="cardContainer">
 
           <Card
             img=" https://images.pexels.com/photos/20787/pexels-photo.jpg?auto=compress&cs=tinysrgb&h=350"
@@ -67,79 +67,61 @@ const PeoplePage = props => {
             role="Organization and Outreach"
             major="User Experience"
             />
-            
 
-            <div class="entireWrapperCards">
-              <div class="profileHalf">
-                <img
-                  src="https://images.pexels.com/photos/20787/pexels-photo.jpg?auto=compress&cs=tinysrgb&h=350"
-                  alt="new"
-                  />
-              </div>
-              <div class="cardContent" id="content1">
-                <h2>Mike Buzzard</h2>
-                <p> Organization and Outreach </p>
-                <p> User Experience </p>
-                <div class="buttonWrapper">
-                  <button class="externalButton">Linkedin &nbsp; {String.fromCharCode(10230)}</button>
-                  <button class="externalButton">Portfolio &nbsp; {String.fromCharCode(10230)}</button>
-                </div>
-              </div>
-            </div>
+          <Card
+            img=" https://images.pexels.com/photos/20787/pexels-photo.jpg?auto=compress&cs=tinysrgb&h=350"
+            name="Mike Buzzard"
+            role="Organization and Outreach"
+            major="User Experience"
+            />
 
+            <Card
+            img=" https://images.pexels.com/photos/20787/pexels-photo.jpg?auto=compress&cs=tinysrgb&h=350"
+            name="Mike Buzzard"
+            role="Organization and Outreach"
+            major="User Experience"
+            />
+
+            <Card
+            img=" https://images.pexels.com/photos/20787/pexels-photo.jpg?auto=compress&cs=tinysrgb&h=350"
+            name="Mike Buzzard"
+            role="Organization and Outreach"
+            major="User Experience"
+            />
+
+            <Card
+            img=" https://images.pexels.com/photos/20787/pexels-photo.jpg?auto=compress&cs=tinysrgb&h=350"
+            name="Mike Buzzard"
+            role="Organization and Outreach"
+            major="User Experience"
+            />
 
           </div>
         </Container>
       </main>
     </Layout>
   );
-
-  // return (
-  //   <Layout>
-  //     <SEO title={site.title} description={site.description} keywords={site.keywords} />
-  //     <main>
-  //       <Container>
-
-  //         <div className="cardWrapper">
-  //           <Card
-  //           img=" https://images.pexels.com/photos/20787/pexels-photo.jpg?auto=compress&cs=tinysrgb&h=350"
-  //           name="Mike Buzzard"
-  //           role="Organization and Outreach"
-  //           major="User Experience"
-  //           />
-
-            // <Card
-            // img=" https://images.pexels.com/photos/20787/pexels-photo.jpg?auto=compress&cs=tinysrgb&h=350"
-            // name="Mike Buzzard"
-            // role="Organization and Outreach"
-            // major="User Experience"
-            // />
-  //         </div>
-
-  //       </Container>
-  //     </main>
-  //   </Layout>
-  // );
 };
 
 
 function Card (props) {
   return(
-    <div classname="entireWrapperCards">
-      <div className="profileHalf">
-        <img src={props.img} />
-      </div>
 
-      <div className = "cardContent" >
-        <h2 className="cardName">{props.name}</h2>
-        <p className="cardRole">{props.role}</p>
-        <p className="cardMajor">{props.major}</p>
-        <div class="buttonWrapper">
-         <button className="externalButton">LinkedIn &nbsp; {String.fromCharCode(10230)}</button>
-         <button className="externalButton">Portfolio &nbsp; {String.fromCharCode(10230)}</button>
+      <div className="entireWrapperCards">
+        <div className="profileHalf">
+          <img src={props.img} />
+        </div>
+
+        <div className = "cardContent" >
+          <h2 className="cardName">{props.name}</h2>
+          <p className="cardRole">{props.role}</p>
+          <p className="cardMajor">{props.major}</p>
+          <div class="buttonWrapper">
+            <button className="externalButton">LinkedIn &nbsp; {String.fromCharCode(10230)}</button>
+            <button className="externalButton">Portfolio &nbsp; {String.fromCharCode(10230)}</button>
+          </div>
         </div>
       </div>
-    </div>
   );
 }
 
