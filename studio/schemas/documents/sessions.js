@@ -92,10 +92,10 @@ export default {
         validation: Rule => Rule.required().min(15).max(120)
       },
       {
-        title: 'Club Partner',
+        title: 'Partner',
         name: 'clubPartner',
         type: 'reference',
-        to: [{type: 'club'}]
+        to: [{type: 'partner'}]
       },
       {
         title: 'Host',

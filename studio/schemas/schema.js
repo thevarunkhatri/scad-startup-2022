@@ -9,6 +9,7 @@ import siteSettings from './documents/siteSettings'
 import sessions from './documents/sessions'
 import club from './documents/club'
 import hosts from './documents/hosts'
+import partner from './documents/partner'
 
 // Object types
 import resources from './objects/resources'
@@ -27,6 +28,7 @@ export default createSchema({
     demoFiles,
     club,
     hosts,
+    partner,
     // Documents
     siteSettings,
     sessions
