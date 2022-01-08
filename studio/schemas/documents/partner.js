@@ -18,7 +18,7 @@ export default {
             title: 'Partner Site/Social'
         },
         {
-            name: 'partnerLink',
+            name: 'partnerType',
             type: 'string',
             options: {
                 list: [
