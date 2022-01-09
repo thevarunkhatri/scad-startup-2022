@@ -18,10 +18,32 @@ export default {
             title: 'File Link',
             validation: Rule => Rule.required(),
         },
+        {
+          title: 'Type', 
+          name: 'demoType',
+          description: 'The type of demo file this is',
+          type: 'string',
+              options: {
+                  list: [
+
+                      {title: 'Recording', value: 'recording'},
+                      {title: 'Project Folder', value: 'folder'},
+                      {title: 'Website', value: 'website'},
+                      {title: 'Document', value: 'document'},
+                      {title: 'Article', value: 'article'},
+                      {title: 'Course', value: 'course'},
+                      {title: 'Image', value: 'image'},
+                      {title: 'Video', value: 'video'},
+
+                  ]
+              }        
+      },
+
     ],
     preview: {
       select: {
-        
+        title: 'title',
+        subtitle: 'demoType'
       }
     }
 }

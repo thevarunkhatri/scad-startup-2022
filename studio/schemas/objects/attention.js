@@ -18,10 +18,11 @@ export default {
             title: 'Attention Message',
             validation: Rule => Rule.required(),
         },
-        {title: 'Type', 
-        name: 'attentionType',
-        description: 'The type of attention this is',
-        type: 'string',
+        {
+            title: 'Type', 
+            name: 'attentionType',
+            description: 'The type of attention this is',
+            type: 'string',
                 options: {
                     list: [
                         {title: 'Preparation', value: 'prep'},
@@ -29,11 +30,12 @@ export default {
                         {title: 'Caution', value: 'caution'},
                     ]
                 }        
-      },
+        },
     ],
     preview: {
       select: {
-        
+        title: 'attentionTitle',
+        subtitle: 'attentionType',
       }
     }
 }
