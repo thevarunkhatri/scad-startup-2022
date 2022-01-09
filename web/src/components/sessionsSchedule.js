@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useState, useEffect} from "react";
 import { Link, useStaticQuery, graphql } from "gatsby"
 
 const SessionsCard = props => {
@@ -39,14 +39,63 @@ const SessionsCard = props => {
   );
 };
 
+const FilterTab = props => {
+
+  return (
+      <div className="filterTab">
+        {props.label}
+      </div>
+  );
+};
+
 const SessionsSchedule = props => {
+    const [filterType, setFilterType] = useState("day");
+
 
     const sessionsArray = props.sanityData;
     console.log(sessionsArray) 
 
+    const dayOptions = ["Friday", "Saturday", "Sunday", "Monday", "Tuesday", "Wednesday", "Thursday"]
+    const difficultyOptions = ["Beginner", "Novice", "Intermediate", "Advanced", "Expert"]
+    const subjectOptions = []
+
     return (
-        <div>
-            <h1>Sessions</h1>
+        <div className="sessionsSchedule">
+            <div>
+              <h1 className="sessionsTitle">Sessions by Day</h1>
+              <div className="filterHolder">
+                <select name="filterType" id="filterType"
+                  onChange={(e) => {
+                    setFilterType(e.target.value) 
+                  }}>
+                  <option selected value="day">Day</option>
+                  <option value="difficulty">Difficulty</option>
+                  <option value="subject">Subject</option>
+                </select>
+                {
+                  filterType == "day" ? dayOptions.map((day) => {
+                    return(
+                      <FilterTab label={day}/>
+                    )
+                  }): null
+                }
+                {
+                  filterType == "difficulty" ? difficultyOptions.map((difficulty) => {
+                    return(
+                      <FilterTab label={difficulty}/>
+                    )
+                  }): null
+                }
+                {
+                  filterType == "subject" ? subjectOptions.map((subject) => {
+                    return(
+                      <FilterTab label={subject}/>
+                    )
+                  }): null
+                }
+                
+              </div>
+            </div>
             <div className="sessionsGrid">
               {
                 sessionsArray.map(edge => 
@@ -64,8 +113,6 @@ const SessionsSchedule = props => {
                     }
                 )
               }
-              <h3>Hello</h3>
-              <h3>Hello</h3>
             </div>
         </div>
     );

@@ -76,6 +76,28 @@
         }
     }  
 }
+.sessionsSchedule {
+    .sessionsTitle {
+        font-weight: 400;
+        margin-bottom: 8px;
+    }
+
+    .filterHolder {
+        display: flex;
+        flex-direction: row;
+        gap: 12px;
+        margin-bottom: 32px;
+
+        .filterTab {
+            text-transform: uppercase;
+            padding: 10px 16px;
+            border-radius: 10px;
+            background: #191919;
+            font-size: 14px;
+        }
+    }
+}
+
 
 .sessionsGrid {
     display: grid;
