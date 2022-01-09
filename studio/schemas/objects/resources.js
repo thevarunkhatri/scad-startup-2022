@@ -1,3 +1,5 @@
+import { MdSchool } from "react-icons/md"
+
 export default {
     name: 'resources',
     title: 'Resources',
@@ -18,26 +20,31 @@ export default {
             title: 'Resource Link',
             validation: Rule => Rule.required(),
         },
-        {title: 'Type', 
-        name: 'resourceType',
-        description: 'The type of resource this is',
-        type: 'string',
+        {
+            title: 'Type', 
+            name: 'resourceType',
+            description: 'The type of resource this is',
+            type: 'string',
                 options: {
                     list: [
-                        {title: 'Image', value: 'image'},
-                        {title: 'Website', value: 'website'},
-                        {title: 'Article', value: 'article'},
-                        {title: 'Course', value: 'course'},
-                        {title: 'Video', value: 'video'},
+
                         {title: 'Recording', value: 'recording'},
                         {title: 'Project Folder', value: 'folder'},
+                        {title: 'Website', value: 'website'},
+                        {title: 'Document', value: 'document'},
+                        {title: 'Article', value: 'article'},
+                        {title: 'Course', value: 'course'},
+                        {title: 'Image', value: 'image'},
+                        {title: 'Video', value: 'video'},
+
                     ]
                 }        
-      },
+        },
     ],
     preview: {
       select: {
-        
+        title: 'resourceTitle',
+        subtitle: 'resourceType',
       }
     }
 }
