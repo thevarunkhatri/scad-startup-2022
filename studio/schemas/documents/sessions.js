@@ -168,6 +168,13 @@ export default {
         of: [{type: 'demoFiles'}]
       },
       {
+        title: 'Attention', 
+        name: 'attention',
+        description: 'Any messages to display on the site before the session goes live',
+        type: 'array', 
+        of: [{type: 'attention'}]
+      },
+      {
         title: 'Prerequisites',
         name: 'prerequisites',
         type: 'array',

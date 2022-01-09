@@ -12,6 +12,7 @@ import partner from './documents/partner'
 
 // Object types
 import resources from './objects/resources'
+import attention from './objects/attention'
 import demoFiles from './objects/demoFiles'
 import figure from './objects/figure' 
 
@@ -24,6 +25,7 @@ export default createSchema({
     // Objects
     figure,
     resources,
+    attention,
     demoFiles,
     hosts,
     partner,
