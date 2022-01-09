@@ -3,6 +3,7 @@ nav {
     padding-bottom: 40px;
     position: fixed;
     width: 100vw;
+    z-index: 50;
     // background: rgb(10, 10, 10);
     background: linear-gradient(to bottom, rgba(10,10,10,1), rgba(10,10,10,1) 80%, rgba(10,10,10,0) 100%);
 
