@@ -21,10 +21,17 @@ export default {
       },
       {
         name: 'excerpt',
-        title: 'excerpt',
-        description: 'A quick (elevator-pitch style) description of the product',
+        title: 'Description',
+        description: 'A small description of the session',
         type: 'string',
         validation: Rule => Rule.min(30).max(100)
+      },
+      {
+        title: 'Detailed Description', 
+        name: 'detailedDescription',
+        description: 'A long description of the session',
+        type: 'array', 
+        of: [{type: 'block'}]
       },
       {
         name: 'locationName',
@@ -85,7 +92,7 @@ export default {
                 {value: 75, title: '1 hour 15 mins'},
                 {value: 90, title: '1 hour 30 mins'},
                 {value: 105, title: '1 hour 45 mins'},
-                {value: 120, title: '2 hour'}
+                {value: 120, title: '2 hours'}
             ]
         },
         initialValue: 15,
@@ -122,27 +129,24 @@ export default {
         type: 'array', 
         of: [{type: 'block'}]
       },
-      // {
-      //   title: 'Category', 
-      //   name: 'categories',
-      //   description: 'Add one or more categories',
-      //   type: 'array', 
-      //   of: [
-      //       {
-      //           type: 'string',
-      //           options: {
-      //               list: [
-      //                   {title: 'Basics', value: 'basics'},
-      //                   {title: 'Visual', value: 'visual'},
-      //                   {title: 'Physical', value: 'physical'},
-      //                   {title: 'Game', value: 'game'},
-      //                   {title: 'Amp', value: 'amp'},
-      //                   {title: 'One-Off', value: 'one-off'}
-      //               ]
-      //           }
-      //       }
-      //   ]
-      // },
+      {
+        title: 'Category', 
+        name: 'categories',
+        description: 'Add one or more categories',
+        type: 'string',
+                options: {
+                    list: [
+                        {title: '#basics', value: 'basics'},
+                        {title: '#visuals', value: 'visual'},
+                        {title: '#physical', value: 'physical'},
+                        {title: '#coding', value: 'coding'},
+                        {title: '#storytelling', value: 'storytelling'},
+                        {title: '#one-shot', value: 'one-shot'}
+                    ]
+                }
+            
+        
+      },
       {
         title: 'Video Embed URL', 
         name: 'videoURL',

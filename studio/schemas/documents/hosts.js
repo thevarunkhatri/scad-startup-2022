@@ -1,3 +1,6 @@
+import { MdAssignmentInd } from "react-icons/md";
+
+
 export default {
     name: 'hosts',
     title: 'Session Hosts',
@@ -5,6 +8,7 @@ export default {
     options: {
       hotspot: true
     },
+    icon: MdAssignmentInd,
     fields: [
         {
             name: 'name',
@@ -13,16 +17,29 @@ export default {
             validation: Rule => Rule.required(),
         },
         {
-            name: 'portfolioLink',
+            name: 'linkedIn',
             type: 'url',
-            title: 'Portfolio Link'
+            title: 'LinkedIn Page'
         },
         {
-            name: 'club',
+            name: 'partner',
             type: 'reference',
-            title: 'Club',
-            to: [{type: 'club'}]
+            title: 'Partner',
+            to: [{type: 'partner'}]
         },
+
+        {
+            name: 'contact',
+            type: 'string',
+            title: 'Contact Method'
+        },
+
+        {
+            name: 'headshot',
+            type: 'image',
+            title: 'Headshot',
+            description: 'A nice image of the host',
+        }
     ]
 }
   
