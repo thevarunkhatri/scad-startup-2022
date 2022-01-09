@@ -1,10 +1,15 @@
+import { MdGroups } from "react-icons/md";
+
 export default {
     name: 'partner',
     title: 'Partner',
     type: 'document',
+
+
     options: {
       hotspot: true
     },
+    icon: MdGroups,
     fields: [
         {
             name: 'partnerName',
@@ -20,11 +25,12 @@ export default {
         {
             name: 'partnerType',
             type: 'string',
+            initialValue: 'club',
             options: {
                 list: [
-                    {title: 'Basics', value: 'basics'},
-                    {title: 'Visual', value: 'visual'},
-                    {title: 'Physical', value: 'physical'}
+                    {title: 'Club', value: 'club'},
+                    {title: 'Major', value: 'major'},
+                    {title: 'Partner', value: 'partner'}
                 ]
             }
         }
