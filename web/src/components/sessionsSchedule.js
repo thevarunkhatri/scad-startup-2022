@@ -52,8 +52,13 @@ const SessionsSchedule = props => {
                 sessionsArray.map(edge => 
                     {
                       //console.log(edge)
+                      if(edge.heroImage == null || edge.heroImage.asset == null) {
+                        return (
+                          <SessionsCard name={edge.name}/>
+                        )
+                      }
                       return(
-                        <SessionsCard name={edge.name} imageUrl={edge._rawHeroImage.asset.url}/>
+                        <SessionsCard name={edge.name} imageUrl={edge.heroImage.asset.url}/>
                         //
                       )       
                     }

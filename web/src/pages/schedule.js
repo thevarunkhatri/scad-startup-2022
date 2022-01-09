@@ -24,16 +24,40 @@ export const query = graphql`
     sessions: allSanitySessions {
       edges {
         node {
-          _rawHeroImage(resolveReferences: {maxDepth: 10})
-          demoFiles {
+          zoomURL
+          videoURL
+          slug {
             _key
             _type
-            fileTitle
-            fileLink
+            current
           }
-          difficulty
-          duration
-          excerpt
+          sessionDateTime
+          relatedSession {
+            slug {
+              _key
+              _type
+              current
+            }
+            name
+          }
+          resources {
+            _key
+            _type
+            resourceTitle
+            resourceLink
+            resourceType
+          }
+          registrationURL
+          prerequisites {
+            name
+            slug {
+              _key
+              _type
+              current
+            }
+          }
+          name
+          locationName
           location {
             _key
             _type
@@ -41,23 +65,41 @@ export const query = graphql`
             lng
             alt
           }
-          locationName
-          name
-          registrationURL
-          resources {
+          id
+          host {
+            name
+            partner {
+              partnerName
+              partnerLink
+              partnerType
+            }
+            linkedIn
+          }
+          heroImage {
+            asset {
+              url
+            }
+          }
+          excerpt
+          duration
+          difficulty
+          detailedDescription {
             _key
             _type
-            resourceTitle
-            resourceLink
+            style
+            list
+            _rawChildren
           }
-          sessionDateTime
-          slug {
-            _key
-            _type
-            current
+          demoFiles {
+            fileLink
+            fileTitle
           }
-          videoURL
-          zoomURL
+          clubPartner {
+            partnerName
+            partnerType
+            partnerLink
+          }
+          categories
         }
       }
     }
@@ -83,6 +125,8 @@ const SchedulePage = props => {
         .filter(filterOutDocsPublishedInTheFuture)
     : [];
 
+  console.log(sessionNodes)
+
   if (!site) {
     throw new Error(
       'Missing "Site settings". Open the studio at http://localhost:3333 and add some content to "Site settings" and restart the development server.'
@@ -100,12 +144,9 @@ const SchedulePage = props => {
           <Container>
             <div className="scheduleControls">
               <ul className="controlHolder">
-                <li onClick={ activeCalendar ? null : flipCalendar } className={ activeCalendar ? "active activeLeft controls" : "activeLeft controls" }>Overview</li>
+                <li onClick={ activeCalendar ? null : flipCalendar } className={ activeCalendar ? "active activeLeft controls" : "activeLeft controls" }>Required</li>
                 <li onClick={ activeCalendar ? flipCalendar : null } className={ activeCalendar ? "activeRight controls" : "active activeRight controls" }>Sessions</li>
               </ul>
-              <div className="controlHolder controls filter">
-                Filter
-              </div>
             </div>
             { activeCalendar ? <GeneralSchedule/> : <SessionsSchedule sanityData={sessionNodes}/>}
           </Container>
