@@ -12,6 +12,11 @@ export default {
     icon: MdGroups,
     fields: [
         {
+            name: 'partnerIcon',
+            type: 'image',
+            title: 'Partner Icon',
+        },
+        {
             name: 'partnerName',
             type: 'string',
             title: 'Partner Name',
