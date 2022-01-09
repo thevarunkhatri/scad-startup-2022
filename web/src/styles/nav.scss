@@ -1,46 +1,68 @@
 nav {
     padding-top: 16px;
+    padding-bottom: 40px;
     position: fixed;
     width: 100vw;
-    background: rgba(10,10,10,0.8);
-    backdrop-filter: blur(12px);
+    // background: rgb(10, 10, 10);
+    background: linear-gradient(to bottom, rgba(10,10,10,1), rgba(10,10,10,1) 80%, rgba(10,10,10,0) 100%);
 
     .navContainer {
-        border-top: 1px solid #282828;
-        border-bottom: 1px solid #282828;
         padding: 0 2vw;
         margin: 0 auto;
         display: flex;
         flex-direction: row;
         justify-content: space-between;
         align-items: center;
-        height: 64px;
+        gap: 24px;
+
+        .center {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            flex-grow: 5;
+            gap: 8px;
+
+            .navFlorish {
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                flex-grow: 5;
+
+                div {
+                    height: 2px;
+                    border-top: 0.5px rgba(249,249,249,0.5) solid;
+                    border-bottom: 0.5px rgba(249,249,249,0.5) solid;
+                    flex-grow: 10;
+                }
+            }
+
+            a {
+                height: 146px;
+            }
+        }
 
         ul {
             display: flex;
             flex-direction: row;
-            border-left: 1px solid #282828;
-            border-right: 1px solid #282828;
             padding: 0;
             margin: 0;
-            height: 100%;
+            height: 56px;
+            gap: 8px;
 
             a {
                 color: #FFFFFF;
                 text-decoration: none;
                 text-transform: uppercase;
                 font-size: 14px;
-                border-right: 1px solid #282828;
                 transition: all 300ms ease-in-out;
+                border-radius: 8px;
 
                 &:hover {
-                    background-color: var(--color-teal);
+                    color: #0A0A0A;
+                    background-color: var(--color-yellow);
                     transition: all 300ms ease-in-out;
                 }
-
-                &:last-child {
-                    border: none
-                } 
             }
 
             li {
@@ -53,17 +75,6 @@ nav {
                 justify-content: center;
                 align-items: center;
                 
-            }
-
-            .signupButton {
-                background: var(--color-yellow);
-                color: #0A0A0A;
-                transition: all 300ms ease-in-out;
-
-                &:hover {
-                    background: var(--color-yellow-dark);
-                    transition: all 300ms ease-in-out;
-                }
             }
         }
 

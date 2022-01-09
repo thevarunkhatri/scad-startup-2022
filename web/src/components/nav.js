@@ -1,5 +1,8 @@
 import React from "react";
 import { Link } from "gatsby"
+import NavFlorish from "../assets/svg/nav/navFlorish.svg"
+import NavFlorishWithArc from "../assets/svg/nav/navFlorishWithArc.svg"
+import LogoCircle from "../assets/svg/nav/logoCircle.svg"
 
 import "../styles/nav.scss";
 
@@ -19,9 +22,23 @@ const Nav = () => {
                         Deliverables
                     </li></Link>
                 </ul>
-                <Link to="/">
-                    <h3>StartUp</h3>
-                </Link>
+
+                <div className="center">
+                    <div className="navFlorish">
+                        <NavFlorish/>
+                        <div></div>
+                        <NavFlorishWithArc/>
+                    </div>
+                    <Link to="/">
+                        <LogoCircle/>
+                    </Link>
+                    <div className="navFlorish">
+                        <NavFlorish/>
+                        <div></div>
+                        <NavFlorishWithArc/>
+                    </div>
+                </div>
+
                 <ul className="navRight">
                     <Link to="/faq"><li>
                         FAQ

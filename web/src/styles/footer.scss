@@ -13,19 +13,18 @@
     height: 64px;
 
     .footerRight {
-        display: flexbox;
+        display: flex;
+        align-items: center;
         justify-content: space-between;
         width: 300px;
     }
 
     .footerLeft {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
         width: 300px;
-
-        .leftWrapper {
-            display: flex;
-            width: 150px;
-            justify-content: space-between;
-        }
+        gap: 16px;
     }
     
 
@@ -40,7 +39,7 @@
     ul {
         display: flex;
         flex-direction: row;
-
+        padding: 0;
         list-style-type: none;
     }
 }

@@ -18,6 +18,14 @@ module.exports = {
     "gatsby-plugin-react-helmet",
     "gatsby-plugin-sitemap",
     `gatsby-plugin-image`,
-    `gatsby-plugin-sharp`
+    `gatsby-plugin-sharp`, 
+    {
+      resolve: "gatsby-plugin-react-svg",
+      options: {
+        rule: {
+          include: /\.svg$/ // See below to configure properly
+        }
+      }
+    }
   ],
 };

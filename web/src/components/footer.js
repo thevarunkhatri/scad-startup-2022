@@ -1,5 +1,9 @@
 import React from "react";
 import { Link } from "gatsby"
+import Flux from "../assets/svg/footer/FLUX.svg"
+import Scadpro from "../assets/svg/footer/SCADpro.svg"
+import Instagram from "../assets/svg/footer/Instagram.svg"
+import Discord from "../assets/svg/footer/Discord.svg"
 
 import "../styles/footer.scss";
 
@@ -10,14 +14,12 @@ const Footer = () => {
             <div className="footerContainer">
 
                 <ul className="footerLeft">
-                    <div className="leftWrapper">
-                        <Link to=""><li>
-                        <img src={"https://placeholder.pics/svg/60/75F3FF"}></img>
-                        </li></Link>
-                        <Link to=""><li>
-                        <img src={"https://placeholder.pics/svg/60/75F3FF"}></img>
-                        </li></Link>
-                    </div>
+                    <Link to=""><li>
+                        <Flux/>
+                    </li></Link>
+                    <Link to=""><li>
+                        <Scadpro/>
+                    </li></Link>
                 </ul>
 
                 <Link to="/">
@@ -26,10 +28,10 @@ const Footer = () => {
 
                 <ul className="footerRight">
                     <Link to=""><li>
-                       <img src={"https://placeholder.pics/svg/60/75F3FF"}></img>
+                       <Instagram/>
                     </li></Link>
                     <Link to=""><li>
-                        <img src={"https://placeholder.pics/svg/60/75F3FF"}></img>
+                        <Discord/>
                     </li></Link>
                     <button class="footerButton">Sign up &nbsp; {String.fromCharCode(10230)}</button>
                 </ul>
