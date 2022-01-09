@@ -10,6 +10,8 @@ import GraphQLErrorList from "../components/graphql-error-list";
 import SEO from "../components/seo";
 import Layout from "../containers/layout";
 
+import PeopleBackgroundSVG from "../assets/svg/people/peopleBG.svg";
+
 import '../styles/people.scss';
 
 
@@ -50,7 +52,8 @@ const PeoplePage = props => {
   return (
     <Layout>
       <SEO title={site.title} description={site.description} keywords={site.keywords} />
-      <main>
+      <main id="peoplePageBG">
+        {/* <PeopleBackgroundSVG /> */}
         <Container>
 
           <div class="peopleHeader">
@@ -264,42 +267,3 @@ function FacultyCard (props) {
 }
 
 export default PeoplePage;
-
-// OG PEOPLE CARD - KINDA WORKS return (
-//   <Layout>
-//     <SEO title={site.title} description={site.description} keywords={site.keywords} />
-//     <main>
-//       <Container>
-
-//         <div class="peopleHeader">
-//           <h3>The people that brought Startup to life</h3>
-//           <h1>Startup 2022 Core Team</h1>
-//         </div>
-
-//         <div class="cardContainer">
-
-//           <div class="entireWrapperCards">
-//             <div class="profileHalf">
-//               <img
-//                 src="https://images.pexels.com/photos/20787/pexels-photo.jpg?auto=compress&cs=tinysrgb&h=350"
-//                 alt="new"
-//                 />
-//             </div>
-
-//             <div class="cardContent" id="content1">
-//               <h2>Mike Buzzard</h2>
-//               <p> Organization and Outreach </p>
-//               <p> User Experience </p>
-//               <div class="buttonWrapper">
-//                 <button class="externalButton">Linkedin &nbsp; {String.fromCharCode(10230)}</button>
-//                 <button class="externalButton">Portfolio &nbsp; {String.fromCharCode(10230)}</button>
-//               </div>
-//             </div>
-//           </div>
-
-
-//         </div>
-//       </Container>
-//     </main>
-//   </Layout>
-// );

@@ -49,14 +49,14 @@ const DeliverablesPage = props => {
   return (
     <Layout>
       <SEO title={site.title} description={site.description} keywords={site.keywords} />
-      <main>
+      <main id="deliverablesPageBG">
         <Container>
           <div class="deliverablesHeader">
             <h3>Pitch your ideas and WIN BIG!!!</h3>
-            <h1>The Deliverables</h1>
+            <h1 className="pageName">The Deliverables</h1>
           </div>
 
-          <div class="cardContainer">
+          <div class="deliverablesContainer">
             <div class="deliverablesCard" id="content1">
               <h2>Presentation Deck</h2>
               <p> "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo." </p>
