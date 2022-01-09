@@ -1,5 +1,36 @@
 import React, {useState, useEffect} from "react";
 import { Link, useStaticQuery, graphql } from "gatsby"
+import Feb4 from "../assets/svg/schedule/feb4.svg"
+
+const SessionsGroup = props => {
+  return (
+    <div className="sessionsGroup">
+        <div className="groupLabel">
+          {props.icon}
+          <h3>{props.title}</h3>
+          <div className="line"/>
+        </div>
+        <div className="sessionsGrid">
+          {
+            props.sessions.map(edge => 
+                {
+                  //console.log(edge)
+                  if(edge.heroImage == null || edge.heroImage.asset == null) {
+                    return (
+                      <SessionsCard name={edge.name}/>
+                    )
+                  }
+                  return(
+                    <SessionsCard name={edge.name} imageUrl={edge.heroImage.asset.url}/>
+                    //
+                  )       
+                }
+            )
+          }
+        </div>
+    </div>
+  );
+}
 
 const SessionsCard = props => {
 
@@ -57,21 +88,24 @@ const SessionsSchedule = props => {
 
     const dayOptions = ["Friday", "Saturday", "Sunday", "Monday", "Tuesday", "Wednesday", "Thursday"]
     const difficultyOptions = ["Beginner", "Novice", "Intermediate", "Advanced", "Expert"]
-    const subjectOptions = []
+    const subjectOptions = ["Design", "Research"]
 
     return (
         <div className="sessionsSchedule">
             <div>
               <h1 className="sessionsTitle">Sessions by Day</h1>
               <div className="filterHolder">
-                <select name="filterType" id="filterType"
-                  onChange={(e) => {
-                    setFilterType(e.target.value) 
-                  }}>
-                  <option selected value="day">Day</option>
-                  <option value="difficulty">Difficulty</option>
-                  <option value="subject">Subject</option>
-                </select>
+                <div className="select">
+                  <select name="filterType" id="filterType"
+                    onChange={(e) => {
+                      setFilterType(e.target.value) 
+                    }}>
+                    <option selected value="day">Day</option>
+                    <option value="difficulty">Difficulty</option>
+                    <option value="subject">Subject</option>
+                  </select>
+                </div>
+
                 {
                   filterType == "day" ? dayOptions.map((day) => {
                     return(
@@ -96,7 +130,11 @@ const SessionsSchedule = props => {
                 
               </div>
             </div>
-            <div className="sessionsGrid">
+            <SessionsGroup 
+              icon={<Feb4/>} 
+              title="Friday" 
+               sessions={sessionsArray}/>
+            {/* <div className="sessionsGrid">
               {
                 sessionsArray.map(edge => 
                     {
@@ -113,7 +151,7 @@ const SessionsSchedule = props => {
                     }
                 )
               }
-            </div>
+            </div> */}
         </div>
     );
 };

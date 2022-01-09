@@ -88,16 +88,74 @@
         gap: 12px;
         margin-bottom: 32px;
 
+        .select {
+            display: flex;
+            align-items: center;
+
+            &::before {
+                content: "";
+                position: relative;
+                left: 12px;
+                width: 12px;
+                height: 16px;
+                background-image: url('../assets/img/arrow.png');
+            }
+        }
+
+        select {
+            -webkit-appearance: none;
+            -moz-appearance: none;
+            appearance: none;
+
+            color: white; 
+            text-transform: uppercase;
+            padding: 10px 16px 10px 32px;
+            border-radius: 10px;
+            background: #191919;
+            font-size: 14px;
+            border: none;
+            cursor: pointer;
+            margin-left: -12px;
+
+            option {
+                
+                appearance: none;
+            }
+        }
+
         .filterTab {
             text-transform: uppercase;
             padding: 10px 16px;
             border-radius: 10px;
             background: #191919;
             font-size: 14px;
+            cursor: pointer;
         }
     }
 }
 
+
+.sessionsGroup {
+    .groupLabel {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 16px;
+        margin-bottom: 24px;
+         
+        h3 {
+            font-size: 24px;
+            font-weight: 300;
+            margin: 0;
+        }
+
+        .line {
+            height: 1px;
+            background: white;
+            flex-grow: 5;
+        }
+    }
+}
 
 .sessionsGrid {
     display: grid;
