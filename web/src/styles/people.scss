@@ -14,9 +14,26 @@
 
 .cardContainer {
   display: grid;
+
   gap: 26px;
   grid-template-columns: repeat(3, 1fr);
+
+
 }
+
+@media only screen and (max-width: 1200px) {
+  .cardContainer {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .cardContainer {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+
 
 .entireWrapperCards {
   display: flex;
@@ -35,8 +52,50 @@
   width: 204px;
   border-radius: 0px 15px 15px 0px;
   background-color: rgba(255, 255, 255, 0.05);
+  display: flex;
+  flex-direction: column;
+  // justify-content: space-evenly;
+  height: 200px;
 }
 
+.facultyCard {
+  padding-left: 8px;
+  width: 204px;
+  border-radius: 0px 15px 15px 0px;
+  background-color: rgba(255, 255, 255, 0.05);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 200px;
+}
+
+.cardFirstName {
+  margin-bottom: 4px;
+}
+
+.cardLastName {
+  margin-bottom: 4px;
+}
+
+
+
+.cardRole {
+  font-size: 15px;
+  font-weight: 400;
+  color: var(--electric-blue);
+  margin-bottom: -12px;
+}
+
+.cardMajor {
+  font-size: 14px;
+  font-weight: 300;
+  color: var(--electric-blue);
+  // margin-bottom:  12px;
+}
+
+.buttonWrapper {
+  padding-bottom: 16px;
+}
 
 .externalButton {
   background: none;
@@ -60,11 +119,15 @@ h1 {
   color: var(--light-yellow);
 }
 
+
+
+
 h2 {
-  font-size: 32px;
+  font-size: 28px;
   font-weight: 500;
   line-height: 0px;
   padding-bottom: 5%;
+  // padding-top: ;
 }
 
 h3 {
@@ -77,7 +140,7 @@ p {
   font-size: 16px;
   font-weight: 300;
   opacity: 100%;
-  padding-bottom: 2%;
+  padding-bottom: 0%;
 }
 
 // #content1 {
