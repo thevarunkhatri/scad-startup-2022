@@ -170,14 +170,28 @@ export default {
       {
         title: 'Prerequisites',
         name: 'prerequisites',
-        type: 'reference',
-        to: [{type: 'sessions'}]
+        type: 'array',
+        of: [
+          {
+            type: 'reference',
+            to: [
+              {type: 'sessions'},
+            ]
+          }
+        ]
       },
       {
         title: 'Related Sessions',
         name: 'relatedSession',
-        type: 'reference',
-        to: [{type: 'sessions'}]
+        type: 'array',
+        of: [
+          {
+            type: 'reference',
+            to: [
+              {type: 'sessions'},
+            ]
+          }
+        ]
       },
       {
         title: 'Slug',
