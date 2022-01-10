@@ -290,9 +290,9 @@ const SubjectSessions = ({data, activeFilters}) => {
         {
           activeFilters.includes("Visuals") ? (
             <SessionsGroup 
-              icon={<Basics/>} 
-              title="Basics" 
-              sessions={basics}/>
+              icon={<Visuals/>} 
+              title="Visuals" 
+              sessions={visuals}/>
           ) : null
         }
         {

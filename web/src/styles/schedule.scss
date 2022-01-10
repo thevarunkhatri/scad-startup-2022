@@ -109,7 +109,7 @@
 
             color: white; 
             text-transform: uppercase;
-            padding: 10px 16px 10px 32px;
+            padding: 14px 16px 14px 32px;
             border-radius: 10px;
             background: #191919;
             font-size: 14px;
@@ -124,6 +124,7 @@
         }
 
         .filterTab {
+            box-sizing: border-box !important;
             text-transform: uppercase;
             padding: 10px 16px;
             border-radius: 10px;
@@ -153,7 +154,7 @@
 
 
 .sessionsGroup {
-    margin-top: 40px;
+    margin-top: 48px;
 
     .groupLabel {
         display: flex;
@@ -311,6 +312,12 @@
 
         p {
             font-weight: 300;
+        }
+
+        .midpoint {
+            margin-top: 12px;
+            font-weight: 500;
+            color: var(--color-yellow)
         }
 
         .dateButton {
