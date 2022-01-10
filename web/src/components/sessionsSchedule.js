@@ -22,40 +22,89 @@ import Feb8 from "../assets/svg/schedule/feb8.svg"
 import Feb9 from "../assets/svg/schedule/feb9.svg"
 import Feb10 from "../assets/svg/schedule/feb10.svg"
 
-const DifficultySessions = ({data}) => {
+const DifficultySessions = ({data, activeFilters}) => {
   const difficulty1 = data.filter(data => data.difficulty == 1);
   const difficulty2 = data.filter(data => data.difficulty == 2);
   const difficulty3 = data.filter(data => data.difficulty == 3);
   const difficulty4 = data.filter(data => data.difficulty == 4);
   const difficulty5 = data.filter(data => data.difficulty == 5);
 
-  return(
-    <>
-      <SessionsGroup 
-        icon={<Beginner/>} 
-        title="Beginner" 
-        sessions={difficulty1}/>
-      <SessionsGroup 
-        icon={<Novice/>} 
-        title="Novice" 
-        sessions={difficulty2}/>
-      <SessionsGroup 
-        icon={<Intermediate/>} 
-        title="Intermediate" 
-        sessions={difficulty3}/>
-      <SessionsGroup 
-        icon={<Advanced/>} 
-        title="Advanced" 
-        sessions={difficulty4}/>
-      <SessionsGroup 
-        icon={<Expert/>} 
-        title="Expert" 
-        sessions={difficulty5}/>
-    </>
-  )
+  if(activeFilters.length == 0) {
+    return(
+      <>
+        <SessionsGroup 
+          icon={<Beginner/>} 
+          title="Beginner" 
+          sessions={difficulty1}/>
+        <SessionsGroup 
+          icon={<Novice/>} 
+          title="Novice" 
+          sessions={difficulty2}/>
+        <SessionsGroup 
+          icon={<Intermediate/>} 
+          title="Intermediate" 
+          sessions={difficulty3}/>
+        <SessionsGroup 
+          icon={<Advanced/>} 
+          title="Advanced" 
+          sessions={difficulty4}/>
+        <SessionsGroup 
+          icon={<Expert/>} 
+          title="Expert" 
+          sessions={difficulty5}/>
+      </>
+    )
+  } else {
+    return(
+      <>
+        {
+          activeFilters.includes("Beginner") ? (
+            <SessionsGroup 
+              icon={<Beginner/>} 
+              title="Beginner" 
+              sessions={difficulty1}/>
+          ) : null
+        }
+        {
+          activeFilters.includes("Novice") ? (
+            <SessionsGroup 
+              icon={<Novice/>} 
+              title="Novice" 
+              sessions={difficulty2}/>
+          ) : null
+        }
+        {
+          activeFilters.includes("Intermediate") ? (
+            <SessionsGroup 
+              icon={<Intermediate/>} 
+              title="Intermediate" 
+              sessions={difficulty3}/>
+          ) : null
+        }
+        {
+          activeFilters.includes("Advanced") ? (
+            <SessionsGroup 
+              icon={<Advanced/>} 
+              title="Advanced" 
+              sessions={difficulty4}/>
+          ) : null
+        }
+        {
+          activeFilters.includes("Expert") ? (
+            <SessionsGroup 
+              icon={<Expert/>} 
+              title="Expert" 
+              sessions={difficulty5}/> 
+          ) : null
+        }
+      </>
+    )
+  }
+
+  
 }
 
-const DaySessions = ({data}) => {
+const DaySessions = ({data, activeFilters}) => {
 
   // const withDates = data.filter(data => data.sessionDateTime);
 
@@ -94,76 +143,193 @@ const DaySessions = ({data}) => {
     return date.getDate() == 10
   });
 
-  return(
-    <>
-      <SessionsGroup 
-        icon={<Feb4/>} 
-        title="Friday" 
-        sessions={day1}/>
-      <SessionsGroup 
-        icon={<Feb5/>} 
-        title="Saturday" 
-        sessions={day2}/>
-      <SessionsGroup 
-        icon={<Feb6/>} 
-        title="Sunday" 
-        sessions={day3}/>
-      <SessionsGroup 
-        icon={<Feb7/>} 
-        title="Monday" 
-        sessions={day4}/>
-      <SessionsGroup 
-        icon={<Feb8/>} 
-        title="Tuesday" 
-        sessions={day5}/>
-      <SessionsGroup 
-        icon={<Feb9/>} 
-        title="Wednesday" 
-        sessions={day6}/>
-      <SessionsGroup 
-        icon={<Feb10/>} 
-        title="Thursday" 
-        sessions={day7}/>
-    </>
-  )
+  if(activeFilters.length == 0) {
+    return(
+      <>
+        <SessionsGroup 
+          icon={<Feb4/>} 
+          title="Friday" 
+          sessions={day1}/>
+        <SessionsGroup 
+          icon={<Feb5/>} 
+          title="Saturday" 
+          sessions={day2}/>
+        <SessionsGroup 
+          icon={<Feb6/>} 
+          title="Sunday" 
+          sessions={day3}/>
+        <SessionsGroup 
+          icon={<Feb7/>} 
+          title="Monday" 
+          sessions={day4}/>
+        <SessionsGroup 
+          icon={<Feb8/>} 
+          title="Tuesday" 
+          sessions={day5}/>
+        <SessionsGroup 
+          icon={<Feb9/>} 
+          title="Wednesday" 
+          sessions={day6}/>
+        <SessionsGroup 
+          icon={<Feb10/>} 
+          title="Thursday" 
+          sessions={day7}/>
+      </>
+    )
+  } else {
+    return(
+      <>
+        {
+          activeFilters.includes("Friday") ? (
+            <SessionsGroup 
+              icon={<Feb4/>} 
+              title="Friday" 
+              sessions={day1}/>
+          ) : null
+        }
+        {
+          activeFilters.includes("Saturday") ? (
+            <SessionsGroup 
+              icon={<Feb5/>} 
+              title="Saturday" 
+              sessions={day2}/>
+          ) : null
+        }
+        {
+          activeFilters.includes("Sunday") ? (
+            <SessionsGroup 
+              icon={<Feb6/>} 
+              title="Sunday" 
+              sessions={day3}/>
+          ) : null
+        }
+        {
+          activeFilters.includes("Monday") ? (
+            <SessionsGroup 
+              icon={<Feb7/>} 
+              title="Monday" 
+              sessions={day4}/>
+          ) : null
+        }
+        {
+          activeFilters.includes("Tuesday") ? (
+            <SessionsGroup 
+              icon={<Feb8/>} 
+              title="Tuesday" 
+              sessions={day5}/>
+          ) : null
+        }
+        {
+          activeFilters.includes("Wednesday") ? (
+            <SessionsGroup 
+              icon={<Feb9/>} 
+              title="Wednesday" 
+              sessions={day6}/>
+          ) : null
+        }
+        {
+          activeFilters.includes("Thursday") ? (
+            <SessionsGroup 
+              icon={<Feb10/>} 
+              title="Thursday" 
+              sessions={day7}/>
+          ) : null
+        }
+      </>
+    )
+  }
 }
 
-const SubjectSessions = ({data}) => {
+const SubjectSessions = ({data, activeFilters}) => {
   const basics = data.filter(data => data.categories == "basics");
   const visuals = data.filter(data => data.categories == "visuals");
   const coding = data.filter(data => data.categories == "coding");
   const physical = data.filter(data => data.categories == "physical");
   const storytelling = data.filter(data => data.categories == "storytelling");
   const oneShot = data.filter(data => data.categories == "one-shot");
-  
-  return(
-    <>
-      <SessionsGroup 
-        icon={<Basics/>} 
-        title="Basics" 
-        sessions={basics}/>
-      <SessionsGroup 
-        icon={<Visuals/>} 
-        title="Visual" 
-        sessions={visuals}/>
-      <SessionsGroup 
-        icon={<Coding/>} 
-        title="Coding" 
-        sessions={coding}/>
-      <SessionsGroup 
-        icon={<Physical/>} 
-        title="Physical" 
-        sessions={physical}/>
-      <SessionsGroup 
-        icon={<Storytelling/>} 
-        title="Storytelling" 
-        sessions={storytelling}/>
-      <SessionsGroup 
-        icon={<OneShot/>} 
-        title="One-Shot" 
-        sessions={oneShot}/>
-    </>
-  )
+  if(activeFilters.length == 0) {
+    return(
+      <>
+        <SessionsGroup 
+          icon={<Basics/>} 
+          title="Basics" 
+          sessions={basics}/>
+        <SessionsGroup 
+          icon={<Visuals/>} 
+          title="Visuals" 
+          sessions={visuals}/>
+        <SessionsGroup 
+          icon={<Coding/>} 
+          title="Coding" 
+          sessions={coding}/>
+        <SessionsGroup 
+          icon={<Physical/>} 
+          title="Physical" 
+          sessions={physical}/>
+        <SessionsGroup 
+          icon={<Storytelling/>} 
+          title="Storytelling" 
+          sessions={storytelling}/>
+        <SessionsGroup 
+          icon={<OneShot/>} 
+          title="One-Shot" 
+          sessions={oneShot}/>
+      </>
+    )
+  } else {
+    return(
+      <>
+        {
+          activeFilters.includes("Basics") ? (
+            <SessionsGroup 
+              icon={<Basics/>} 
+              title="Basics" 
+              sessions={basics}/>
+          ) : null
+        }
+        {
+          activeFilters.includes("Visuals") ? (
+            <SessionsGroup 
+              icon={<Basics/>} 
+              title="Basics" 
+              sessions={basics}/>
+          ) : null
+        }
+        {
+          activeFilters.includes("Coding") ? (
+            <SessionsGroup 
+              icon={<Coding/>} 
+              title="Coding" 
+              sessions={coding}/>
+          ) : null
+        }
+        {
+          activeFilters.includes("Physical") ? (
+            <SessionsGroup 
+              icon={<Physical/>} 
+              title="Physical" 
+              sessions={physical}/>
+          ) : null
+        }
+        {
+          activeFilters.includes("Storytelling") ? (
+            <SessionsGroup 
+              icon={<Storytelling/>} 
+              title="Storytelling" 
+              sessions={storytelling}/>
+          ) : null
+        }
+        {
+          activeFilters.includes("One-Shot") ? (
+            <SessionsGroup 
+              icon={<OneShot/>} 
+              title="One-Shot" 
+              sessions={oneShot}/>
+          ) : null
+        }
+      </>
+    )
+  }
 }
 
 const SessionsGroup = props => {
@@ -244,10 +410,25 @@ const FilterTab = props => {
 
 const SessionsSchedule = props => {
     const [filterType, setFilterType] = useState("difficulty");
+    const [activeFilters, setActiveFilters] = useState([])
 
+    const toggleFilter = (filterToToggle) => {
+      console.log("hello")
+      // check if in array already     
+      if(activeFilters.includes(filterToToggle)){
+        // if in array, remove
+        let newActiveFilters = activeFilters.filter(e => e !== filterToToggle)
+        setActiveFilters(newActiveFilters)
+      } else {
+        // if not, add to array
+        let newActiveFilters = [...activeFilters, filterToToggle];
+        setActiveFilters(newActiveFilters);
+      }
+      console.log(activeFilters)
+    }
 
     const sessionsArray = props.sanityData;
-    console.log(sessionsArray) 
+    //console.log(sessionsArray) 
 
     const dayOptions = ["Friday", "Saturday", "Sunday", "Monday", "Tuesday", "Wednesday", "Thursday"]
     const difficultyOptions = ["Beginner", "Novice", "Intermediate", "Advanced", "Expert"]
@@ -261,7 +442,8 @@ const SessionsSchedule = props => {
                 <div className="select">
                   <select name="filterType" id="filterType"
                     onChange={(e) => {
-                      setFilterType(e.target.value) 
+                      setActiveFilters([]) 
+                      setFilterType(e.target.value)
                     }}>
                     <option value="difficulty">Difficulty</option>
                     <option value="day">Day</option>
@@ -272,30 +454,45 @@ const SessionsSchedule = props => {
                 {
                   filterType == "day" ? dayOptions.map((day) => {
                     return(
-                      <FilterTab label={day}/>
+                      <div className={activeFilters.includes(day) ? "filterTab active": "filterTab"} onClick={() => toggleFilter(day)}>
+                        {day}
+                      </div>
                     )
                   }): null
                 }
                 {
                   filterType == "difficulty" ? difficultyOptions.map((difficulty) => {
                     return(
-                      <FilterTab label={difficulty}/>
+                      <div className={activeFilters.includes(difficulty) ? "filterTab active": "filterTab"} onClick={() => toggleFilter(difficulty)}>
+                        {difficulty}
+                      </div>
                     )
                   }): null
                 }
                 {
                   filterType == "subject" ? subjectOptions.map((subject) => {
                     return(
-                      <FilterTab label={subject}/>
+                      <div className={activeFilters.includes(subject) ? "filterTab active": "filterTab"} onClick={() => toggleFilter(subject)}>
+                        {subject}
+                      </div>
                     )
                   }): null
                 }
                 
               </div>
             </div>
-            {filterType == "difficulty" ? <DifficultySessions data={sessionsArray}/> : null}
-            {filterType == "day" ? <DaySessions data={sessionsArray}/> : null}
-            {filterType == "subject" ? <SubjectSessions data={sessionsArray}/> : null}
+            {/* <div>
+              {activeFilters.map((e) => {
+                return(
+                  <span>
+                    {e}
+                  </span>
+                )
+              })}
+            </div> */}
+            {filterType == "difficulty" ? <DifficultySessions data={sessionsArray} activeFilters={activeFilters}/> : null}
+            {filterType == "day" ? <DaySessions data={sessionsArray} activeFilters={activeFilters}/> : null}
+            {filterType == "subject" ? <SubjectSessions data={sessionsArray} activeFilters={activeFilters}/> : null}
         </div>
     );
 };
