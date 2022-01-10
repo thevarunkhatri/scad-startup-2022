@@ -9,6 +9,7 @@ export default {
     fields: [
       {
         name: 'name',
+        description: 'This is what the session is called',
         title: 'Name',
         type: 'string'
       },
@@ -29,7 +30,7 @@ export default {
       {
         title: 'Category', 
         name: 'categories',
-        description: 'Add one or more categories',
+        description: 'Add one or more categories', 
         type: 'string',
                 options: {
                     list: [
@@ -39,7 +40,9 @@ export default {
                         {title: '#coding', value: 'coding'},
                         {title: '#storytelling', value: 'storytelling'},
                         {title: '#one-shot', value: 'one-shot'}
-                    ]
+                    ],
+                   //layout: 'radio', //demo for alex from momelove learning code :)
+
                 }
       },
       {
