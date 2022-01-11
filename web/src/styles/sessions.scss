@@ -1,0 +1,133 @@
+.sessions {
+    .recording {
+        height: 600px;
+        width: 100%;
+        position: relative; 
+        display: flex;
+        justify-content: center;
+        align-self: center;
+        border-radius: 1rem;
+        border: rgba(252, 233, 134, 0.6) 2px solid;
+        
+        &::before {
+            content: "";
+            background-image: url('../assets/img/sessions/videoPlaceholder.png');
+            background-size: cover;
+            position: absolute;
+            top: 0px;
+            right: 0px;
+            bottom: 0px;
+            left: 0px;
+            opacity: 0.2;
+            border-radius: 0.6rem;
+        }
+    }
+
+    .sessionInfo {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        margin-top: 50px;
+        gap: 48px;
+
+        .mainInfo {
+            display: flex;
+            flex-direction: column;
+            gap: 20px; 
+            color: #bfbfbf;
+            font-weight: 300;
+
+            h1, h2, h3, p {
+                margin: 0
+            }
+
+            h1, h2, h3 {
+                font-weight: 400;
+            }
+
+
+            h1, h3 {
+                color: white;
+            }
+
+            h1 {
+                font-size: 48px;
+            }
+            
+            h3 {
+                font-size: 20px;
+            }
+
+            .relatedSessions {
+                ul {
+                    list-style: none;
+                    margin: 0;
+                    padding: 0;
+                    display: flex;
+                    flex-direction: column;
+                    gap: 10px;
+
+                    a {
+                        color: white;
+                    }
+
+                    li {
+                        padding: 0;
+                        
+                    }
+                }
+            }
+        }
+
+        .secondaryInfo {
+            display: flex;
+            flex-direction: column;
+            gap: 18px; 
+            color: white;
+
+            .secondaryItem {
+                border-radius: 12px;
+                background: rgba(255, 255, 255, 0.1);
+            }
+
+            .dateTime {
+                padding: 18px 24px;
+                display: flex;
+                justify-content: space-between;
+            }
+
+            .resources {
+                display: flex;
+                flex-direction: column;
+                gap: 24px;
+                padding: 24px;
+
+                h3 {
+                    margin: 0 0 8px;
+                }
+
+                ul {
+                    list-style: none;
+                    margin: 0;
+                    padding: 0;
+                    display: flex;
+                    flex-direction: column;
+                    gap: 4px;
+
+                    a {
+                        color: white;
+                        text-decoration: none;
+                    }
+
+                    li {
+                        padding: 0;
+                        
+                    }
+                }
+            }
+
+            .map {
+                height: 100px;
+            }
+        }
+    }
+}

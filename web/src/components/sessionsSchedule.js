@@ -347,11 +347,11 @@ const SessionsGroup = props => {
                   //console.log(edge)
                   if(edge.heroImage == null || edge.heroImage.asset == null) {
                     return (
-                      <SessionsCard name={edge.name}/>
+                      <SessionsCard name={edge.name} slug={edge.slug}/>
                     )
                   }
                   return(
-                    <SessionsCard name={edge.name} imageUrl={edge.heroImage.asset.url}/>
+                    <SessionsCard name={edge.name} imageUrl={edge.heroImage.asset.url} slug={edge.slug}/>
                     //
                   )       
                 }
@@ -370,7 +370,7 @@ const SessionsCard = props => {
   };
 
   return (
-      <div className="sessionsCard">
+      <Link to={"/sessions/" + props.slug.current} className="sessionsCard">
           <div className="heroImage" style={imageStyle}></div>
           <div className="cardContent">
             <h4>{props.name}</h4>
@@ -396,7 +396,7 @@ const SessionsCard = props => {
               <button>Zoom</button>
             </div>
           </div>
-      </div>
+      </Link>
   );
 };
 
@@ -409,7 +409,7 @@ const FilterTab = props => {
 };
 
 const SessionsSchedule = props => {
-    const [filterType, setFilterType] = useState("difficulty");
+    const [filterType, setFilterType] = useState("day");
     const [activeFilters, setActiveFilters] = useState([])
 
     const toggleFilter = (filterToToggle) => {
@@ -446,7 +446,7 @@ const SessionsSchedule = props => {
                       setFilterType(e.target.value)
                     }}>
                     <option value="difficulty">Difficulty</option>
-                    <option value="day">Day</option>
+                    <option selected value="day">Day</option>
                     <option value="subject">Subject</option>
                   </select>
                 </div>

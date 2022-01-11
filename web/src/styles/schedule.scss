@@ -185,6 +185,14 @@
     .sessionsCard {
         background: #161616;
         border-radius: 12px;
+        text-decoration: none;
+        color: white;
+        transition: all 300ms ease-out;
+
+        &:hover {
+            transition: all 300ms ease-out;
+            transform: scale(1.02);
+        }
 
         .heroImage {
             height: 200px;
