@@ -125,8 +125,23 @@
                 }
             }
 
-            .map {
-                height: 100px;
+            .location {
+                height: 100%;
+                position: relative;
+
+                #map {
+                    border-radius: 12px;
+                }
+
+                .locationLabel {
+                    box-sizing: border-box;
+                    padding: 16px 24px;
+                    width: 100%;
+                    background: #1A1A1A;
+                    position: absolute;
+                    bottom: 0;
+                    border-radius: 0 0 12px 12px;
+                }
             }
         }
     }

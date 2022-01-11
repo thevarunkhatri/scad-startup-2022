@@ -3,6 +3,7 @@ import {graphql, Link} from 'gatsby';
 import SEO from '../components/seo'
 import Layout from '../containers/layout'
 import Container from "../components/container";
+import Map from '../components/map';
 
 import "../styles/sessions.scss"
 
@@ -62,8 +63,11 @@ const sessionsPage = props => {
                             <span>3:00PM EST</span>
                             <span>60m</span>
                         </div>
-                        <div className='map secondaryItem'>
-
+                        <div className='location secondaryItem'>
+                            <Map/>
+                            <div className='locationLabel'>
+                                Alder Hall
+                            </div>
                         </div>
                         <div className='resources secondaryItem'>
                             <div>
