@@ -25,10 +25,10 @@ export default {
             type: 'string',
                 options: {
                     list: [
-                        {title: 'Supplies', value: 'supplies'},
                         {title: 'Preparation', value: 'prep'},
+                        {title: 'Materials', value: 'materials'},
                         {title: 'Caution', value: 'caution'},
-                        {title: 'Warning', value: 'warning'},
+                        {title: 'Stop', value: 'stop'},
                     ]
                 }        
         },
