@@ -9,6 +9,9 @@ import BottomL from "../assets/img/schedule/BottomL.png"
 import BottomR from "../assets/img/schedule/BottomR.png"
 import SessionsImg from "../assets/img/schedule/Sessions.png"
 
+import SessionsSvg from "../assets/svg/schedule/sessions.svg"
+import KickoffSvg from "../assets/svg/schedule/kickoff.svg"
+
 const ScheduleCard = (props) => {
 
     let backgroundStyle = {}
@@ -37,7 +40,7 @@ const ScheduleCard = (props) => {
                             </div>
                         </div>
                         <div className="graphic">
-                            
+                            {props.graphic}
                         </div>
                     </>
                 ) : (
@@ -67,7 +70,8 @@ const GeneralSchedule = () => {
                 day={1}
                 description="Kickoff energizes more than 300 students and includes our theme reveal, workshop training sessions, and lightning talks by subject matter experts. We’ll also explain more about the track system, and how StartUp is going to run."
                 time="10:00 AM - 11:30 PM EST"
-                bigSize={true}/>
+                bigSize={true}
+                graphic={<KickoffSvg/>}/>
             <ScheduleCard
                 title="Midpoint 1" 
                 day={4}
@@ -112,7 +116,8 @@ const GeneralSchedule = () => {
                 description="Come join us for sessions covering a wide range of topics! Whether it's your first StartUp or you want to hone a new skill, we’ve got you covered. With experts from 7 different SCAD majors and a few of our friends at Adobe, there's a session for everyone."
                 time="10:00 AM - 11:30 PM EST"
                 bigSize={true}
-                backgroundImg={SessionsImg}/>
+                backgroundImg={SessionsImg}
+                graphic={<SessionsSvg/>}/>
         </div>
     );
 };

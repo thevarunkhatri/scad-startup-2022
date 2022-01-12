@@ -347,11 +347,11 @@ const SessionsGroup = props => {
                   //console.log(edge)
                   if(edge.heroImage == null || edge.heroImage.asset == null) {
                     return (
-                      <SessionsCard name={edge.name} slug={edge.slug}/>
+                      <SessionsCard name={edge.name} slug={edge.slug} difficulty={edge.difficulty}/>
                     )
                   }
                   return(
-                    <SessionsCard name={edge.name} imageUrl={edge.heroImage.asset.url} slug={edge.slug}/>
+                    <SessionsCard name={edge.name} imageUrl={edge.heroImage.asset.url} difficulty={edge.difficulty} slug={edge.slug}/>
                     //
                   )       
                 }
@@ -381,14 +381,20 @@ const SessionsCard = props => {
             </div>
             <div className="difficulty">
               <span>Difficulty: </span>
-              <div className="difficultyCircles">
-                <span></span>
-                <span></span>
-                <span></span>
-                <span></span>
-                <span></span>
+              <div className="difficultyCircles">         
+                <span className={props.difficulty > 0 ? "active" : null}></span>
+                <span className={props.difficulty > 1 ? "active" : null}></span>
+                <span className={props.difficulty > 2 ? "active" : null}></span>
+                <span className={props.difficulty > 3 ? "active" : null}></span>
+                <span className={props.difficulty > 4 ? "active" : null}></span>
               </div>
-              <span className="difficultyText">Beginner</span>
+              <span className="difficultyText">
+                {props.difficulty == 1 ? "Beginner" : null}
+                {props.difficulty == 2 ? "Novice" : null}
+                {props.difficulty == 3 ? "Intermediate" : null}
+                {props.difficulty == 4 ? "Advanced" : null}
+                {props.difficulty == 5 ? "Expert" : null}
+              </span>
             </div>
             <p className="description">Placeholder content for the description of the session! Integer vel enim viverra nulla arcu. Velit enim cras turpis aliquam ullamcorper. Felis, convallis mattis elit commodo.</p>
             <div className="cardButtons">

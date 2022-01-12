@@ -7,6 +7,10 @@
         border: 1px #838383 solid;
         border-radius: 24px;
         padding: 2em;
+
+        @media only screen and (max-width: 1200px) {
+            margin: 0 2em;
+        }
         
         .scheduleControls {
             display: flex;
@@ -182,6 +186,14 @@
     grid-template-columns: 1fr 1fr 1fr;
     gap: 32px;
 
+    @media only screen and (max-width: 1000px) {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    @media only screen and (max-width: 650px) {
+        grid-template-columns: 1fr;
+    }
+
     .sessionsCard {
         background: #161616;
         border-radius: 12px;
@@ -230,6 +242,10 @@
                         width: 10px;
                         border-radius: 5px;
                         background: #333333;
+
+                        &.active {
+                            background: var(--color-yellow);
+                        }
                     }
                 }
 
@@ -276,9 +292,14 @@
     grid-template-columns: 1fr 1fr;
     gap: 30px;
 
+    @media only screen and (max-width: 800px) {
+        display: flex;
+        flex-direction: column;
+    }
+
     .scheduleCard {
         background: rgba(255, 255, 255, 0.05);
-        height: 300px;
+        min-height: 300px;
         border-radius: 10px;
         padding: 40px;
         display: flex;
@@ -292,12 +313,33 @@
             grid-template-columns: 1fr 1fr;
             gap: 30px;
 
+            @media only screen and (max-width: 800px) {
+                display: flex;
+                flex-direction: column-reverse;
+            }
+
             .content {
                 display: flex;
                 flex-direction: column;
                 justify-content: space-between;
                 align-items: start;
                 height: 100%;
+            }
+
+            .graphic {
+                height: 100%;
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                align-items: center;
+
+                @media only screen and (max-width: 800px) {
+                    width: 100%;
+                }
+
+                svg {
+                    height: 250px;
+                }
             }
         }
 
@@ -338,6 +380,7 @@
             color: var(--color-teal);
             font-weight: 300;
             border-radius: 8px;
+            margin-top: 24px;
         }
     }
 }
