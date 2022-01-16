@@ -96,7 +96,7 @@ const sessionsPage = props => {
 
   let imageStyle ={}
   
-  if(data.session.heroImage.asset.url) {
+  if(data.session.heroImage.asset) {
     imageStyle = {
       background: "url(" + data.session.heroImage.asset.url + ")",
       backgroundSize: "cover"
