@@ -16,6 +16,10 @@ nav {
         align-items: center;
         gap: 24px;
 
+        @media only screen and (max-width: 1200px) {
+            gap: 12px;
+        } 
+
         .center {
             display: flex;
             flex-direction: row;
@@ -75,7 +79,12 @@ nav {
                 display: flex;
                 justify-content: center;
                 align-items: center;
+                font-size: 14px;
                 
+                @media only screen and (max-width: 1200px) {
+                    width: 120px;
+                    font-size: 13px;
+                } 
             }
         }
 

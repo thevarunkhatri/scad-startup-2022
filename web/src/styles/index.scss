@@ -1,0 +1,220 @@
+.hero {
+    height: calc(100vh - 192px)
+}
+
+.marquee {
+    border-top: 1px solid #838383;
+    border-bottom: 1px solid #838383;
+
+    p {
+        color: white;
+        font-family: 'IBM Plex Mono', sans-serif;
+        font-size: 21px;
+        font-weight: 500;
+        margin: 10px 20px;
+        text-transform: uppercase;
+
+        @media only screen and (max-width: 600px) {
+            font-size: 16px;
+        }            
+    }
+}
+
+.info {
+    padding: 80px 0 120px;
+
+    p {
+        color: white;
+        font-weight: 300;
+        margin: 0 auto;
+        max-width: 900px;
+        text-align: center;
+        font-size: 24px;
+        letter-spacing: 0.02em;
+        text-transform: uppercase;
+
+        span {
+            font-weight: bold;
+            color: #FCE986;
+        }
+
+        a {
+            color: #01AEC4;
+        }
+    }
+
+    .infoContainer {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 3vw;
+
+        svg {
+            width: 100%;
+        }
+
+        #desktopInfo {
+            margin-top: 120px;
+        }
+
+        #tabletInfo {
+            margin-top: 60px;
+            padding: 0 3vw;
+            box-sizing: border-box;
+        }
+    }
+}
+
+.countdown {
+    height: 720px;
+    text-align: center;
+    color: white;
+
+    h2 {
+        font-weight: 300;
+        font-size: 30px;
+        text-transform: uppercase;
+        letter-spacing: 0.03em;
+    }
+
+    .container {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .yellow {
+        color: #FCE986;
+        font-size: 144px;
+        line-height: 144px;
+    }
+
+    .timer {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: 64px;
+
+        .value {
+            display: flex;
+            flex-direction: column;
+            gap: 24px;
+
+            .number {
+                font-size: 144px;
+                line-height: 144px;
+            }
+    
+            .label {
+                font-size: 24px;
+                font-weight: 300;
+                text-transform: uppercase;
+                color: #01AEC4;
+            }
+        }
+    }
+}
+
+.ctaSection {
+    .container {
+        display: flex;
+        flex-direction: column;
+        gap: 96px;
+    }
+
+    h2 {
+        text-align: center;
+        color: white;
+        font-size: 48px;
+        text-transform: uppercase;
+        font-weight: 400;
+        margin: 0;
+        margin-bottom: 30px;
+    }
+
+    form {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-self: center;
+
+        input {
+            background: #FCE986;
+            border: none;
+            text-transform: uppercase;
+            font-size: 24px;
+            padding: 30px 96px;
+            border-radius: 8px;
+            font-weight: 500;
+            transition: all 300ms ease-in-out;
+
+            &:hover {
+                background: var(--color-yellow-dark);
+                transition: all 300ms ease-in-out;
+                cursor: pointer;
+            }
+        }
+    }
+
+    .ctaSteps {
+        display: flex;
+        flex-direction: row;
+        gap: 12px;
+        align-items: center;
+        justify-content: center;
+        padding-bottom: 96px;
+
+        #arrow {
+            margin-top: -80px;
+            flex-shrink: 3;
+        }
+
+        .step {
+            text-align: center;
+            color: white;
+            text-transform: uppercase;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-start;
+            align-self: stretch;
+            gap: 24px;
+            flex-grow: 5;
+
+            svg {
+                width: 160px;
+                height: 160px;
+            }
+
+            p {
+                margin: 0;
+                font-size: 20px;
+            }
+        }
+    }
+}
+
+.divider {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 16px;
+
+    .line {
+        flex-shrink: 20;
+        height: 2px;
+
+        svg {
+            height: 2px;
+        }
+    }
+
+    .circle {
+        height: 16px;
+        width: 16px;
+        border-radius: 8px;
+        background: var(--color-yellow);
+        flex-grow: 5;
+    }
+}
