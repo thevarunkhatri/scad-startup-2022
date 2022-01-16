@@ -57,27 +57,27 @@ const SponsersPage = props => {
           </div>
 
           <div class="sponsersContainer">
-            <div class="sponsersCard" id="content1">
+            <div class="sponsersCard">
               <img class="sponserLogo" src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Google_2015_logo.svg/736px-Google_2015_logo.svg.png" />
             </div>
 
-            <div class="sponsersCard" id="content2">
+            <div class="sponsersCard">
               <img class="sponserLogo" src="https://logodix.com/logo/590760.png" />
             </div>
 
-            <div class="sponsersCard" id="content3">
+            <div class="sponsersCard">
               <img class="sponserLogo" src="https://upload.wikimedia.org/wikipedia/commons/6/60/Gulfstream_Aerospace_logo.svg" />
             </div>
 
-            <div class="sponsersCard" id="content4">
+            <div class="sponsersCard">
               <img class="sponserLogo" src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Google_2015_logo.svg/736px-Google_2015_logo.svg.png" />
             </div>
 
-            <div class="sponsersCard" id="content5">
+            <div class="sponsersCard">
               <img class="sponserLogo" src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Google_2015_logo.svg/736px-Google_2015_logo.svg.png" />
             </div>
 
-            <div class="sponsersCard" id="content6">
+            <div class="sponsersCard">
               <img class="sponserLogo" src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Google_2015_logo.svg/736px-Google_2015_logo.svg.png" />
             </div>
 
