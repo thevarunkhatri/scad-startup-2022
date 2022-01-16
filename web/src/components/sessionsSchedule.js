@@ -1,4 +1,4 @@
-import React, {useState, useEffect} from "react";
+import React, {useState, useEffect, useRef} from "react";
 import { Link, useStaticQuery, graphql } from "gatsby"
 
 import Beginner from "../assets/svg/schedule/difficulty/Beginner.svg"
@@ -347,11 +347,30 @@ const SessionsGroup = props => {
                   //console.log(edge)
                   if(edge.heroImage == null || edge.heroImage.asset == null) {
                     return (
-                      <SessionsCard name={edge.name} slug={edge.slug} difficulty={edge.difficulty}/>
+                      <SessionsCard 
+                        name={edge.name} 
+                        slug={edge.slug} 
+                        difficulty={edge.difficulty}
+                        location={edge.locationName}
+                        datetime={edge.sessionDateTime}
+                        duration={edge.duration}
+                        excerpt={edge.excerpt}
+                        registrationLink={edge.registrationURL}
+                        zoomLink={edge.zoomURL}/>
                     )
                   }
                   return(
-                    <SessionsCard name={edge.name} imageUrl={edge.heroImage.asset.url} difficulty={edge.difficulty} slug={edge.slug}/>
+                    <SessionsCard 
+                      name={edge.name} 
+                      imageUrl={edge.heroImage.asset.url} 
+                      difficulty={edge.difficulty} 
+                      slug={edge.slug}
+                      location={edge.locationName}
+                      datetime={edge.sessionDateTime}
+                      duration={edge.duration}
+                      excerpt={edge.excerpt}
+                      registrationLink={edge.registrationURL}
+                      zoomLink={edge.zoomURL}/>
                     //
                   )       
                 }
@@ -369,15 +388,25 @@ const SessionsCard = props => {
     backgroundSize: 'cover'
   };
 
+  const date = new Date(props.datetime)
+  var dayOption = { weekday: 'long'}
+  const day = new Intl.DateTimeFormat('en-US', dayOption).format(date)
+  var timeOption =  {hour: 'numeric', minute: 'numeric'}
+  const time = new Intl.DateTimeFormat('en-US', timeOption).format(date)
+
   return (
-      <Link to={"/sessions/" + props.slug.current} className="sessionsCard">
+      // <Link to={"/sessions/" + props.slug.current} className="sessionsCard">
+      <div className="sessionsCard">
+        <Link to={"/sessions/" + props.slug.current}>
           <div className="heroImage" style={imageStyle}></div>
-          <div className="cardContent">
+        </Link>
+        <div className="cardContent">
+          <Link to={"/sessions/" + props.slug.current}>
             <h4>{props.name}</h4>
             <div className="timeLocation">
-              <span>5PM</span>
-              <span>60m</span>
-              <a href=""><span>The Shed</span></a>
+              <span>{day + ", " + time}</span>
+              <span>{props.duration}m</span>
+              <span>{props.location ? props.location : "Location here"}</span>
             </div>
             <div className="difficulty">
               <span>Difficulty: </span>
@@ -396,13 +425,14 @@ const SessionsCard = props => {
                 {props.difficulty == 5 ? "Expert" : null}
               </span>
             </div>
-            <p className="description">Placeholder content for the description of the session! Integer vel enim viverra nulla arcu. Velit enim cras turpis aliquam ullamcorper. Felis, convallis mattis elit commodo.</p>
-            <div className="cardButtons">
-              <button>Register</button>
-              <button>Zoom</button>
-            </div>
+            <p className="description">{props.excerpt}</p>
+          </Link>
+          <div className="cardButtons">
+            <a href={props.registrationLink}>Register</a>
+            <a href={props.zoomLink}>Zoom</a>
           </div>
-      </Link>
+        </div>
+      </div>
   );
 };
 
@@ -415,8 +445,20 @@ const FilterTab = props => {
 };
 
 const SessionsSchedule = props => {
+    const filterRef = useRef(null);
     const [filterType, setFilterType] = useState("day");
     const [activeFilters, setActiveFilters] = useState([])
+
+    useEffect(() => {
+      setFilterType(window.localStorage.getItem('filterType'));
+      console.log(filterRef.current.value)
+      filterRef.current.value = window.localStorage.getItem('filterType')
+      console.log(filterRef.current.value)
+    }, []);
+  
+    useEffect(() => {
+      window.localStorage.setItem('filterType', filterType);
+    }, [filterType]);
 
     const toggleFilter = (filterToToggle) => {
       console.log("hello")
@@ -446,13 +488,13 @@ const SessionsSchedule = props => {
               <h1 className="sessionsTitle">Sessions by {filterType[0].toUpperCase() + filterType.substring(1)}</h1>
               <div className="filterHolder">
                 <div className="select">
-                  <select name="filterType" id="filterType"
+                  <select name="filterType" id="filterType" ref={filterRef}
                     onChange={(e) => {
                       setActiveFilters([]) 
                       setFilterType(e.target.value)
                     }}>
+                    <option value="day">Day</option>
                     <option value="difficulty">Difficulty</option>
-                    <option selected value="day">Day</option>
                     <option value="subject">Subject</option>
                   </select>
                 </div>

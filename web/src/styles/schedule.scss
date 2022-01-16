@@ -200,6 +200,8 @@
         text-decoration: none;
         color: white;
         transition: all 300ms ease-out;
+        display: flex;
+        flex-direction: column;
 
         &:hover {
             transition: all 300ms ease-out;
@@ -214,6 +216,16 @@
 
         .cardContent {
             padding: 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            flex-grow: 5;
+            gap: 12px;
+
+            a {
+                color: white;
+                text-decoration: none;
+            }
 
             h4, p, div {
                 margin: 0;
@@ -257,7 +269,8 @@
             .timeLocation {
                 display: flex;
                 flex-direction: row;
-                gap: 20px;
+                justify-content: space-between;
+                gap: 12px;
                 font-weight: 300;
                 color: #01AEC4;
                 margin-bottom: 8px;
@@ -274,13 +287,22 @@
                 flex-direction: row;
                 gap: 12px;
 
-                button {
+                a {
                     border: 1px solid #01AEC4;
                     color: #01AEC4;
                     font-weight: 300;
                     background: none;
                     border-radius: 8px;
                     padding: 12px 20px;
+                    text-decoration: none;
+                    transition: all 350ms ease-in-out;
+                    z-index: 20;
+
+                    &:hover {
+                        transition: all 350ms ease-in-out;
+                        background: #01AEC4;
+                        color: #fff;
+                    }
                 }
             }
         }

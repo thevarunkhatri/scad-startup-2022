@@ -108,7 +108,16 @@ export const query = graphql`
 
 const SchedulePage = props => {
   const { data, errors } = props;
+  
   const [activeCalendar, setActiveCalendar] = useState(true);
+
+  useEffect(() => {
+    setActiveCalendar(JSON.parse(window.localStorage.getItem('activeCalendar')));
+  }, []);
+
+  useEffect(() => {
+    window.localStorage.setItem('activeCalendar', activeCalendar);
+  }, [activeCalendar]);
 
   if (errors) {
     return (
