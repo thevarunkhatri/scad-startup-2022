@@ -48,8 +48,10 @@
     background-color: rgba(255, 255, 255, 0.05);
     border-radius: 25px;
     padding: 48px 64px 48px 64px;
-    outline: solid 1px #01AEC4; /*having trouble finding a working gradient outline solution*/
+    background-image: TopL;
     backdrop-filter: blur(6px);
+
+
 
     h2 {
       color: #fff;
@@ -83,18 +85,26 @@
 
 #content1 {
   grid-area: content1;
+  background: url("../assets/img/schedule/TopL.png") rgba(255, 255, 255, 0.05) no-repeat;
+  background-size: cover;
 }
 
 #content2 {
   grid-area: content2;
+  background: url("../assets/img/schedule/TopR.png") rgba(255, 255, 255, 0.05) no-repeat;
+  background-size: cover;
 }
 
 #content3 {
   grid-area: content3;
+  background: url("../assets/img/schedule/MiddleR.png") rgba(255, 255, 255, 0.05) 0% no-repeat;
+  background-size: cover;
 }
 
 #content4 {
   grid-area: content4;
+  background: url("../assets/img/schedule/BottomR.png") rgba(255, 255, 255, 0.05) no-repeat;
+  background-size: cover;
 }
 
 #content5 {
