@@ -22,9 +22,11 @@ const Footer = () => {
                     </li></Link>
                 </ul>
 
-                <Link to="/">
-                    <h3>StartUp</h3>
-                </Link>
+                <div className="footerLogo">
+                    <Link to="/">
+                        <h3>StartUp</h3>
+                    </Link>
+                </div>
 
                 <ul className="footerRight">
                     <Link to=""><li>
