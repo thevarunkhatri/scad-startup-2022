@@ -18,13 +18,32 @@ import Step2 from "../assets/svg/home/step2.svg";
 import Step3 from "../assets/svg/home/step3.svg";
 import Arrow from "../assets/svg/home/arrow.svg";
 import DashedLine from "../assets/svg/home/dashedLine.svg";
+import HookMain from "../assets/svg/home/hookMain.svg";
+
+import HeroVideo from "../assets/video/hero.mp4";
+
+import BigPrizes from "../assets/svg/home/bigprizes.svg";
+import Connections from "../assets/svg/home/connections.svg";
+import PortfolioPieces from "../assets/svg/home/portfoliopieces.svg";
+import Scholarships from "../assets/svg/home/scholarships.svg";
+
+import { CarouselProvider, Slider, Slide } from 'pure-react-carousel';
+import 'pure-react-carousel/dist/react-carousel.es.css';
 
 import "../styles/index.scss"
 
 const Hero = props => {
   return (
       <div className="hero">
-        
+        <video
+          className="video-player"
+          loop
+          muted
+          autoPlay>
+          <source
+            src={HeroVideo}
+            type="video/mp4"/>
+        </video>
       </div>
   );
 };
@@ -91,11 +110,35 @@ const Hooks = props => {
       <div className="hooks">
         <Container>
           <h2>What's in it for me?</h2>
+          <div className="hookMain">
+                
+            <HookMain/>
+          </div>
           <div className="hookHolder">
             <Divider/>
-            <HookItem/>
+            <HookItem 
+              iconLeft={true} 
+              icon={<Connections/>}
+              title="Connections"
+              description="This is your chance to make connections within your field. Talk with your design idols, get a look into your dream company, stand out from the crowd during interviews."/>
             <Divider/>
-            <HookItem/>
+            <HookItem 
+              iconLeft={false} 
+              icon={<Scholarships/>}
+              title="Scholarships"
+              description="Do you have that one class you’ve always wanted to take? Or maybe enroll in graduate school at SCAD? We’ve got you covered. Take a chance and apply."/>
+            <Divider/>
+            <HookItem 
+              iconLeft={true} 
+              icon={<BigPrizes/>}
+              title="Big Prizes"
+              description="What would you do with $1,000? Or a gift card to your favorite store... or a subscription that helps you advnace your career... or... "/>
+            <Divider/>
+            <HookItem 
+              iconLeft={false} 
+              icon={<PortfolioPieces/>}
+              title="Portfolio Pieces"
+              description="Whether this is your first big project or you are returning for your fourth year, StartUp projects make incredible portfolio pieces!"/>
             <Divider/>
           </div>
         </Container>
@@ -106,7 +149,26 @@ const Hooks = props => {
 const HookItem = props => {
   return (
       <div className="hookItem">
-        
+        <div className={props.iconLeft ? "center" : "text"}>
+          <div className={props.iconLeft ? "circle" : "textAlign"}>
+            {props.iconLeft ? props.icon : (
+              <>
+                <h3>{props.title}</h3>
+                <p>{props.description}</p>
+              </>
+            )}
+          </div>
+        </div>
+        <div className={props.iconLeft ? "text" : "center"}>
+          <div className={props.iconLeft ? "textAlign" : "circle"}>
+            {props.iconLeft ? (
+              <>
+                <h3>{props.title}</h3>
+                <p>{props.description}</p>
+              </>
+            ) : props.icon}
+          </div>
+        </div>
       </div>
   );
 };
@@ -146,10 +208,8 @@ const Divider = props => {
   return (
       <div className="divider">
         <div className="circle"></div>
-        <div className="line">
-          <DashedLine/>
-        </div>
-        <div className="circle"></div>
+        <DashedLine/>
+        <div className="circle right"></div>
       </div>
   );
 };

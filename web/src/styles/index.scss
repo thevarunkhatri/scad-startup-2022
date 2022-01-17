@@ -1,5 +1,25 @@
 .hero {
-    height: calc(100vh - 192px)
+    height: calc(100vh - 192px);
+    position: relative;
+    overflow: hidden;
+
+
+    @media only screen and (max-width: 1000px) {
+        height: calc(70vh - 192px);
+    } 
+
+    @media only screen and (max-width: 700px) {
+        height: calc(55vh - 192px);
+    } 
+
+    .video-player {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -52%);
+        min-width: 100%;
+        min-height: 100%;
+    }
 }
 
 .marquee {
@@ -196,25 +216,114 @@
 }
 
 .divider {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
     height: 16px;
+    position: relative;
+    overflow: hidden;
 
-    .line {
-        flex-shrink: 20;
-        height: 2px;
-
-        svg {
-            height: 2px;
-        }
+    svg {
+        position: absolute;
+        top: 7px;
     }
 
     .circle {
+        position: absolute;
         height: 16px;
         width: 16px;
         border-radius: 8px;
         background: var(--color-yellow);
         flex-grow: 5;
+
+        &.right {
+            right: 0;
+        }
+    }
+}
+.hooks {
+    color: white;
+
+    .hookMain {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 60px;
+    }
+
+    h2 {
+        text-align: center;
+        font-weight: 300;
+        font-size: 30px;
+        text-transform: uppercase;
+        letter-spacing: 0.03em;
+        margin-bottom: 80px;
+    }
+
+    .hookItem {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 40px;
+        padding: 60px 0;
+
+        @media only screen and (max-width: 600px) {
+            grid-template-columns: 1fr;
+        } 
+
+        .text {
+            height: 100%;
+
+            .textAlign {
+                height: 100%;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+
+                h3 {
+                    margin: 0 0 12px;
+                    font-style: italic;
+                    font-weight: 600;
+                    font-size: 24px;
+                    line-height: 30px;
+                    text-transform: uppercase;
+                }
+
+                p {
+                    margin: 0;
+                    font-style: normal;
+                    font-weight: 300;
+                    font-size: 18px;
+                    line-height: 150%;
+                }
+            }
+        }
+
+        .center {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            @media only screen and (max-width: 600px) {
+                grid-row: 1;
+            } 
+            
+
+            .circle {
+                height: 300px;
+                width: 300px;
+                border-radius: 50%;
+                border: 1px solid var(--color-teal);
+                background: rgba(255, 255, 255, 0.04);
+                box-sizing: border-box;
+                backdrop-filter: blur(4px);
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                svg {
+                    transform: scale(1.15);
+                }
+            }
+        }
     }
 }
