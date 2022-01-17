@@ -28,8 +28,8 @@ import Connections from "../assets/svg/home/connections.svg";
 import PortfolioPieces from "../assets/svg/home/portfoliopieces.svg";
 import Scholarships from "../assets/svg/home/scholarships.svg";
 
-import Carousel, { autoplayPlugin } from '@brainhubeu/react-carousel';
-import '@brainhubeu/react-carousel/lib/style.css';
+// import Carousel, { autoplayPlugin } from '@brainhubeu/react-carousel';
+// import '@brainhubeu/react-carousel/lib/style.css';
 
 
 import "../styles/index.scss"
@@ -126,7 +126,7 @@ const Hooks = props => {
           <div className="hookMain"> 
             <HookMain/>
             <div className="carouselHolder">
-              <Carousel
+              {/* <Carousel
                 plugins={[
                   'infinite',
                 {
@@ -153,7 +153,7 @@ const Hooks = props => {
                   <PortfolioPieces/>
                   <h3>Portfolio Pieces</h3>
                 </div>
-              </Carousel>
+              </Carousel> */}
             </div>  
           </div>
           <div className="hookHolder">
