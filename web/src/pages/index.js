@@ -21,14 +21,16 @@ import DashedLine from "../assets/svg/home/dashedLine.svg";
 import HookMain from "../assets/svg/home/hookMain.svg";
 
 import HeroVideo from "../assets/video/hero.mp4";
+import CountdownVideo from "../assets/video/countdown.mp4";
 
 import BigPrizes from "../assets/svg/home/bigprizes.svg";
 import Connections from "../assets/svg/home/connections.svg";
 import PortfolioPieces from "../assets/svg/home/portfoliopieces.svg";
 import Scholarships from "../assets/svg/home/scholarships.svg";
 
-import { CarouselProvider, Slider, Slide } from 'pure-react-carousel';
-import 'pure-react-carousel/dist/react-carousel.es.css';
+import Carousel, { autoplayPlugin } from '@brainhubeu/react-carousel';
+import '@brainhubeu/react-carousel/lib/style.css';
+
 
 import "../styles/index.scss"
 
@@ -96,6 +98,17 @@ const Countdown = props => {
   return (
       <div className="countdown">
         <Container>
+          <div className="videoHolder">
+            <video
+              className="video-player"
+              loop
+              muted
+              autoPlay>
+              <source
+                src={CountdownVideo}
+                type="video/mp4"/>
+            </video>
+          </div>
           <h2 className="kickoffTitle">Countdown to Kickoff</h2>
           <CountdownTimer 
             date={countdownDate}
@@ -110,9 +123,38 @@ const Hooks = props => {
       <div className="hooks">
         <Container>
           <h2>What's in it for me?</h2>
-          <div className="hookMain">
-                
+          <div className="hookMain"> 
             <HookMain/>
+            <div className="carouselHolder">
+              <Carousel
+                plugins={[
+                  'infinite',
+                {
+                  resolve: autoplayPlugin,
+                  options: {
+                    interval: 2000,
+                  }
+                },
+              ]}   
+              animationSpeed={1000}>
+                <div className="hook">
+                  <Connections/>
+                  <h3>Connections</h3>
+                </div>
+                <div className="hook">
+                  <Scholarships/>
+                  <h3>Scholarships</h3>
+                </div>
+                <div className="hook">
+                  <BigPrizes/>
+                  <h3>Big Prizes</h3>
+                </div>
+                <div className="hook">
+                  <PortfolioPieces/>
+                  <h3>Portfolio Pieces</h3>
+                </div>
+              </Carousel>
+            </div>  
           </div>
           <div className="hookHolder">
             <Divider/>
