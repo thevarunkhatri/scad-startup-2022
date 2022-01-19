@@ -40,8 +40,9 @@ const Hero = props => {
         <video
           className="video-player"
           loop
-          muted
-          autoPlay>
+          autoPlay 
+          muted 
+          playsInline>
           <source
             src={HeroVideo}
             type="video/mp4"/>
@@ -102,8 +103,9 @@ const Countdown = props => {
             <video
               className="video-player"
               loop
-              muted
-              autoPlay>
+              autoPlay 
+              muted 
+              playsInline>
               <source
                 src={CountdownVideo}
                 type="video/mp4"/>
