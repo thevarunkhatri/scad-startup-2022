@@ -9,17 +9,17 @@ import "../styles/nav.scss";
 const Nav = () => {
 
     return(
-        <nav>
+        <nav className="desktopNav">
             <div className="navContainer">
                 <ul className="navLeft">
                     <Link to="/schedule"><li>
                         Schedule
                     </li></Link>
-                    <Link to="/people"><li>
-                        People
-                    </li></Link>
                     <Link to="/deliverables"><li>
                         Deliverables
+                    </li></Link>
+                    <Link to="/people"><li>
+                        People
                     </li></Link>
                 </ul>
 
@@ -29,7 +29,7 @@ const Nav = () => {
                         <div></div>
                         <NavFlorishWithArc/>
                     </div>
-                    <Link to="/">
+                    <Link to="/" className="logo">
                         <LogoCircle/>
                     </Link>
                     <div className="navFlorish">
@@ -43,10 +43,10 @@ const Nav = () => {
                     <Link to="/faq"><li>
                         FAQ
                     </li></Link>
-                    <a href="/" target="_blank"><li>
+                    <a href="https://www.instagram.com/scadstartup/" target="_blank"><li>
                         Instagram
                     </li></a>
-                    <a href="/" target="_blank" className="signupButton"><li>
+                    <a href="https://forms.gle/x3XDcaPtxvhrPmGk6" target="_blank" className="signupButton"><li>
                         Sign Up
                     </li></a>
                 </ul>

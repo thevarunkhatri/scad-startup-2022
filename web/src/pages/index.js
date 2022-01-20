@@ -30,7 +30,12 @@ import Scholarships from "../assets/svg/home/scholarships.svg";
 
 // import Carousel, { autoplayPlugin } from '@brainhubeu/react-carousel';
 // import '@brainhubeu/react-carousel/lib/style.css';
+// Import Swiper React components
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Autoplay } from 'swiper';
 
+// Import Swiper styles
+import "swiper/css";
 
 import "../styles/index.scss"
 
@@ -57,13 +62,18 @@ const HomeInfo = props => {
       <div className="infoContainer">
         <p><span>SCAD StartUp</span> is our annual, week-long design sprint hosted by <a href="">FLUX - the UX club</a> - in collaboration with <a href="">SCADpro</a></p>
         {props.pageWidth >= 1000 ? <DesktopInfo/> : null}
-        {props.pageWidth > 600 && props.pageWidth < 1000 ? <TabletInfo/> : null}
+        {props.pageWidth >= 600 && props.pageWidth < 1000 ? <TabletInfo/> : null}
+        {props.pageWidth < 600 ? (
+          <div>
+            <h2>Hello</h2>
+          </div>
+        ) : null}
       </div>
     </div>
   );
 };
 
-const Completionist = () => <span>You are good to go!</span>;
+const Completionist = () => <span className="completionist">Event is live now</span>;
 
 // Renderer callback with condition
 const renderer = ({ days, hours, minutes, completed }) => {
@@ -128,6 +138,24 @@ const Hooks = props => {
           <div className="hookMain"> 
             <HookMain/>
             <div className="carouselHolder">
+            <Swiper modules={[Autoplay]} slidesPerView={1} spaceBetween={30} loop={true} className="mySwiper" autoplay={{delay: 3000}}>
+              <SwiperSlide>
+                  <Connections/>
+                  <h3>Connections</h3>
+              </SwiperSlide>
+              <SwiperSlide>
+                  <Scholarships/>
+                  <h3>Scholarships</h3>
+              </SwiperSlide>
+              <SwiperSlide>
+                <BigPrizes/>
+                <h3>Big Prizes</h3>
+              </SwiperSlide>
+              <SwiperSlide>
+                <PortfolioPieces/>
+                <h3>Portfolio Pieces</h3>
+              </SwiperSlide>
+            </Swiper>
               {/* <Carousel
                 plugins={[
                   'infinite',
@@ -223,7 +251,7 @@ const CTASection = props => {
         <Container>
           <div className="ctaHeader">
             <h2>Want in?</h2>
-            <form action="https://google.com">
+            <form action="https://forms.gle/x3XDcaPtxvhrPmGk6">
               <input type="submit" value="Sign Up Today!" />
             </form>
           </div>

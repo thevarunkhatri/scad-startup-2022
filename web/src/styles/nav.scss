@@ -1,4 +1,4 @@
-nav {
+.desktopNav {
     padding-top: 16px;
     padding-bottom: 40px;
     position: fixed;
@@ -26,7 +26,8 @@ nav {
             align-items: center;
             justify-content: center;
             flex-grow: 5;
-            gap: 8px;
+            gap: 12px;
+        
 
             .navFlorish {
                 display: flex;
@@ -54,6 +55,10 @@ nav {
             margin: 0;
             height: 56px;
             gap: 8px;
+
+            @media only screen and (max-width: 1000px) {
+                height: 48px; 
+            } 
 
             a {
                 color: #FFFFFF;
