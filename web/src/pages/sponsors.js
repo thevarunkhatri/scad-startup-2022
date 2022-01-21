@@ -10,10 +10,13 @@ import GraphQLErrorList from "../components/graphql-error-list";
 import SEO from "../components/seo";
 import Layout from "../containers/layout";
 
-import '../styles/sponsers.scss';
+import '../styles/sponsors.scss';
+
+import sedaLogo from '../assets/img/sponsors/sedaLogo.png';
+import gulfstreamLogo from '../assets/img/sponsors/gulfstreamLogo.png';
 
 export const query = graphql`
-  query SponsersPageQuery {
+  query SponsorsPageQuery {
     site: sanitySiteSettings(_id: { regex: "/(drafts.|)siteSettings/" }) {
       title
       description
@@ -22,7 +25,7 @@ export const query = graphql`
   }
 `;
 
-const SponsersPage = props => {
+const SponsorsPage = props => {
   const { data, errors } = props;
 
   if (errors) {
@@ -58,15 +61,15 @@ const SponsersPage = props => {
 
           <div class="sponsersContainer">
             <div class="sponsersCard">
-              <img class="sponserLogo" src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Google_2015_logo.svg/736px-Google_2015_logo.svg.png" />
+              <img class="sponserLogo" src={sedaLogo} />
             </div>
 
             <div class="sponsersCard">
-              <img class="sponserLogo" src="https://logodix.com/logo/590760.png" />
+                <img class="sponserLogo" src={gulfstreamLogo} />
             </div>
 
             <div class="sponsersCard">
-              <img class="sponserLogo" src="https://upload.wikimedia.org/wikipedia/commons/6/60/Gulfstream_Aerospace_logo.svg" />
+                <img class="sponserLogo" src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Google_2015_logo.svg/736px-Google_2015_logo.svg.png" />
             </div>
 
             <div class="sponsersCard">
@@ -88,4 +91,4 @@ const SponsersPage = props => {
   );
 };
 
-export default SponsersPage;
+export default SponsorsPage;

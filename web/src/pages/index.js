@@ -204,7 +204,7 @@ const Hooks = props => {
               iconLeft={true} 
               icon={<BigPrizes/>}
               title="Big Prizes"
-              description="What would you do with $1,000? Or a gift card to your favorite store... or a subscription that helps you advnace your career... or... "/>
+              description="What would you do with $1,000? Or a gift card to your favorite store... or a subscription that helps you advance your career... or... "/>
             <Divider/>
             <HookItem 
               iconLeft={false} 
