@@ -28,6 +28,8 @@ import Connections from "../assets/svg/home/connections.svg";
 import PortfolioPieces from "../assets/svg/home/portfoliopieces.svg";
 import Scholarships from "../assets/svg/home/scholarships.svg";
 
+import MobileInfoCircles from "../assets/svg/home/mobileInfoCircles.svg";
+
 // import Carousel, { autoplayPlugin } from '@brainhubeu/react-carousel';
 // import '@brainhubeu/react-carousel/lib/style.css';
 // Import Swiper React components
@@ -64,8 +66,58 @@ const HomeInfo = props => {
         {props.pageWidth >= 1000 ? <DesktopInfo/> : null}
         {props.pageWidth >= 600 && props.pageWidth < 1000 ? <TabletInfo/> : null}
         {props.pageWidth < 600 ? (
-          <div>
-            <h2>Hello</h2>
+          <div className="mobileInfoHolder">
+            <Swiper modules={[Autoplay]} slidesPerView='auto' centeredSlides={true} spaceBetween={30} loop={true} className="mySwiper" autoplay={{delay: 2500}}>  
+              <SwiperSlide>
+                <MobileInfoCircles/>
+                <div className="infoSlide">
+                  <span className="number">60+</span>
+                  <span className="label">Teams</span>
+                </div>
+              </SwiperSlide>
+              <SwiperSlide>
+                <MobileInfoCircles/>
+                <div className="infoSlide">
+                  <span className="number">70+</span>
+                  <span className="label">Mentors &amp; Experts</span>
+                </div>
+              </SwiperSlide>
+              <SwiperSlide>
+                <MobileInfoCircles/>
+                <div className="infoSlide">
+                  <span className="number">30+</span>
+                  <span className="label">Majors</span>
+                </div>
+              </SwiperSlide>
+              <SwiperSlide>
+                <MobileInfoCircles/>
+                <div className="infoSlide">
+                  <span className="number">300+</span>
+                  <span className="label">Students</span>
+                </div>
+              </SwiperSlide>
+              <SwiperSlide>
+                <MobileInfoCircles/>
+                <div className="infoSlide">
+                  <span className="number">1</span>
+                  <span className="label">Week</span>
+                </div>
+              </SwiperSlide>
+              <SwiperSlide>
+                <MobileInfoCircles/>
+                <div className="infoSlide">
+                  <span className="number">40K+</span>
+                  <span className="label">In Prizes</span>
+                </div>
+              </SwiperSlide>
+              <SwiperSlide>
+                <MobileInfoCircles/>
+                <div className="infoSlide">
+                  <span className="number">7</span>
+                  <span className="label">Years Running</span>
+                </div>
+              </SwiperSlide>
+            </Swiper>
           </div>
         ) : null}
       </div>
