@@ -5,6 +5,10 @@ import { Transition } from 'react-transition-group';
 
 import Logo from "../assets/svg/logo.svg"
 import Hamburger from "../assets/svg/nav/mobileNavHamburger.svg"
+import Close from "../assets/svg/nav/mobileNavClose.svg"
+import ChevronRight from "../assets/svg/nav/chevronRight.svg"
+import Instagram from "../assets/svg/footer/Instagram.svg"
+import Discord from "../assets/svg/footer/Discord.svg"
 
 import "../styles/nav.scss";
 
@@ -86,14 +90,27 @@ const MobileNav = () => {
                             ...defaultStyle,
                             ...transitionStyles[state]
                         }}>
-                            <Hamburger onClick={flipActiveNav}/>
-                            <ul>
-                                <Link to="/schedule"><li>Schedule</li></Link>
-                                <Link to="/deliverables"><li>Deliverables</li></Link>
-                                <Link to="/people"><li>People</li></Link>
-                                <Link to="/faq"><li>FAQ</li></Link>
-                                <a href="https://www.instagram.com/scadstartup/" target="_blank"><li>Instagram</li></a>
-                                <a href="https://forms.gle/x3XDcaPtxvhrPmGk6" target="_blank"><li>Sign Up</li></a>
+                            <div className="close">
+                                <Close onClick={flipActiveNav}/>
+                            </div>
+                            <ul className="webLinks">
+                                <Link to="/schedule"><li>Schedule <ChevronRight/></li></Link>
+                                <Link to="/deliverables"><li>Deliverables <ChevronRight/></li></Link>
+                                <Link to="/people"><li>People <ChevronRight/></li></Link>
+                                <Link to="/faq"><li>FAQ <ChevronRight/></li></Link>
+                                {/* <a href="https://www.instagram.com/scadstartup/" target="_blank"><li>Instagram <ChevronRight/></li></a>
+                                <a href="https://forms.gle/x3XDcaPtxvhrPmGk6" target="_blank"><li>Sign Up <ChevronRight/></li></a> */}
+                            </ul>
+                            <ul className="socialLinks">
+                                <Link to="https://www.instagram.com/scadstartup/"  target="_blank" ><li>
+                                <Instagram/>
+                                </li></Link>
+                                <Link to="https://discord.gg/D4AFxAwwp6" target="_blank" ><li>
+                                    <Discord/>
+                                </li></Link>
+                                <Link to="https://forms.gle/x3XDcaPtxvhrPmGk6" target="_blank">
+                                    <button class="footerButton">Sign up &nbsp; {String.fromCharCode(10230)}</button>
+                                </Link>
                             </ul>
                         </div>
                         <div className="tint" style={{
