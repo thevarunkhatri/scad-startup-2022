@@ -1,0 +1,357 @@
+.peopleHeader {
+  text-align: center;
+  margin-top: 32px;
+  padding-bottom: 64px;
+
+  h1 {
+    font-size: 56px;
+    font-weight: 600;
+    margin: 0px;
+    color: var(--light-yellow);
+  }
+
+  h3 {
+    font-size: 24px;
+    font-weight: 400;
+    color: #959595;
+    margin: 0px;
+  }
+}
+
+.peopleContainer {
+  display: grid;
+
+  gap: 26px;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+@media only screen and (max-width: 1150px) {
+  .peopleContainer {
+    grid-template-columns: repeat(2, 1fr);
+    align-items: stretch;
+    // align-items: space-between;
+    // justify-content: space-between;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .peopleContainer {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+
+.judgeHeader {
+  text-align: center;
+  margin-top: 32px;
+  padding-bottom: 64px;
+
+  h1 {
+    font-size: 56px;
+    font-weight: 600;
+    margin: 0px;
+    color: var(--light-yellow);
+  }
+
+  h3 {
+    font-size: 24px;
+    font-weight: 400;
+    color: #959595;
+    margin: 0px;
+  }
+}
+
+.judgesSectionHeader {
+  display: flex;
+  align-items: center;
+  margin: 16px;
+  padding-right: 32px;
+
+  img {
+    width: 10px;
+  }
+
+  h2 {
+    padding-left: 32px;
+    color: white;
+    font-size: 40px;
+    font-weight: 500;  
+  }
+
+}
+
+
+.entireWrapperCards {
+  display: flex;
+  flex-direction: row;
+
+  .profileHalf {
+    height: 200px;
+    width: 150px;
+    overflow: hidden;
+    border-radius: 15px 0px 0px 15px;
+
+      .profilePic {
+        width:100%; height:100%;
+        object-fit: cover;
+      }
+  }
+
+  .judgesCardContent {
+    
+    padding-left: 8px;
+    width: 204px;
+    border-radius: 0px 15px 15px 0px;
+    background-color: rgba(255, 255, 255, 0.10);
+    // display: flex;
+    // flex-direction: column;
+    height: 200px;
+    backdrop-filter: blur(6px);
+    margin: 0px;
+    // display: flex;
+    // flex-direction: column;
+
+  }
+
+  h2 {
+    font-size: 28px;
+    font-weight: 500;
+    color: #fff;
+  }
+
+  p {
+    font-size: 16px;
+    font-weight: 300;
+    opacity: 100%;
+    // padding-bottom: 0%;
+  }
+
+  .judgesFirstName {
+    margin-top: 4px;
+    margin-bottom: -28px;
+  }
+  
+  .judgesLastName {
+    // margin-bottom: -4px;
+  }
+
+  .judgesRole {
+    font-size: 15px;
+    font-weight: 400;
+    color: var(--electric-blue);
+    // margin-bottom: -12px;
+  }
+  
+  .cardMajor {
+    font-size: 14px;
+    font-weight: 300;
+    color: var(--electric-blue);
+    // margin-bottom:  12px;
+  }
+
+  .buttonWrapper {
+    padding-bottom: 16px;
+    display: flex;
+
+    .externalButton {
+      background: none;
+      border: 1px solid var(--electric-blue);
+      border-radius: 8px;
+      color: var(--electric-blue);
+      text-transform: uppercase;
+      font-size: 11px;
+      text-align: left;
+      text-decoration: none;
+      padding: 8px 5px;
+      margin-right: 12px;
+      transition: all 300ms ease-in-out;
+
+      &:hover {
+        color:white;
+        background-color: var(--electric-blue);
+        cursor: pointer;
+        transition: all 300ms ease-in-out;
+    }
+    }
+
+    .externalButtonFaculty {
+      background: none;
+      border: 1px solid var(--electric-blue);
+      border-radius: 8px;
+      color: var(--electric-blue);
+      text-transform: uppercase;
+      font-size: 11px;
+      text-align: left;
+      text-decoration: none;
+      padding: 8px 16px;
+      transition: all 300ms ease-in-out;
+
+      &:hover {
+        color:white;
+        background-color: var(--electric-blue);
+        cursor: pointer;
+        transition: all 300ms ease-in-out;
+    }
+    }
+  }
+}
+@media only screen and (max-width: 1150px) {
+  .entireWrapperCards {
+    align-self: center;
+    justify-self: center;
+  }
+
+  .centerBC {
+    display: none;
+  }
+}
+
+
+//  * {
+//   outline: solid 1px red;
+// } 
+
+
+
+
+// .judgeContainer {
+//   display: grid;
+
+//   gap: 26px;
+//   grid-template-columns: repeat(3, 1fr);
+
+//   padding-bottom: 32px;
+// }
+
+// @media only screen and (max-width: 1150px) {
+//   .judgeContainer {
+//     grid-template-columns: repeat(2, 1fr);
+//     align-items: stretch;
+//     // align-items: space-between;
+//     // justify-content: space-between;
+//   }
+// }
+
+// @media only screen and (max-width: 800px) {
+//   .judgeContainer {
+//     grid-template-columns: repeat(1, 1fr);
+//   }
+// }
+
+
+
+
+
+// .judgesCardsWrapper {
+//   display: flex;
+//   flex-direction: row;
+
+//   .profileHalfJudges {
+//     height: 200px;
+//     width: 150px;
+//     overflow: hidden;
+//     border-radius: 15px 0px 0px 15px;
+
+//       .profilePic {
+//         width:100%; height:100%;
+//         object-fit: cover;
+//       }
+//   }
+
+//   .cardContent {
+//     padding-left: 8px;
+//     width: 204px;
+//     border-radius: 0px 15px 15px 0px;
+//     background-color: rgba(255, 255, 255, 0.10);
+//     display: flex;
+//     flex-direction: column;
+//     // justify-content: space-evenly;
+//     height: 200px;
+//     backdrop-filter: blur(6px);    
+//   }
+
+//   // h2 {
+//   //   font-size: 28px;
+//   //   font-weight: 500;
+//   //   // line-height: 0px;
+//   //   padding-bottom: 5%;
+//   //   color: #fff;
+//   //   // padding-top: ;
+//   // }
+
+//   p {
+//     font-size: 16px;
+//     font-weight: 300;
+//     opacity: 100%;
+//     // padding-bottom: 0%;
+//   }
+
+//   .cardFirstName {
+//     margin-bottom: 0px;
+//   }
+  
+//   .cardLastName {
+//     margin-bottom: 0px;
+//   }
+
+//   .cardRole {
+//     font-size: 15px;
+//     font-weight: 400;
+//     color: var(--electric-blue);
+//     margin-bottom: -12px;
+//   }
+  
+
+//   .buttonWrapper {
+//     padding-bottom: 16px;
+//     display: flex;
+
+//     .externalButton {
+//       background: none;
+//       border: 1px solid var(--electric-blue);
+//       border-radius: 8px;
+//       color: var(--electric-blue);
+//       text-transform: uppercase;
+//       font-size: 11px;
+//       text-align: left;
+//       text-decoration: none;
+//       padding: 8px 5px;
+//       margin-right: 12px;
+//       transition: all 300ms ease-in-out;
+
+//       &:hover {
+//         color:white;
+//         background-color: var(--electric-blue);
+//         cursor: pointer;
+//         transition: all 300ms ease-in-out;
+//     }
+//     }
+
+//     .externalButtonFaculty {
+//       background: none;
+//       border: 1px solid var(--electric-blue);
+//       border-radius: 8px;
+//       color: var(--electric-blue);
+//       text-transform: uppercase;
+//       font-size: 11px;
+//       text-align: left;
+//       text-decoration: none;
+//       padding: 8px 16px;
+//       transition: all 300ms ease-in-out;
+
+//       &:hover {
+//         color:white;
+//         background-color: var(--electric-blue);
+//         cursor: pointer;
+//         transition: all 300ms ease-in-out;
+//     }
+//     }
+//   }
+// }
+
+// @media only screen and (max-width: 1150px) {
+//   .entireWrapperCards {
+//     align-self: center;
+//     justify-self: center;
+//   }
+// }

@@ -59,25 +59,25 @@ const DeliverablesPage = props => {
           <div class="deliverablesContainer">
             <div class="deliverablesCard" id="content1">
               <h2>Presentation Deck</h2>
-              <p> "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo." </p>
+              <p> No pitch is perfect without a slide deck! Craft your presentation and make it STAND OUT. This is how you introduce others to your BRILLIANT IDEAS, so make it count! </p>
               <button class="pastExamplesButton">Past Examples &nbsp; {String.fromCharCode(10230)}</button>
             </div>
 
             <div class="deliverablesCard" id="content2">
               <h2>Visual Prototype</h2>
-              <p> ""Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo." </p>
+              <p> CREATE YOUR VISION. No matter the detail level, a good idea becomes UNFORGETTABLE when you see it in action! </p>
               <button class="pastExamplesButton">Past Examples &nbsp; {String.fromCharCode(10230)}</button>
             </div>
 
             <div class="deliverablesCard" id="content3">
               <h2>Business Model</h2>
-              <p> ""Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo." </p>
+              <p> A business model keeps it real. Shoot for the stars and see your idea come to life in the real world. A business model can help you answer the hard questions (like “who’s it for?” and “how does it make $$$$”)! </p>
               <button class="pastExamplesButton">Past Examples &nbsp; {String.fromCharCode(10230)}</button>
             </div>
 
             <div class="deliverablesCard" id="content4" >
               <h2>WOW FACTOR!!</h2>
-              <p> ""Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo." </p>
+              <p> What makes an idea stand out? What makes the audience gasp? Flex your team’s skillset and make your idea SHAKE THE ROOM (even if it’s virtual ;)). </p>
               <button class="pastExamplesButton">Past Examples &nbsp; {String.fromCharCode(10230)} </button>
             </div>
 
