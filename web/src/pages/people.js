@@ -12,7 +12,23 @@ import Layout from "../containers/layout";
 
 import PeopleBackgroundSVG from "../assets/svg/people/peopleBG.svg";
 
+import amadeusProfile2 from '../assets/img/people/amadeusHeadshot.png';
 import amadeusProfile from '../assets/img/people/amadeusHeadshot.jpg';
+
+import amandaProfile from '../assets/img/people/amandaHeadshot.png';
+import andrewProfile from '../assets/img/people/andrewHeadshot.png';
+import aparnaProfile from '../assets/img/people/aparnaHeadshot.jpeg';
+import arjunProfile from '../assets/img/people/arjunHeadshot.jpg';
+import banksProfile from '../assets/img/people/banksHeadshot.jpg';
+import desmondProfile from '../assets/img/people/desmondHeadshot.jpg';
+import laraProfile from '../assets/img/people/laraHeadshot.jpg';
+import mattProfile from '../assets/img/people/mattHeadshot.png';
+import pranshuProfile from '../assets/img/people/pranshuHeadshot.jpg';
+import quintProfile from '../assets/img/people/quintHeadshot.png';
+import savannahProfile from '../assets/img/people/savannahHeadshot.jpg';
+import sethProfile from '../assets/img/people/sethHeadshot.jpg';
+import shivaniProfile from '../assets/img/people/shivaniHeadshot.jpg';
+import varunProfile from '../assets/img/people/varunHeadshot.jpg';
 
 import '../styles/people.scss';
 
@@ -67,7 +83,7 @@ const PeoplePage = props => {
           <div class="peopleContainer">
 
           <Card
-            img="../assets/img/people/amadeusHeadshot.jpg"
+            img={laraProfile}
             fname="Lara"
             lname="Federspiel"
             role="Co-Director"
@@ -75,7 +91,7 @@ const PeoplePage = props => {
             />
 
             <Card
-            img=" https://images.pexels.com/photos/20787/pexels-photo.jpg?auto=compress&cs=tinysrgb&h=350"
+            img={amadeusProfile}
             fname="Amadeus"
             lname="Cameron"
             role="Co-Director"
@@ -83,7 +99,7 @@ const PeoplePage = props => {
             />
 
             <Card
-            img=" https://images.pexels.com/photos/20787/pexels-photo.jpg?auto=compress&cs=tinysrgb&h=350"
+            img={savannahProfile}
             fname="Savannah"
             lname="Wilkinson"
             role="Event Coordinator"
@@ -91,7 +107,7 @@ const PeoplePage = props => {
             />
 
             <Card
-            img=" https://images.pexels.com/photos/20787/pexels-photo.jpg?auto=compress&cs=tinysrgb&h=350"
+            img={andrewProfile}
             fname="Andrew"
             lname="Goodridge"
             role="Logistics Coordinator"
@@ -99,7 +115,7 @@ const PeoplePage = props => {
             />
 
             <Card
-            img=" https://images.pexels.com/photos/20787/pexels-photo.jpg?auto=compress&cs=tinysrgb&h=350"
+            img={quintProfile}
             fname="Quint"
             lname="Bailey"
             role="Sessions Coordinator"
@@ -107,7 +123,7 @@ const PeoplePage = props => {
             />
 
             <Card
-            img=" https://images.pexels.com/photos/20787/pexels-photo.jpg?auto=compress&cs=tinysrgb&h=350"
+            img={aparnaProfile}
             fname="Aparna"
             lname="Somvanshi"
             role="Outreach Coordinator"
@@ -115,15 +131,15 @@ const PeoplePage = props => {
             />
 
             <Card
-            img=" https://images.pexels.com/photos/20787/pexels-photo.jpg?auto=compress&cs=tinysrgb&h=350"
-            fname="Varn"
+            img={varunProfile}
+            fname="Varun"
             lname="Khatri"
             role="Web Developer"
             major="User Experience"
             />
 
             <Card
-            img=" https://images.pexels.com/photos/20787/pexels-photo.jpg?auto=compress&cs=tinysrgb&h=350"
+            img={mattProfile}
             fname="Matt"
             lname="Ahrens"
             role="Web Developer"
@@ -131,7 +147,7 @@ const PeoplePage = props => {
             />
 
             <Card
-            img=" https://images.pexels.com/photos/20787/pexels-photo.jpg?auto=compress&cs=tinysrgb&h=350"
+            img={sethProfile}
             fname="Seth"
             lname="Stomberger"
             role="Visual Designer"
@@ -139,7 +155,7 @@ const PeoplePage = props => {
             />
 
             <Card
-            img=" https://images.pexels.com/photos/20787/pexels-photo.jpg?auto=compress&cs=tinysrgb&h=350"
+            img={amandaProfile}
             fname="Amanda"
             lname="Kong"
             role="Visal Designer"
@@ -155,7 +171,7 @@ const PeoplePage = props => {
             />
 
             <Card
-            img=" https://images.pexels.com/photos/20787/pexels-photo.jpg?auto=compress&cs=tinysrgb&h=350"
+            img={arjunProfile}
             fname="Arjun"
             lname="Gupta"
             role="Visal Designer"
@@ -163,7 +179,7 @@ const PeoplePage = props => {
             />
 
             <Card
-            img=" https://images.pexels.com/photos/20787/pexels-photo.jpg?auto=compress&cs=tinysrgb&h=350"
+            img={pranshuProfile}
             fname="Pranshu"
             lname="Agarwal"
             role="Outreach Coordinator"
@@ -171,7 +187,7 @@ const PeoplePage = props => {
             />
 
             <Card
-            img=" https://images.pexels.com/photos/20787/pexels-photo.jpg?auto=compress&cs=tinysrgb&h=350"
+            img={banksProfile}
             fname="Banks"
             lname="Maynard"
             role="Motion Media Designer"
@@ -179,7 +195,7 @@ const PeoplePage = props => {
             />
 
             <Card
-            img=" https://images.pexels.com/photos/20787/pexels-photo.jpg?auto=compress&cs=tinysrgb&h=350"
+            img={shivaniProfile}
             fname="Shivani"
             lname="Varandani"
             role="Motion Media Designer"
@@ -229,7 +245,7 @@ function Card (props) {
 
       <div className="entireWrapperCards">
         <div className="profileHalf">
-          <img src={props.img} />
+          <img className="profilePic" src={props.img} />
         </div>
 
         <div className = "cardContent" >
