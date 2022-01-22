@@ -29,13 +29,15 @@ const Footer = () => {
                 </div>
 
                 <ul className="footerRight">
-                    <Link to=""><li>
+                    <Link to="https://www.instagram.com/scadstartup/"  target="_blank" ><li>
                        <Instagram/>
                     </li></Link>
-                    <Link to=""><li>
+                    <Link to="https://discord.gg/D4AFxAwwp6" target="_blank" ><li>
                         <Discord/>
                     </li></Link>
-                    <button class="footerButton">Sign up &nbsp; {String.fromCharCode(10230)}</button>
+                    <Link to="https://forms.gle/x3XDcaPtxvhrPmGk6" target="_blank">
+                        <button class="footerButton">Sign up &nbsp; {String.fromCharCode(10230)}</button>
+                    </Link>
                 </ul>
 
             </div>

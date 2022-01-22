@@ -63,6 +63,11 @@
     width: 150px;
     overflow: hidden;
     border-radius: 15px 0px 0px 15px;
+    object-fit: cover;
+
+      .profilePic {
+        object-fit: cover;
+      }
   }
 
   .cardContent {
@@ -144,6 +149,14 @@
       text-decoration: none;
       padding: 8px 4px;
       margin-right: 8px;
+      transition: all 300ms ease-in-out;
+
+      &:hover {
+        color:white;
+        background-color: var(--electric-blue);
+        cursor: pointer;
+        transition: all 300ms ease-in-out;
+    }
     }
 
     .externalButtonFaculty {
@@ -156,6 +169,14 @@
       text-align: left;
       text-decoration: none;
       padding: 8px 16px;
+      transition: all 300ms ease-in-out;
+
+      &:hover {
+        color:white;
+        background-color: var(--electric-blue);
+        cursor: pointer;
+        transition: all 300ms ease-in-out;
+    }
     }
   }
 }

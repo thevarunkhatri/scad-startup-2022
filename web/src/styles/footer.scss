@@ -87,6 +87,14 @@ h3 {
     text-decoration: none;
     padding: 0px 16px;
     height: 52px;
+    transition: all 300ms ease-in-out;
+    
+      &:hover {
+        color:black;
+        background-color: var(--light-yellow);
+        cursor: pointer;
+        transition: all 300ms ease-in-out;
+    }
   }
 
 

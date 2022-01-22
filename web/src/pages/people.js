@@ -12,6 +12,8 @@ import Layout from "../containers/layout";
 
 import PeopleBackgroundSVG from "../assets/svg/people/peopleBG.svg";
 
+import amadeusProfile from '../assets/img/people/amadeusHeadshot.jpg';
+
 import '../styles/people.scss';
 
 
@@ -65,7 +67,7 @@ const PeoplePage = props => {
           <div class="peopleContainer">
 
           <Card
-            img=" https://images.pexels.com/photos/20787/pexels-photo.jpg?auto=compress&cs=tinysrgb&h=350"
+            img="../assets/img/people/amadeusHeadshot.jpg"
             fname="Lara"
             lname="Federspiel"
             role="Co-Director"
@@ -236,7 +238,7 @@ function Card (props) {
           <p className="cardRole">{props.role}</p>
           <p className="cardMajor">{props.major}</p>
           <div class="buttonWrapper">
-            {/* <a href={www.linkedin.com/feed} className="externalButton">LinkedIn &nbsp; {String.fromCharCode(10230)}</a>  */}
+            <button className="externalButton">LinkedIn &nbsp; {String.fromCharCode(10230)}</button>
             <button className="externalButton">Portfolio &nbsp; {String.fromCharCode(10230)}</button>
           </div>
         </div>
