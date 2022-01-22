@@ -4,19 +4,40 @@
 
 
 .footerContainer {
-    padding: 64px 24px 64px 24px;
+    padding: 32px 24px 32px 24px;
     // margin: 0px 64px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    height: 64px;
+
+    .footerLogo {
+      height: 52px;
+    }
 
     .footerRight {
         display: flex;
         align-items: center;
         justify-content: space-between;
         width: 300px;
+
+        // Discord {
+        //   &:hover {
+        //     color:red;
+        //     background-color: #01AEC4;
+        //     cursor: pointer;
+        //     transition: all 300ms ease-in-out;
+        //   }
+        // }
+
+        .circleFooterLogo {
+            &:hover {
+              border-radius: 200px;
+              background-color: #01adc466;
+              cursor: pointer;
+              transition: all 300ms ease-in-out;
+          }
+        }
     }
 
 
@@ -54,16 +75,15 @@
     }
   }
 
-  @media only screen and (max-width: 375px) {
-
-    .footerLogo {
-      display: none;
-    //   flex-direction: column;
-    }
+  @media only screen and (max-width: 600px) {
 
     .footerContainer {
-        display: grid;
+        display: flex;
         flex-direction: column;
+    }
+
+    .footerLeft {
+      justify-content: center;
     }
   }
 
