@@ -67,7 +67,7 @@ const SponsorsPage = props => {
             <div class="sponsersCard">
                 <img class="sponserLogo" src={gulfstreamLogo} />
             </div>
-
+{/* 
             <div class="sponsersCard">
                 <img class="sponserLogo" src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Google_2015_logo.svg/736px-Google_2015_logo.svg.png" />
             </div>
@@ -82,7 +82,7 @@ const SponsorsPage = props => {
 
             <div class="sponsersCard">
               <img class="sponserLogo" src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Google_2015_logo.svg/736px-Google_2015_logo.svg.png" />
-            </div>
+            </div> */}
 
           </div>
         </Container>

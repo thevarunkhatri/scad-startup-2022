@@ -10,6 +10,7 @@ import GraphQLErrorList from "../components/graphql-error-list";
 import SEO from "../components/seo";
 import Layout from "../containers/layout";
 
+
 import PeopleBackgroundSVG from "../assets/svg/people/peopleBG.svg";
 
 import amadeusProfile2 from '../assets/img/people/amadeusHeadshot.png';
@@ -21,6 +22,7 @@ import aparnaProfile from '../assets/img/people/aparnaHeadshot.jpeg';
 import arjunProfile from '../assets/img/people/arjunHeadshot.jpg';
 import banksProfile from '../assets/img/people/banksHeadshot.jpg';
 import desmondProfile from '../assets/img/people/desmondHeadshot.jpg';
+import ellaProfile from '../assets/img/people/ellaHeadshot.jpg';
 import laraProfile from '../assets/img/people/laraHeadshot.jpg';
 import mattProfile from '../assets/img/people/mattHeadshot.png';
 import pranshuProfile from '../assets/img/people/pranshuHeadshot.jpg';
@@ -29,6 +31,11 @@ import savannahProfile from '../assets/img/people/savannahHeadshot.jpg';
 import sethProfile from '../assets/img/people/sethHeadshot.jpg';
 import shivaniProfile from '../assets/img/people/shivaniHeadshot.jpg';
 import varunProfile from '../assets/img/people/varunHeadshot.jpg';
+
+import briannaProfile from '../assets/img/people/briannaHeadshot.jpeg';
+import joshProfile from '../assets/img/people/joshHeadshot.jpeg';
+import jeanneProfile from '../assets/img/people/jeanneHeadshot.jpeg';
+import bcProfile from '../assets/img/people/bcHeadshot.jpeg';
 
 import '../styles/people.scss';
 
@@ -88,6 +95,8 @@ const PeoplePage = props => {
             lname="Federspiel"
             role="Co-Director"
             major="User Experience"
+            linkedin="https://www.linkedin.com/in/larafederspiel"
+            portfolio="http://larafederspiel.com/"
             />
 
             <Card
@@ -96,6 +105,8 @@ const PeoplePage = props => {
             lname="Cameron"
             role="Co-Director"
             major="User Experience"
+            linkedin="https://www.linkedin.com/in/amadeuscameron/"
+            portfolio="http://evanamadeus.com/"
             />
 
             <Card
@@ -104,6 +115,8 @@ const PeoplePage = props => {
             lname="Wilkinson"
             role="Event Coordinator"
             major="User Experience"
+            linkedin="https://www.linkedin.com/in/savannahwilkinson"
+            portfolio="https://www.savannahwilkinson.com/"
             />
 
             <Card
@@ -112,6 +125,8 @@ const PeoplePage = props => {
             lname="Goodridge"
             role="Logistics Coordinator"
             major="User Experience"
+            linkedin=""
+            portfolio=""
             />
 
             <Card
@@ -120,6 +135,8 @@ const PeoplePage = props => {
             lname="Bailey"
             role="Sessions Coordinator"
             major="User Experience"
+            linkedin=""
+            portfolio=""
             />
 
             <Card
@@ -128,6 +145,8 @@ const PeoplePage = props => {
             lname="Somvanshi"
             role="Outreach Coordinator"
             major="User Experience"
+            linkedin=""
+            portfolio=""
             />
 
             <Card
@@ -136,6 +155,8 @@ const PeoplePage = props => {
             lname="Khatri"
             role="Web Developer"
             major="User Experience"
+            linkedin="https://www.linkedin.com/in/varunmk/"
+            portfolio="https://www.thevarunkhatri.com/"
             />
 
             <Card
@@ -144,6 +165,8 @@ const PeoplePage = props => {
             lname="Ahrens"
             role="Web Developer"
             major="User Experience"
+            linkedin="https://www.linkedin.com/in/matt-ahrens-/"
+            portfolio="https://www.mattahrens.design/"
             />
 
             <Card
@@ -152,6 +175,8 @@ const PeoplePage = props => {
             lname="Stomberger"
             role="Visual Designer"
             major="User Experience"
+            linkedin=""
+            portfolio=""
             />
 
             <Card
@@ -160,14 +185,18 @@ const PeoplePage = props => {
             lname="Kong"
             role="Visal Designer"
             major="User Experience"
+            linkedin=""
+            portfolio=""
             />            
 
             <Card
-            img=" https://images.pexels.com/photos/20787/pexels-photo.jpg?auto=compress&cs=tinysrgb&h=350"
+            img={ellaProfile}
             fname="Ella"
             lname="Reisinger"
             role="Social Media Coordinator"
             major="Graphic Design"
+            linkedin=""
+            portfolio=""
             />
 
             <Card
@@ -176,6 +205,8 @@ const PeoplePage = props => {
             lname="Gupta"
             role="Visal Designer"
             major="User Experience"
+            linkedin=""
+            portfolio=""
             />
 
             <Card
@@ -184,6 +215,8 @@ const PeoplePage = props => {
             lname="Agarwal"
             role="Outreach Coordinator"
             major="User Experience"
+            linkedin=""
+            portfolio=""
             />
 
             <Card
@@ -192,6 +225,8 @@ const PeoplePage = props => {
             lname="Maynard"
             role="Motion Media Designer"
             major="Motion Media"
+            linkedin=""
+            portfolio=""
             />
 
             <Card
@@ -200,36 +235,42 @@ const PeoplePage = props => {
             lname="Varandani"
             role="Motion Media Designer"
             major="Motion Media"
+            linkedin=""
+            portfolio=""
             />
 
             <FacultyCard
-            img=" https://images.pexels.com/photos/20787/pexels-photo.jpg?auto=compress&cs=tinysrgb&h=350"
+            img={briannaProfile}
             fname="Brianna"
             lname="Hayes"
             role="SCADpro Project Coordinator"
+            linkedin="https://www.linkedin.com/in/brianna-hayes/"
             />
 
             <FacultyCard
-            img=" https://images.pexels.com/photos/20787/pexels-photo.jpg?auto=compress&cs=tinysrgb&h=350"
+            img={joshProfile}
             fname="Josh"
             lname="Lind"
             role="Executive Director of &nbsp; Stragetic Enterprises"
+            linkedin="https://www.linkedin.com/in/joshlind/"
             />
 
             <FacultyCard
-            img=" https://images.pexels.com/photos/20787/pexels-photo.jpg?auto=compress&cs=tinysrgb&h=350"
+            img={jeanneProfile}
             fname="Jeanne"
             lname="McPhillips"
             role="Event Advisor"
+            linkedin="https://www.linkedin.com/in/jeanne-mcphillips/"
             />
 
             <div className="centerBC"></div>
 
             <FacultyCard 
-            img=" https://images.pexels.com/photos/20787/pexels-photo.jpg?auto=compress&cs=tinysrgb&h=350"
+            img={bcProfile}
             fname="BC"
             lname="Hwang"
             role="Chair of UX"
+            linkedin="https://www.linkedin.com/in/uxking/"
             />
 
           </div>
@@ -254,8 +295,12 @@ function Card (props) {
           <p className="cardRole">{props.role}</p>
           <p className="cardMajor">{props.major}</p>
           <div class="buttonWrapper">
-            <button className="externalButton">LinkedIn &nbsp; {String.fromCharCode(10230)}</button>
-            <button className="externalButton">Portfolio &nbsp; {String.fromCharCode(10230)}</button>
+            <form action={props.linkedin} target="_blank">
+              <button className="externalButton">LinkedIn &nbsp; {String.fromCharCode(10230)}</button>
+            </form>
+            <form action={props.portfolio} target="_blank">
+              <button className="externalButton">Portfolio &nbsp; {String.fromCharCode(10230)}</button>
+            </form>
           </div>
         </div>
       </div>
@@ -267,7 +312,7 @@ function FacultyCard (props) {
 
       <div className="entireWrapperCards">
         <div className="profileHalf">
-          <img src={props.img} />
+          <img className="profilePic" src={props.img} />
         </div>
 
         <div className = "facultyCard" >
@@ -276,8 +321,9 @@ function FacultyCard (props) {
           <p className="cardRole">{props.role}</p>
           <p className="cardMajor">{props.major}</p>
           <div class="buttonWrapper">
-            <button className="externalButtonFaculty">LinkedIn &nbsp; {String.fromCharCode(10230)}</button>
-            {/* <button className="externalButton">Portfolio &nbsp; {String.fromCharCode(10230)}</button> */}
+            <form action={props.linkedin} target="_blank">
+              <button className="externalButtonFaculty">LinkedIn &nbsp; {String.fromCharCode(10230)}</button>
+            </form>
           </div>
         </div>
       </div>
