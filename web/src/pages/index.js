@@ -28,7 +28,7 @@ import Connections from "../assets/svg/home/connections.svg";
 import PortfolioPieces from "../assets/svg/home/portfoliopieces.svg";
 import Scholarships from "../assets/svg/home/scholarships.svg";
 
-import MobileInfoCircles from "../assets/svg/home/MobileInfoCircles.svg";
+import MobileInfoCircles from "../assets/svg/home/mobileInfoCircles.svg";
 
 // import Carousel, { autoplayPlugin } from '@brainhubeu/react-carousel';
 // import '@brainhubeu/react-carousel/lib/style.css';
