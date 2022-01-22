@@ -57,6 +57,11 @@
         letter-spacing: 0.02em;
         text-transform: uppercase;
 
+        @media only screen and (max-width: 600px) {
+            padding: 0 2vw;
+            font-size: 21px;
+        } 
+
         span {
             font-weight: bold;
             color: #FCE986;
@@ -71,6 +76,70 @@
         max-width: 1200px;
         margin: 0 auto;
         padding: 0 3vw;
+
+        .mobileInfoHolder {
+            position: relative;
+
+            &::before {
+                z-index: 100;
+                position: absolute;
+                top: 0; 
+                left: 0;
+                content: '';
+                width: 15vw;
+                height: 100%;
+                background: linear-gradient(90deg, #0A0A0A 0%, rgba(10, 10, 10, 0) 100%);;
+            }
+
+            &::after {
+                z-index: 100;
+                position: absolute;
+                top: 0; 
+                right: 0;
+                content: '';
+                width: 15vw;
+                height: 100%;
+                background: linear-gradient(270deg, #0A0A0A 0%, rgba(10, 10, 10, 0) 100%);;
+            }
+        }
+
+        .mySwiper {
+            width: 100%;
+            padding: 100px 0 0;
+
+            .swiper-slide {
+               display: flex;
+               flex-direction: column;
+               justify-content: center;
+               align-items: center;
+               color: white;
+               width: 65vw !important;
+
+               .infoSlide {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    position: absolute;
+
+                    .number {
+                        font-size: 72px;
+                    }
+
+                    .label {
+                        text-transform: uppercase;
+                        font-size: 18px;
+                        font-weight: 300;
+                        width: 150px;
+                        text-align: center;
+                    }
+               }
+
+               svg {
+                   width: 65vw;
+               }
+            }
+        }
 
         svg {
             width: 100%;
@@ -336,10 +405,15 @@
         svg {
             z-index: 20;
         }
+
+        .swiper {
+            width: 100%;
+            height: 500px;
+        }
         
         .carouselHolder {
             position: absolute;
-            width: 30%;
+            width: 300px;
             z-index: 1;
 
             &::before {
@@ -451,9 +525,4 @@
             }
         }
     }
-}
-
-.swiper {
-    width: 100%;
-    height: 500px;
 }
