@@ -18,6 +18,32 @@ import joshProfile from '../assets/img/people/joshHeadshot.jpeg';
 import jeanneProfile from '../assets/img/people/jeanneHeadshot.jpeg';
 import bcProfile from '../assets/img/people/bcHeadshot.jpeg';
 
+import blankProfile from '../assets/img/judges/blankProfile.png';
+
+import aditiVyas from '../assets/img/judges/aditiVyas.jpeg';
+import akshayKhandelwal from '../assets/img/judges/akshayKhandelwal.jpeg';
+import alanGorinstein from '../assets/img/judges/alanGorinstein.jpeg';
+import andrésSepúlveda from '../assets/img/judges/andrésSepúlveda.jpeg';
+import annaJones from '../assets/img/judges/annaJones.jpeg';
+import brianOllison from '../assets/img/judges/brianOllison.jpeg';
+import caseyHarper from '../assets/img/judges/caseyHarper.jpeg';
+import dipaliBajaj from '../assets/img/judges/dipaliBajaj.jpeg';
+import goldieChan from '../assets/img/judges/goldieChan.jpeg';
+import jaiTudor from '../assets/img/judges/jaiTudor.jpeg';
+import jamesSpence from '../assets/img/judges/jamesSpence.jpeg';
+import joshInch from '../assets/img/judges/joshInch.jpeg';
+import leonZhang from '../assets/img/judges/leonZhang.jpeg';
+import marcelaVillalobos from '../assets/img/judges/marcelaVillalobos.jpeg';
+import mattAshwood from '../assets/img/judges/mattAshwood.jpeg';
+import mitziOkou from '../assets/img/judges/mitziOkou.jpeg';
+import nadiaLe from '../assets/img/judges/nadiaLe.jpeg';
+import nickBraver from '../assets/img/judges/nickBraver.jpeg';
+import nickCuda from '../assets/img/judges/nickCuda.jpeg';
+import nickDine from '../assets/img/judges/nickDine.jpeg';
+import sarahLashinsky from '../assets/img/judges/sarahLashinsky.jpeg';
+import travisNeilson from '../assets/img/judges/travisNeilson.jpeg';
+
+
 import '../styles/people.scss';
 import '../styles/judges.scss';
 
@@ -76,7 +102,7 @@ const JudgesPage = props => {
           <div class="peopleContainer">
 
           <JudgeCard
-            img={jeanneProfile}
+            img={blankProfile}
             fname="first"
             lname="last"
             role="role"
@@ -86,7 +112,7 @@ const JudgesPage = props => {
 
 
           <JudgeCard
-            img={jeanneProfile}
+            img={blankProfile}
             fname="first"
             lname="last"
             role="role"
@@ -102,212 +128,212 @@ const JudgesPage = props => {
 
           <div class="peopleContainer">
           <JudgeCard
-            img={briannaProfile}
+            img={aditiVyas}
             fname="Aditi"
             lname="Vyas"
             role="Industrial Designerr"
             company="Clear"
-            linkedin="https://www.linkedin.com/in/brianna-hayes/"
+            linkedin="https://www.linkedin.com/in/vyasaditi/"
             />
 
             <JudgeCard
-            img={joshProfile}
+            img={akshayKhandelwal}
             fname="Akshay"
             lname="Khandelwal"
             role="Sr. Product Designer"
             company="BIC"
-            linkedin="https://www.linkedin.com/in/joshlind/"
+            linkedin="https://www.linkedin.com/in/khandelwalakshay/"
             />
 
             <JudgeCard
-            img={jeanneProfile}
+            img={alanGorinstein}
             fname="Alan"
             lname="Gorinstein"
             role="UX Designer"
             company="Ancestry"
-            linkedin="https://www.linkedin.com/in/jeanne-mcphillips/"
+            linkedin="https://www.linkedin.com/in/alanrivero/"
             />
 
             <JudgeCard
-            img={jeanneProfile}
+            img={andrésSepúlveda}
             fname="Andrés"
             lname="Sepúlveda"
             role="UX Researcher"
             company="Lowe's"
-            linkedin="https://www.linkedin.com"
+            linkedin="https://www.linkedin.com/in/andresfelipegalvis/"
             />
 
             <JudgeCard
-            img={jeanneProfile}
+            img={annaJones}
             fname="Anna"
             lname="Jones"
             role="Sr. UX Designer"
             company="Calendly"
-            linkedin="https://www.linkedin.com"
+            linkedin="https://www.linkedin.com/in/anna-jones-21471b36/"
             />
 
 <JudgeCard
-            img={jeanneProfile}
+            img={brianOllison}
             fname="Brian"
             lname="Ollison"
             role="Sr. Product Designer"
             company="Intuit"
-            linkedin="https://www.linkedin.com"
+            linkedin="https://www.linkedin.com/in/brian-ollison-924a7248/"
             />
 
 <JudgeCard
-            img={jeanneProfile}
+            img={caseyHarper}
             fname="Casey"
             lname="Harper"
             role="Product Designer"
             company="Mailchimp"
-            linkedin="https://www.linkedin.com"
+            linkedin="https://www.linkedin.com/in/caseymharper/"
             />
 
 <JudgeCard
-            img={jeanneProfile}
+            img={dipaliBajaj}
             fname="Dipali"
             lname="Bajaj"
             role="Experience Designer"
             company="Adobe"
-            linkedin="https://www.linkedin.com"
+            linkedin="https://www.linkedin.com/in/dipali-bajaj-861a7b105/"
             />
 
 <JudgeCard
-            img={jeanneProfile}
+            img={goldieChan}
             fname="Goldie"
             lname="Chan"
             role="Speaker & Founder"
             company="Warm Robots"
-            linkedin="https://www.linkedin.com"
+            linkedin="https://www.linkedin.com/in/goldie/"
             />
 
 <JudgeCard
-            img={jeanneProfile}
+            img={jaiTudor}
             fname="Jai"
             lname="Tudor"
             role="Product Designer"
             company="Zillow"
-            linkedin="https://www.linkedin.com"
+            linkedin="https://www.linkedin.com/in/jaitudor/"
             />
 
 <JudgeCard
-            img={jeanneProfile}
+            img={jamesSpence}
             fname="James"
             lname="Spence"
             role="Principal Design Program Manager"
             company="Zillow"
-            linkedin="https://www.linkedin.com"
+            linkedin="https://www.linkedin.com/in/jspence1/"
             />
 
 <JudgeCard
-            img={jeanneProfile}
+            img={joshInch}
             fname="Josh"
             lname="Inch"
             role="Sr. Product Designer"
             company="Meta"
-            linkedin="https://www.linkedin.com"
+            linkedin="https://www.linkedin.com/in/josh-inch-0415b334/"
             />
 
 <JudgeCard
-            img={jeanneProfile}
+            img={blankProfile}
             fname="Justin"
             lname="Keoninh"
             role="Product Designer"
             company="Kalshi"
-            linkedin="https://www.linkedin.com"
+            linkedin="https://www.linkedin.com/in/justin-keoninh/"
             />
 
 <JudgeCard
-            img={jeanneProfile}
+            img={leonZhang}
             fname="Leon"
             lname="Zhang"
             role="UX Designer"
             company="Expedia"
-            linkedin="https://www.linkedin.com"
+            linkedin="https://www.linkedin.com/in/zhangleondesign/"
             />
 
 <JudgeCard
-            img={jeanneProfile}
+            img={marcelaVillalobos}
             fname="Marcela"
             lname="Villalobos"
             role="Graphic Designer"
             company="Axiom Space"
-            linkedin="https://www.linkedin.com"
+            linkedin="https://www.linkedin.com/in/marcelavillalobos22/"
             />
 
 <JudgeCard
-            img={jeanneProfile}
+            img={mattAshwood}
             fname="Matt"
             lname="Ashwood"
             role="Principal Product Designer"
             company="Intuit"
-            linkedin="https://www.linkedin.com"
+            linkedin="https://www.linkedin.com/in/mattashwood/"
             />
 
 <JudgeCard
-            img={jeanneProfile}
+            img={mitziOkou}
             fname="Mitzi"
             lname="Okou"
             role="Associate Product Designer"
             company="Spotify"
-            linkedin="https://www.linkedin.com"
+            linkedin="https://www.linkedin.com/in/mitzi-okou-30918b144/"
             />
 
             <JudgeCard
-            img={jeanneProfile}
+            img={nadiaLe}
             fname="Nadia"
             lname="Le"
             role="Product Designer"
             company="Corus Entertainment"
-            linkedin="https://www.linkedin.com"
+            linkedin="https://www.linkedin.com/in/nadiahle/"
             />
 
             <JudgeCard
-            img={jeanneProfile}
+            img={nickBraver}
             fname="Nick"
             lname="Braver"
             role="Product Designer"
             company="Indeed"
-            linkedin="https://www.linkedin.com"
+            linkedin="https://www.linkedin.com/in/nickbraver/"
             />
 
             <JudgeCard
-            img={jeanneProfile}
+            img={nickCuda}
             fname="Nick"
             lname="Cuda"
             role="Sr. Product Designer"
             company="Mailchimp"
-            linkedin="https://www.linkedin.com"
+            linkedin="https://www.linkedin.com/in/nickcuda/"
             />
 
           <JudgeCard
-            img={jeanneProfile}
+            img={nickDine}
             fname="Nick"
             lname="Dine"
             role="SCADpro Professor"
             company="SCAD"
-            linkedin="https://www.linkedin.com"
+            linkedin="https://www.linkedin.com/in/nick-dine-a8a94375/"
             />
 
 
           <JudgeCard
-            img={jeanneProfile}
+            img={sarahLashinsky}
             fname="Sarah"
             lname="Lashinsky"
             role="Product Designer"
             company="Mailchimp"
-            linkedin="https://www.linkedin.com"
+            linkedin="https://www.linkedin.com/in/sarah-lashinsky/"
             />
 
 
           <JudgeCard
-            img={jeanneProfile}
+            img={travisNeilson}
             fname="Travis"
             lname="Neilson"
             role="Interaction Designer"
             company="Google"
-            linkedin="https://www.linkedin.com"
+            linkedin="https://www.linkedin.com/in/travisneilson/"
             />
           </div>
 
@@ -331,7 +357,7 @@ function JudgeCard (props) {
           <h2 className="judgesFirstName">{props.fname}</h2>
           <h2 className="judgesLastName">{props.lname}</h2>
           <p className="judgesRole">{props.role} @ <strong>{props.company}</strong></p>
-          <div class="buttonWrapper">
+          <div class="buttonWrapperJudges">
             <form action={props.linkedin} target="_blank">
               <button className="externalButtonFaculty">LinkedIn &nbsp; {String.fromCharCode(10230)}</button>
             </form>
