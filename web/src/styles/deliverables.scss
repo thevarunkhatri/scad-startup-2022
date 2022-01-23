@@ -85,6 +85,14 @@
       text-align: left;
       text-decoration: none;
       padding: 8px 32px;
+      transition: all 300ms ease-in-out;
+
+        &:hover {
+          color:white;
+          background-color: var(--electric-blue);
+          cursor: pointer;
+          transition: all 300ms ease-in-out;
+      }
     }
   }
 }
@@ -125,6 +133,7 @@
   .deliverablesContainer {
     display: flex;
     flex-direction: column;
+    align-items: center;
   }
 }
 

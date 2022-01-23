@@ -59,7 +59,7 @@ const JudgesPage = props => {
   return (
     <Layout>
       <SEO title={site.title} description={site.description} keywords={site.keywords} />
-      <main id="judgePageBG">
+      <main id="judgesPageBG">
         {/* <PeopleBackgroundSVG /> */}
         <Container>
 
