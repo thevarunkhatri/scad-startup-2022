@@ -1,3 +1,7 @@
+// * {
+//   outline: 1px solid red;
+// }
+
 .peopleHeader {
   text-align: center;
   margin-top: 32px;
@@ -110,7 +114,10 @@
     margin: 0px;
     // display: flex;
     // flex-direction: column;
-
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: start;
     
 
   }
@@ -134,7 +141,7 @@
   }
   
   .judgesLastName {
-    // margin-bottom: -4px;
+    margin-bottom: -4px;
   }
 
   .judgesRole {
@@ -151,9 +158,10 @@
     // margin-bottom:  12px;
   }
 
-  .buttonWrapper {
-    padding-bottom: 16px;
-    display: flex;
+  .buttonWrapperJudges {
+    // padding-bottom: 16px;
+    // display: flex;
+    margin-bottom: 16px;
 
     .externalButton {
       background: none;
