@@ -9,11 +9,11 @@
     } 
 
     @media only screen and (max-width: 725px) {
-        height: calc(55vh - 192px);
+        height: 450px;
     } 
 
     @media only screen and (max-width: 500px) {
-        height: calc(45vh - 192px);
+        height: 250px;
     } 
 
     .video-player {
@@ -23,6 +23,7 @@
         transform: translate(-50%, -52%);
         min-width: 100%;
         max-height: 100%;
+
     }
 }
 
@@ -399,7 +400,7 @@
         margin-bottom: 60px;
 
         @media only screen and (max-width: 600px) {
-            transform: scale(0.9);
+            transform: scale(0.82);
         } 
 
         svg {

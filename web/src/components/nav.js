@@ -3,6 +3,7 @@ import { Link } from "gatsby"
 import NavFlorish from "../assets/svg/nav/navFlorish.svg"
 import NavFlorishWithArc from "../assets/svg/nav/navFlorishWithArc.svg"
 import LogoCircle from "../assets/svg/nav/logoCircle.svg"
+import Logo from "../assets/svg/logo.svg"
 
 import "../styles/nav.scss";
 
@@ -31,6 +32,7 @@ const Nav = () => {
                     </div>
                     <Link to="/" className="logo">
                         <LogoCircle/>
+                        <Logo/>
                     </Link>
                     <div className="navFlorish">
                         <NavFlorish/>

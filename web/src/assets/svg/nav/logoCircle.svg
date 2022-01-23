@@ -1,8 +1,8 @@
-<svg width="146" height="146" viewBox="0 0 146 146" fill="none" xmlns="http://www.w3.org/2000/svg">
+<svg id="circleNav" width="146" height="146" viewBox="0 0 146 146" fill="none" xmlns="http://www.w3.org/2000/svg">
 <g clip-path="url(#clip0_1218_20038)">
 <path d="M3 81.0374C5.27664 102.114 22.2695 144.267 72.0278 144.267C121.786 144.267 139.993 102.114 142.877 81.0374" stroke="url(#paint0_linear_1218_20038)" stroke-opacity="0.6" stroke-width="3"/>
 <g filter="url(#filter0_d_1218_20038)">
-<circle cx="72.5971" cy="73.5971" r="62.5971" stroke="#FCE986" stroke-width="2" stroke-dasharray="6 8" shape-rendering="crispEdges"/>
+<circle id="dashedCircle" cx="72.5971" cy="73.5971" r="62.5971" stroke="#FCE986" stroke-width="2" stroke-dasharray="6 8" shape-rendering="crispEdges"/>
 </g>
 <circle cx="72" cy="73" r="51.3043" stroke="#CDCDCD" stroke-opacity="0.2" stroke-width="1.3915"/>
 <path d="M3 65.2295C5.27664 44.153 22.2695 2 72.0278 2C121.786 2 139.993 44.153 142.877 65.2295" stroke="url(#paint1_linear_1218_20038)" stroke-opacity="0.6" stroke-width="3"/>
