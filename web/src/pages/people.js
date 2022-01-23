@@ -19,16 +19,16 @@ import amadeusProfile from '../assets/img/people/amadeusHeadshot.jpg';
 import amandaProfile from '../assets/img/people/amandaHeadshot.png';
 import andrewProfile from '../assets/img/people/andrewHeadshot.png';
 import aparnaProfile from '../assets/img/people/aparnaHeadshot.jpeg';
-// import arjunProfile from '../assets/img/people/arjunHeadshot.jpeg';
+import arjunProfile from '../assets/img/people/arjunHeadshot.jpeg';
 import banksProfile from '../assets/img/people/banksHeadshot.jpg';
 import desmondProfile from '../assets/img/people/desmondHeadshot.jpg';
 import ellaProfile from '../assets/img/people/ellaHeadshot.jpg';
 import laraProfile from '../assets/img/people/laraHeadshot.jpg';
-// import mattProfile from '../assets/img/people/mattHeadshot.jpeg';
+import mattProfile from '../assets/img/people/mattHeadshot.jpeg';
 import pranshuProfile from '../assets/img/people/pranshuHeadshot.jpg';
 import quintProfile from '../assets/img/people/quintHeadshot.png';
 import savannahProfile from '../assets/img/people/savannahHeadshot.jpg';
-// import sethProfile from '../assets/img/people/sethHeadshot.jpeg';
+import sethProfile from '../assets/img/people/sethHeadshot.jpeg';
 import shivaniProfile from '../assets/img/people/shivaniHeadshot.jpg';
 import varunProfile from '../assets/img/people/varunHeadshot.jpg';
 
@@ -159,7 +159,7 @@ const PeoplePage = props => {
             portfolio="https://www.thevarunkhatri.com/"
             />
 
-            {/* <Card
+            <Card
             img={mattProfile}
             fname="Matt"
             lname="Ahrens"
@@ -167,9 +167,9 @@ const PeoplePage = props => {
             major="User Experience"
             linkedin="https://www.linkedin.com/in/matt-ahrens-/"
             portfolio="https://www.mattahrens.design/"
-            /> */}
+            />
 
-            {/* <Card
+            <Card
             img={sethProfile}
             fname="Seth"
             lname="Stomberger"
@@ -177,7 +177,7 @@ const PeoplePage = props => {
             major="User Experience"
             linkedin=""
             portfolio=""
-            /> */}
+            />
 
             <Card
             img={amandaProfile}
@@ -199,7 +199,7 @@ const PeoplePage = props => {
             portfolio=""
             />
 
-            {/* <Card
+            <Card
             img={arjunProfile}
             fname="Arjun"
             lname="Gupta"
@@ -207,7 +207,7 @@ const PeoplePage = props => {
             major="User Experience"
             linkedin=""
             portfolio=""
-            /> */}
+            />
 
             <Card
             img={pranshuProfile}
