@@ -23,7 +23,7 @@ import blankProfile from '../assets/img/judges/blankProfile.png';
 import aditiVyas from '../assets/img/judges/aditiVyas.jpeg';
 import akshayKhandelwal from '../assets/img/judges/akshayKhandelwal.jpeg';
 import alanGorinstein from '../assets/img/judges/alanGorinstein.jpeg';
-import andrésSepúlveda from '../assets/img/judges/andrésSepúlveda.jpeg';
+import andresSepulveda from '../assets/img/judges/andresSepulveda.jpeg';
 import annaJones from '../assets/img/judges/annaJones.jpeg';
 import brianOllison from '../assets/img/judges/brianOllison.jpeg';
 import caseyHarper from '../assets/img/judges/caseyHarper.jpeg';
@@ -155,7 +155,7 @@ const JudgesPage = props => {
             />
 
             <JudgeCard
-            img={andrésSepúlveda}
+            img={andresSepulveda}
             fname="Andrés"
             lname="Sepúlveda"
             role="UX Researcher"
