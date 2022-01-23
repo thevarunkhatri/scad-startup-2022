@@ -75,11 +75,11 @@
     padding-left: 8px;
     width: 204px;
     border-radius: 0px 15px 15px 0px;
-    background-color: rgba(255, 255, 255, 0.10);
+    background-color: #161616;
     // display: flex;
     // flex-direction: column;
     height: 200px;
-    backdrop-filter: blur(6px);
+    // backdrop-filter: blur(6px);
     margin: 0px;
   }
 
@@ -87,7 +87,7 @@
     padding-left: 8px;
     width: 204px;
     border-radius: 0px 15px 15px 0px;
-    background-color: rgba(255, 255, 255, 0.10);
+    background-color: #161616;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -145,7 +145,7 @@
       text-align: left;
       text-decoration: none;
       padding: 8px 5px;
-      margin-right: 12px;
+      margin-right: 8px;
       transition: all 300ms ease-in-out;
 
       &:hover {

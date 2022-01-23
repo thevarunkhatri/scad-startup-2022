@@ -51,7 +51,7 @@
     justify-content: space-between;
     border-radius: 25px;
     padding: 48px 64px 48px 64px;
-    backdrop-filter: blur(6px);
+    // backdrop-filter: blur(6px);
     max-width: 432px;
 
   
@@ -100,31 +100,31 @@
 
 #content1 {
   grid-area: content1;
-  background: url("../assets/img/schedule/TopL.png") rgba(255, 255, 255, 0.05) no-repeat;
+  background: url("../assets/img/schedule/TopL.png") #161616;
   background-size: cover;
 }
 
 #content2 {
   grid-area: content2;
-  background: url("../assets/img/schedule/TopR.png") rgba(255, 255, 255, 0.05) no-repeat;
+  background: url("../assets/img/schedule/TopR.png") #161616;
   background-size: cover;
 }
 
 #content3 {
   grid-area: content3;
-  background: url("../assets/img/schedule/MiddleR.png") rgba(255, 255, 255, 0.05) 0% no-repeat;
+  background: url("../assets/img/schedule/MiddleR.png") #161616;
   background-size: cover;
 }
 
 #content4 {
   grid-area: content4;
-  background: url("../assets/img/schedule/BottomR.png") rgba(255, 255, 255, 0.05) no-repeat;
+  background: url("../assets/img/schedule/BottomR.png") #161616;
   background-size: cover;
 }
 
 #content5 {
   grid-area: content5;
-  background:rgba(255, 255, 255, 0.05);
+  background:#161616;
   max-width: 1200px;
 }
 
