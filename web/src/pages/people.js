@@ -296,10 +296,10 @@ function Card (props) {
           <p className="cardMajor">{props.major}</p>
           <div class="buttonWrapper">
             <form action={props.linkedin} target="_blank">
-              <button className="externalButton">LinkedIn &nbsp; {String.fromCharCode(10230)}</button>
+              <button className="externalButton">LinkedIn <strong> &nbsp; {String.fromCharCode(10230)}</strong></button>
             </form>
             <form action={props.portfolio} target="_blank">
-              <button className="externalButton">Portfolio &nbsp; {String.fromCharCode(10230)}</button>
+              <button className="externalButton">Portfolio <strong> &nbsp; {String.fromCharCode(10230)}</strong></button>
             </form>
           </div>
         </div>
@@ -322,7 +322,7 @@ function FacultyCard (props) {
           <p className="cardMajor">{props.major}</p>
           <div class="buttonWrapper">
             <form action={props.linkedin} target="_blank">
-              <button className="externalButtonFaculty">LinkedIn &nbsp; {String.fromCharCode(10230)}</button>
+              <button className="externalButtonFaculty">LinkedIn <strong> &nbsp; {String.fromCharCode(10230)}</strong> </button>
             </form>
           </div>
         </div>

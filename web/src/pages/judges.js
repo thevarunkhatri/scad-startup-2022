@@ -343,8 +343,6 @@ const JudgesPage = props => {
   );
 };
 
-
-
 function JudgeCard (props) {
   return(
 
@@ -359,7 +357,7 @@ function JudgeCard (props) {
           <p className="judgesRole">{props.role} @ <strong>{props.company}</strong></p>
           <div class="buttonWrapperJudges">
             <form action={props.linkedin} target="_blank">
-              <button className="externalButtonFaculty">LinkedIn &nbsp; {String.fromCharCode(10230)}</button>
+              <button className="externalButtonFaculty">LinkedIn <strong> &nbsp; {String.fromCharCode(10230)}</strong></button>
             </form>
           </div>
         </div>
