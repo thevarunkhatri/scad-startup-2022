@@ -125,8 +125,8 @@ const PeoplePage = props => {
             lname="Goodridge"
             role="Logistics Coordinator"
             major="User Experience"
-            linkedin=""
-            portfolio=""
+            linkedin="https://www.linkedin.com/in/ndrewgood"
+            portfolio="http://ndrewgood.com/"
             />
 
             <Card
