@@ -60,7 +60,7 @@ const DeliverablesPage = props => {
             <div class="deliverablesCard" id="content1">
               <h2>Presentation Deck</h2>
               <p> No pitch is perfect without a slide deck! Craft your presentation and make it STAND OUT. This is how you introduce others to your BRILLIANT IDEAS, so make it count! </p>
-              <form action={"https://www.google.com/"} target="_blank">
+              <form action={"https://drive.google.com/drive/folders/1CVVK8T1B0IfzghZCd0mNnlp0SHWke1Oi"} target="_blank">
                 <button class="pastExamplesButton">Past Examples &nbsp; {String.fromCharCode(10230)}</button>
               </form>
             </div>
@@ -68,7 +68,7 @@ const DeliverablesPage = props => {
             <div class="deliverablesCard" id="content2">
               <h2>30 Second Video</h2>
               <p> We want your idea to be SHOUTED FROM THE ROOFTOP (virtually) so we will post YOUR 30 second video to @scadstartup on instagram! Inspiring the future of StartUp. </p>
-              <form action={"https://www.google.com/"} target="_blank">
+              <form action={"https://drive.google.com/drive/folders/1b2cZnGUzNoVYMyGBxxbSu4yPX39-gUK0?usp=sharing"} target="_blank">
                 <button class="pastExamplesButton">Past Examples &nbsp; {String.fromCharCode(10230)}</button>
               </form>
             </div>
@@ -76,7 +76,7 @@ const DeliverablesPage = props => {
             <div class="deliverablesCard" id="content3">
               <h2>Business Model</h2>
               <p> A business model keeps it real. Shoot for the stars and see your idea come to life in the real world. A business model can help you answer the hard questions (like “who’s it for?” and “how does it make $$$$”)! </p>
-              <form action={"https://www.google.com/"} target="_blank">
+              <form action={"https://drive.google.com/drive/folders/1G0QeWDSDzxmwOBA5rpWWF7jDLoa2pp01"} target="_blank">
                 <button class="pastExamplesButton">Past Examples &nbsp; {String.fromCharCode(10230)}</button>
               </form>
             </div>
@@ -84,7 +84,7 @@ const DeliverablesPage = props => {
             <div class="deliverablesCard" id="content4" >
               <h2>WOW FACTOR!!</h2>
               <p> What makes an idea stand out? What makes the audience gasp? Flex your team’s skillset and make your idea SHAKE THE ROOM (even if it’s virtual ;)). </p>
-              <form action={"https://www.google.com/"} target="_blank">
+              <form action={"https://drive.google.com/drive/folders/1G0QeWDSDzxmwOBA5rpWWF7jDLoa2pp01"} target="_blank">
                 <button class="pastExamplesButton">Past Examples &nbsp; {String.fromCharCode(10230)} </button>
               </form>
             </div>
@@ -92,9 +92,9 @@ const DeliverablesPage = props => {
             <div class="deliverablesCard" id="content5">
               <h2>Still not sure? Here's some more examples.</h2>
               <div class="StillNotSure">
-                <p> ""Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo." </p>   
+                <p> Lucky for you we have every single entry from last year's StartUp. Take a look around and see what catches your eye! </p>   
               </div>
-              <form action={"https://www.google.com/"} target="_blank">
+              <form action={"https://drive.google.com/drive/folders/1b2cZnGUzNoVYMyGBxxbSu4yPX39-gUK0?usp=sharing"} target="_blank">
                 <button class="pastExamplesButton">Past Pitches &nbsp; {String.fromCharCode(10230)}</button>
               </form>
             </div>

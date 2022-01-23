@@ -15,10 +15,10 @@ const Footer = () => {
             <div className="footerContainer">
 
                 <ul className="footerLeft">
-                    <Link to=""><li>
+                    <Link to="https://www.scad.edu/about/scadpro"><li>
                         <Flux/>
                     </li></Link>
-                    <Link to=""><li>
+                    <Link to="https://scadflux.com/"><li>
                         <Scadpro/>
                     </li></Link>
                 </ul>
