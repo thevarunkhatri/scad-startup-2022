@@ -1,11 +1,11 @@
 .hero {
-    height: calc(97vh - 192px);
+    height: 780px;
     position: relative;
     overflow: hidden;
 
 
     @media only screen and (max-width: 1000px) {
-        height: calc(68vh - 192px);
+        height: 500px;
     } 
 
     @media only screen and (max-width: 725px) {

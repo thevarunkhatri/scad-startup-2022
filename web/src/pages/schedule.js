@@ -11,6 +11,7 @@ import SEO from "../components/seo";
 import Layout from "../containers/layout";
 import GeneralSchedule from "../components/generalSchedule";
 import SessionsSchedule from "../components/sessionsSchedule";
+import CTA from "../components/cta";
 
 import '../styles/schedule.scss';
 
@@ -158,6 +159,7 @@ const SchedulePage = props => {
               </ul>
             </div>
             { activeCalendar ? <GeneralSchedule/> : <SessionsSchedule sanityData={sessionNodes}/>}
+            <CTA/>
           </Container>
         </main>
     </Layout>

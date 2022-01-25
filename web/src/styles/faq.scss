@@ -11,92 +11,94 @@
         font-size: 24px;
         font-weight: 400;
         color: #959595;
+        margin: 0 12px 
       }
   
       h1 {
       font-size: 56px;
       font-weight: 600;
-      line-height: 0px;
       color: var(--light-yellow);
+      margin: 0 0 12px;
     }
   }
 
 .faqContainer {
-display: grid;
-gap: 30px;
-grid-template-areas:
-    "content1 content3"
-    "content2 content4";
-color: #fff;
-text-align: left;
+  display: grid;
+  gap: 30px;
+  grid-template-columns: 1fr 1fr;
+  color: #fff;
+  text-align: left;
 
-.faqCard {
+  @media only screen and (max-width: 800px) {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+  }
+
+
+  .column {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .faqCard {
+    display: flex;
+    flex-direction: column;
     background-color: rgba(255, 255, 255, 0.05);
     border-radius: 25px;
-    padding: 48px 64px 48px 64px;
+    padding: 48px 64px;
     outline: solid 1px #01AEC4; /*having trouble finding a working gradient outline solution*/
     backdrop-filter: blur(6px);
 
+    @media only screen and (max-width: 1000px) {
+      padding: 32px 48px;
+    }
+
+    @media only screen and (max-width: 600px) {
+      padding: 24px 40px;
+    }
+
     h2 {
-    color: #fff;
-    font-size: 36px;
-    font-weight: 500;
-    line-height: 0px;
-    margin: 15px 0px;
+      color: #fff;
+      font-size: 36px;
+      font-weight: 500;
+      margin: 16x 0px 16px;
     }
 
     h4 {
-    font-size: 20px;
-    line-height: 130%;
-    color: #01AEC4;
-    font-weight: normal;
-    margin: 15px 0px;
+      font-size: 20px;
+      color: #01AEC4;
+      font-weight: normal;
+      margin: 0 0 4px;
     }
 
     p {
-    font-size: 15px;
-    font-weight: 300;
-    opacity: 100%;
-    padding-bottom: 15%;
-    margin: 15px 0px;
+      font-size: 15px;
+      font-weight: 300;
+      margin: 0 0 32px;
     }
 
     .pastExamplesButton {
-    width: fit-content;
-    background: none;
-    border: 1px solid var(--electric-blue);
-    border-radius: 8px;
-    color: var(--electric-blue);
-    text-transform: uppercase;
-    font-size: 16px;
-    text-align: left;
-    text-decoration: none;
-    padding: 8px 32px;
-        }
+      width: fit-content;
+      background: none;
+      border: 1px solid var(--electric-blue);
+      border-radius: 8px;
+      color: var(--electric-blue);
+      text-transform: uppercase;
+      font-size: 16px;
+      text-align: left;
+      text-decoration: none;
+      padding: 8px 32px;
     }
-}
 
-#content1 {
-    grid-area: content1;
-}
-  
-#content2 {
-    grid-area: content2;
-}
-  
-#content3 {
-    grid-area: content3;
-}
-  
-#content4 {
-    grid-area: content4;
-}
-  
-#content5 {
-    grid-area: content5;
+    ol {
+      margin: 0 0 20px;
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+      padding: 0 0 0 16px;
+    }
+  }
 }
 
 #faqPageBG {
