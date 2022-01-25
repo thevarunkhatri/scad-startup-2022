@@ -311,6 +311,10 @@
                 transition: all 300ms ease-in-out;
                 cursor: pointer;
             }
+
+            @media only screen and (max-width: 600px) {
+                padding: 30px 80px;
+            } 
         }
     }
 
@@ -351,6 +355,11 @@
                 @media only screen and (max-width: 600px) {
                     width: 112px;
                     height: 112px;
+                } 
+
+                @media only screen and (max-width: 380px) {
+                    width: 100px;
+                    height: 100px;
                 } 
             }
 
@@ -400,7 +409,7 @@
         margin-bottom: 60px;
 
         @media only screen and (max-width: 600px) {
-            transform: scale(0.82);
+            transform: scale(0.75);
         } 
 
         svg {

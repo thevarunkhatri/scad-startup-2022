@@ -36,7 +36,7 @@ const ScheduleCard = (props) => {
                                 <p>{props.description}</p>
                             </div>
                             <div className="dateButton">
-                                {props.time} -->
+                                {props.time}
                             </div>
                         </div>
                         <div className="graphic">
@@ -52,7 +52,7 @@ const ScheduleCard = (props) => {
                             {props.midpoint ? <p className="midpoint">Your team will be assigned to a Midpoint day after Kickoff.</p> : null}
                         </div>
                         <div className="dateButton">
-                            {props.time} -->
+                            {props.time}
                         </div>
                     </>
                 )
