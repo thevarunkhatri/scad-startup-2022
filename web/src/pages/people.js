@@ -195,8 +195,8 @@ const PeoplePage = props => {
             lname="Reisinger"
             role="Social Media Coordinator"
             major="Graphic Design"
-            linkedin=""
-            portfolio=""
+            linkedin="https://www.linkedin.com/in/ella-r-56972a185/"
+            portfolio="https://ereisi20.myportfolio.com/"
             />
 
             <Card
@@ -205,8 +205,8 @@ const PeoplePage = props => {
             lname="Gupta"
             role="Visal Designer"
             major="User Experience"
-            linkedin=""
-            portfolio=""
+            linkedin="https://www.linkedin.com/in/arjun-gupta-ux/"
+            portfolio="http://arjunguptadesign.com/"
             />
 
             <Card
@@ -215,8 +215,8 @@ const PeoplePage = props => {
             lname="Agarwal"
             role="Outreach Coordinator"
             major="User Experience"
-            linkedin=""
-            portfolio=""
+            linkedin="https://www.linkedin.com/in/pranshu-agarwal-97a41a198/"
+            portfolio="http://pranshuagarwal.com/"
             />
 
             <Card
