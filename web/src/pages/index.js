@@ -353,6 +353,10 @@ const IndexPage = props => {
   const [pageWidth, setPageWidth] = useState(1200);
 
   useEffect(() => {
+    window.localStorage.setItem('activeCalendar', true);
+  });
+
+  useEffect(() => {
     setPageWidth(window.innerWidth);
 
     function handleResize() {
