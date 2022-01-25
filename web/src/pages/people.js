@@ -183,7 +183,7 @@ const PeoplePage = props => {
             img={amandaProfile}
             fname="Amanda"
             lname="Kong"
-            role="Visal Designer"
+            role="Visual Designer"
             major="User Experience"
             linkedin=""
             portfolio=""
@@ -203,7 +203,7 @@ const PeoplePage = props => {
             img={arjunProfile}
             fname="Arjun"
             lname="Gupta"
-            role="Visal Designer"
+            role="Visual Designer"
             major="User Experience"
             linkedin="https://www.linkedin.com/in/arjun-gupta-ux/"
             portfolio="http://arjunguptadesign.com/"
