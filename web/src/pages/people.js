@@ -289,7 +289,7 @@ function Card (props) {
           <img className="profilePic" src={props.img} />
         </div>
 
-        <div className = "cardContent" >
+        <div className="cardContent" >
           <h2 className="cardFirstName">{props.fname}</h2>
           <h2 className="cardLastName">{props.lname}</h2>
           <p className="cardRole">{props.role}</p>
