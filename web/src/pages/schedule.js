@@ -155,7 +155,7 @@ const SchedulePage = props => {
             <div className="scheduleControls">
               <ul className="controlHolder">
                 <li onClick={ activeCalendar ? null : flipCalendar } className={ activeCalendar ? "active activeLeft controls" : "activeLeft controls" }>Required</li>
-                <li onClick={ activeCalendar ? flipCalendar : null } className={ activeCalendar ? "activeRight controls" : "active activeRight controls" }>Sessions</li>
+                <li className={ activeCalendar ? "activeRight controls" : "active activeRight controls" }>Coming Soon</li>
               </ul>
             </div>
             { activeCalendar ? <GeneralSchedule/> : <SessionsSchedule sanityData={sessionNodes}/>}
