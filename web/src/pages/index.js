@@ -197,7 +197,7 @@ const Hooks = props => {
               </SwiperSlide>
               <SwiperSlide>
                   <Scholarships/>
-                  <h3>Scholarships</h3>
+                  <h3>Additional Prizes</h3>
               </SwiperSlide>
               <SwiperSlide>
                 <BigPrizes/>
@@ -249,8 +249,9 @@ const Hooks = props => {
             <HookItem 
               iconLeft={false} 
               icon={<Scholarships/>}
-              title="Scholarships"
-              description="Do you have that one class you’ve always wanted to take? Or maybe enroll in graduate school at SCAD? We’ve got you covered. Take a chance and apply."/>
+              title="Additional Prizes"
+              description="This one is a surprise for kickoff and it's one that you won't want to miss!"/>
+            {/* description="Do you have that one class you’ve always wanted to take? Or maybe enroll in graduate school at SCAD? We’ve got you covered. Take a chance and apply." */}
             <Divider/>
             <HookItem 
               iconLeft={true} 

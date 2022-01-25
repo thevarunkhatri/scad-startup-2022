@@ -282,11 +282,17 @@ const PeoplePage = props => {
 
 
 function Card (props) {
+  const imgStyles = {
+    background: 'url(' + props.img + ')',
+    backgroundSize: 'cover',
+    backgroundPosition: 'center'
+  }
+
   return(
 
       <div className="entireWrapperCards">
-        <div className="profileHalf">
-          <img className="profilePic" src={props.img} />
+        <div className="profileHalf" style={imgStyles}>
+          {/* <img className="profilePic" src={props.img} /> */}
         </div>
 
         <div className="cardContent" >
@@ -308,11 +314,18 @@ function Card (props) {
 }
 
 function FacultyCard (props) {
+
+  const imgStyles = {
+    background: 'url(' + props.img + ')',
+    backgroundSize: 'cover',
+    backgroundPosition: 'center'
+  }
+
   return(
 
       <div className="entireWrapperCards">
-        <div className="profileHalf">
-          <img className="profilePic" src={props.img} />
+        <div className="profileHalf" style={imgStyles}>
+          {/* <img className="profilePic" src={props.img} /> */}
         </div>
 
         <div className = "facultyCard" >

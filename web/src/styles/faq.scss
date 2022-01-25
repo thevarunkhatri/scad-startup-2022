@@ -5,7 +5,7 @@
 
 .faqHeader {
     text-align: center;
-    padding: 64px;
+    padding: 64px 0px;
   
       h3 {
         font-size: 24px;
@@ -44,11 +44,12 @@
   .faqCard {
     display: flex;
     flex-direction: column;
-    background-color: rgba(255, 255, 255, 0.05);
+    background-color: #161616;
+    // background-color: rgba(255, 255, 255, 0.05);
     border-radius: 25px;
     padding: 48px 64px;
-    outline: solid 1px #01AEC4; /*having trouble finding a working gradient outline solution*/
-    backdrop-filter: blur(6px);
+    border: solid 1px #01AEC4; /*having trouble finding a working gradient outline solution*/
+    // backdrop-filter: blur(6px);
 
     @media only screen and (max-width: 1000px) {
       padding: 32px 48px;
