@@ -225,8 +225,8 @@ const PeoplePage = props => {
             lname="Maynard"
             role="Motion Media Designer"
             major="Motion Media"
-            linkedin=""
-            portfolio=""
+            linkedin="https://www.linkedin.com/in/banks-maynard-721b23201"
+            portfolio="https://www.banksmaynard.com/"
             />
 
             <Card
@@ -235,8 +235,8 @@ const PeoplePage = props => {
             lname="Varandani"
             role="Motion Media Designer"
             major="Motion Media"
-            linkedin=""
-            portfolio=""
+            linkedin="https://www.linkedin.com/in/shivani-varandani"
+            portfolio="http://shivanivarandani.com/"
             />
 
             <FacultyCard
@@ -323,7 +323,7 @@ function FacultyCard (props) {
 
   return(
 
-      <div className="entireWrapperCards faculty">
+      <div className="entireWrapperCards">
         <div className="profileHalf" style={imgStyles}>
           {/* <img className="profilePic" src={props.img} /> */}
         </div>
