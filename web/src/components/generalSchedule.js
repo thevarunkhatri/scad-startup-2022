@@ -95,7 +95,7 @@ const GeneralSchedule = () => {
             <ScheduleCard
                 title="Showcase" 
                 day={6}
-                description="Check out the StartUp Showcase, open to all students at SCAD! See what teams come up with and vote your favorite!"
+                description="Check out StartUp Showcase on our instagram, @scadstartup! All of the projects will be posted to reels so your classmates, friends and family can see."
                 time="All Day"
                 backgroundImg={MiddleR}/>
             <ScheduleCard

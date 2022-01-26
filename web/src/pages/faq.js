@@ -79,7 +79,7 @@ const FaqPage = props => {
                 <div class="faqCard">
                   <h2>Specific To Startup 2022</h2>
                   <h4>Is Startup fully on ground?</h4>
-                  <p>Semi- final and final presentations, as well as the science fair showing, will be on ground. All presenters must be on ground in order to present. Due to the ongoing pandemic, some of our judges are unable to travel to Savannah, so you may be presenting to hybrid judges. Midpoint checks will be done virtually. Your team will recieve an email with your unique zoom link and time to join your zoom meeting after Kickoff.</p>
+                  <p>Startup 2022 is virtual! This means kickoff, midpoint and fianls will be held over zoom. This also means that you are able to invite all your friends and family to tune in and watch kickoff and finals! We do have some in person activities such as our sessions, celebration, and multiple chances to meet some of our judges!</p>
                   <h4>Do I need to follow COVID guidelines?</h4>
                   <p>For any event held on SCAD property, you must follow the university COVID guidelines. Failure to follow these guidlines will result in immediate elimination.</p>
                 </div>
