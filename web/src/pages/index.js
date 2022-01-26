@@ -27,6 +27,7 @@ import BigPrizes from "../assets/svg/home/bigprizes.svg";
 import Connections from "../assets/svg/home/connections.svg";
 import PortfolioPieces from "../assets/svg/home/portfoliopieces.svg";
 import Scholarships from "../assets/svg/home/scholarships.svg";
+import Learn from "../assets/svg/home/learn.svg";
 
 import MobileInfoCircles from "../assets/svg/home/mobileInfoCircles.svg";
 
@@ -62,7 +63,7 @@ const HomeInfo = props => {
   return (
     <div className="info">
       <div className="infoContainer">
-        <p><span>SCAD StartUp</span> is our annual, week-long design sprint hosted by <a href="">FLUX - the UX club</a> - in collaboration with <a href="">SCADpro</a></p>
+        <p><span>SCAD StartUp</span> is our annual, week-long design sprint hosted by <a href="https://scadflux.com" target="_blank">FLUX</a> in collaboration with <a href="https://www.scad.edu/about/scadpro" target="_blank">SCADpro</a></p>
         {props.pageWidth >= 1000 ? <DesktopInfo/> : null}
         {props.pageWidth >= 600 && props.pageWidth < 1000 ? <TabletInfo/> : null}
         {props.pageWidth < 600 ? (
@@ -186,84 +187,62 @@ const Hooks = props => {
   return (
       <div className="hooks">
         <Container>
-          <h2>What's in it for me?</h2>
-          <div className="hookMain"> 
+          <h2>What's in it for you?</h2>
+          {/* <div className="hookMain"> 
             <HookMain/>
             <div className="carouselHolder">
             <Swiper modules={[Autoplay]} slidesPerView={1} spaceBetween={30} loop={true} className="mySwiper" autoplay={{delay: 3000}}>
               <SwiperSlide>
                   <Connections/>
-                  <h3>Connections</h3>
-              </SwiperSlide>
-              <SwiperSlide>
-                  <Scholarships/>
-                  <h3>Additional Prizes</h3>
+                  <h3>Make Connections</h3>
               </SwiperSlide>
               <SwiperSlide>
                 <BigPrizes/>
                 <h3>Big Prizes</h3>
+              <SwiperSlide>
+                <Scholarships/>
+                <h3>Additional Prizes</h3>
+              </SwiperSlide>
               </SwiperSlide>
               <SwiperSlide>
                 <PortfolioPieces/>
                 <h3>Portfolio Pieces</h3>
               </SwiperSlide>
             </Swiper>
-              {/* <Carousel
-                plugins={[
-                  'infinite',
-                {
-                  resolve: autoplayPlugin,
-                  options: {
-                    interval: 2000,
-                  }
-                },
-              ]}   
-              animationSpeed={1000}>
-                <div className="hook">
-                  <Connections/>
-                  <h3>Connections</h3>
-                </div>
-                <div className="hook">
-                  <Scholarships/>
-                  <h3>Scholarships</h3>
-                </div>
-                <div className="hook">
-                  <BigPrizes/>
-                  <h3>Big Prizes</h3>
-                </div>
-                <div className="hook">
-                  <PortfolioPieces/>
-                  <h3>Portfolio Pieces</h3>
-                </div>
-              </Carousel> */}
             </div>  
-          </div>
+          </div> */}
           <div className="hookHolder">
-            <Divider/>
+            {/* <Divider/> */}
             <HookItem 
               iconLeft={true} 
               icon={<Connections/>}
-              title="Connections"
-              description="This is your chance to make connections within your field. Talk with your design idols, get a look into your dream company, stand out from the crowd during interviews."/>
+              title="Make Connections"
+              description="Every year, StartUp attracts industry professionals to mentor and judge your progress. This is an amazing chance to make connections within your field. Talk with your design idols, get a look into your dream company, and stand out from the crowd during interviews."/>
             <Divider/>
             <HookItem 
               iconLeft={false} 
-              icon={<Scholarships/>}
-              title="Additional Prizes"
-              description="This one is a surprise for kickoff and it's one that you won't want to miss!"/>
-            {/* description="Do you have that one class you’ve always wanted to take? Or maybe enroll in graduate school at SCAD? We’ve got you covered. Take a chance and apply." */}
+              icon={<BigPrizes/>}
+              title="Win Big"
+              description="What would you do with $1,000? Or a gift card to your favorite store... or a subscription that helps you advance your career... start planning now, because the prizes this year will blow you away. "/>
             <Divider/>
             <HookItem 
               iconLeft={true} 
-              icon={<BigPrizes/>}
-              title="Big Prizes"
-              description="What would you do with $1,000? Or a gift card to your favorite store... or a subscription that helps you advance your career... or... "/>
+              icon={<PortfolioPieces/>}
+              title="Create A Portfolio Piece"
+              description="Whether this is your first big project or you’re returning for another year, StartUp projects make fantastic portfolio pieces. Employers are amazed with the creativity, ingenuity, and speed required to complete StartUp projects.  Make your portfolio stand out with a StartUp project — it only takes a week."/>
             <Divider/>
             <HookItem 
               iconLeft={false} 
-              icon={<PortfolioPieces/>}
-              title="Portfolio Pieces"
-              description="Whether this is your first big project or you are returning for your fourth year, StartUp projects make incredible portfolio pieces!"/>
+              icon={<Learn/>}
+              title="Learn a New Skill"
+              description="This year, we’re completely revamping StartUp Sessions — the workshops we host to improve your product design skills. Instead of 6 Sessions on Launch Day, we’re hosting over 20 throughout the week so you can level up your designs. Whether you’re learning the basics, exploring a hobby, or dipping your toes in a new field, there’s a Session for everyone this StartUp."/>
+            <Divider/>
+            <HookItem 
+              iconLeft={true} 
+              icon={<Scholarships/>}
+              title="Discover Additional Prizes"
+              description="We have so much more planned for you this year and we can’t wait to show you everything. Make sure to sign up and tune in to the launch event so you don’t miss out."/>
+            {/* description="Do you have that one class you’ve always wanted to take? Or maybe enroll in graduate school at SCAD? We’ve got you covered. Take a chance and apply." */}
             <Divider/>
           </div>
         </Container>
@@ -311,17 +290,17 @@ const CTASection = props => {
           <div className="ctaSteps">
             <div className="step">
               <Step1/>
-              <p>Grab your friends</p>
+              <p>Grab your friends.</p>
             </div>
             <Arrow/>
             <div className="step">
               <Step2/>
-              <p>Create an amazing design</p>
+              <p>Design an amazing project.</p>
             </div>
             <Arrow/>
             <div className="step">
               <Step3/>
-              <p>Win big, get noticed!</p>
+              <p>Win big, get noticed.</p>
             </div>
           </div>
         </Container>

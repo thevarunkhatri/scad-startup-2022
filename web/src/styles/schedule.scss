@@ -344,6 +344,7 @@
         display: flex;
         flex-direction: column;
         justify-content: space-between;
+        // justify-content: center;
         align-items: start;
 
         &.big {
@@ -361,6 +362,7 @@
                 display: flex;
                 flex-direction: column;
                 justify-content: space-between;
+                // justify-content: center;
                 align-items: start;
                 height: 100%;
             }

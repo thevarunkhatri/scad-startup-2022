@@ -187,6 +187,13 @@
     }
   }
 }
+
+.faculty {
+  .profileHalf {
+    height: 200px !important;
+  }
+}
+
 @media only screen and (max-width: 1150px) {
   .entireWrapperCards {
     align-self: center;

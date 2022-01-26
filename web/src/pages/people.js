@@ -323,7 +323,7 @@ function FacultyCard (props) {
 
   return(
 
-      <div className="entireWrapperCards">
+      <div className="entireWrapperCards faculty">
         <div className="profileHalf" style={imgStyles}>
           {/* <img className="profilePic" src={props.img} /> */}
         </div>
