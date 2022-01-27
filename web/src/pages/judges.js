@@ -13,12 +13,24 @@ import Layout from "../containers/layout";
 import Checkmark from "../assets/svg/judges/checkmark.svg"
 import Mentors from "../assets/svg/judges/mentors.svg"
 
-import briannaProfile from '../assets/img/people/briannaHeadshot.jpeg';
-import joshProfile from '../assets/img/people/joshHeadshot.jpeg';
-import jeanneProfile from '../assets/img/people/jeanneHeadshot.jpeg';
-import bcProfile from '../assets/img/people/bcHeadshot.jpeg';
-
 import blankProfile from '../assets/img/judges/blankProfile.png';
+
+import amyMartin from '../assets/img/judges/amyMartin.jpeg';
+import amyMcclure from '../assets/img/judges/amyMcclure.jpeg';
+import andrewFirstenberger from '../assets/img/judges/andrewFirstenberger.jpeg';
+import annaliseLao from '../assets/img/judges/annaliseLao.jpeg';
+import cassieMcdaniel from '../assets/img/judges/cassieMcdaniel.jpeg';
+import coreyKeller from '../assets/img/judges/coreyKeller.jpeg';
+import danGrossman from '../assets/img/judges/danGrossman.jpeg';
+import fonzMorris from '../assets/img/judges/fonzMorris.jpeg';
+import hilalKoyuncu from '../assets/img/judges/hilalKoyuncu.jpeg';
+import jayFanelli from '../assets/img/judges/jayFanelli.jpeg';
+import lukeLi from '../assets/img/judges/lukeLi.jpeg';
+import marySargent from '../assets/img/judges/marySargent.jpeg';
+import nishatAkhtar from '../assets/img/judges/nishatAkhtar.jpeg';
+import parvanehToghiani from '../assets/img/judges/parvanehToghiani.jpeg';
+import staceyBurr from '../assets/img/judges/staceyBurr.jpeg';
+import teslimA from '../assets/img/judges/teslimA.jpeg';
 
 import aditiVyas from '../assets/img/judges/aditiVyas.jpeg';
 import akshayKhandelwal from '../assets/img/judges/akshayKhandelwal.jpeg';
@@ -100,6 +112,256 @@ const JudgesPage = props => {
           </div>
 
           <div class="peopleContainer">
+
+          <JudgeCard
+            img={amyMartin}
+            fname="Amy"
+            lname="Martin"
+            role="Senior Manager of Creative"
+            company="Gulfstream"
+            linkedin="https://www.linkedin.com/in/amy-bierbach-martin-2901304/"
+            />
+
+
+          <JudgeCard
+            img={amyMcclure}
+            fname="Amy"
+            lname="McClure"
+            role="Director of Product Design"
+            company="Squarespace"
+            linkedin="https://www.linkedin.com/in/amylucasmcclure/"
+            />
+
+
+          <JudgeCard
+            img={andrewFirstenberger}
+            fname="Andrew"
+            lname="Firstenberger"
+            role="Director of Product Design"
+            company="Intuit"
+            linkedin="https://www.linkedin.com/in/firsten/"
+            />
+
+
+          <JudgeCard
+            img={annaliseLao}
+            fname="Annalise"
+            lname="Lao"
+            role="Senior Product Designer"
+            company="Mattel"
+            linkedin="https://www.linkedin.com/in/annaliselao/"
+            />
+
+
+          <JudgeCard
+            img={cassieMcdaniel}
+            fname="Cassie"
+            lname="McDaniel"
+            role="Director of Product Design"
+            company="Lattice"
+            linkedin="https://www.linkedin.com/in/cassiemc/"
+            />
+
+
+          <JudgeCard
+            img={coreyKeller}
+            fname="Corey"
+            lname="Keller"
+            role="Senior UX Lead"
+            company="IBM"
+            linkedin="https://www.linkedin.com/in/corey-keller-ba638928/"
+            />
+
+            
+          <JudgeCard
+            img={danGrossman}
+            fname="Dan"
+            lname="Grossman"
+            role="Design Director"
+            company="Smart Design"
+            linkedin="https://www.linkedin.com/in/dancgrossman/"
+            />
+
+
+          <JudgeCard
+            img={fonzMorris}
+            fname="Fonz"
+            lname="Morris"
+            role="Lead Product Designer"
+            company="Netflix"
+            linkedin="https://www.linkedin.com/in/fonzmorris/"
+            />
+
+
+          <JudgeCard
+            img={hilalKoyuncu}
+            fname="Hilal"
+            lname="Koyuncu"
+            role="UX Manager"
+            company="Google"
+            linkedin="https://www.linkedin.com/in/hilal-koyuncu-060b2118/"
+            />
+
+
+          <JudgeCard
+            img={jayFanelli}
+            fname="Jay"
+            lname="Fanelli"
+            role="Senior Design Manager"
+            company="Duolingo"
+            linkedin="https://www.linkedin.com/in/jay-fanelli-25602b158/"
+            />
+
+
+          <JudgeCard
+            img={lukeLi}
+            fname="Luke"
+            lname="Li"
+            role="Global Creative Lead"
+            company="IKEA"
+            linkedin="https://www.linkedin.com/in/lukeiscrazyman/"
+            />
+
+
+          <JudgeCard
+            img={marySargent}
+            fname="Mary"
+            lname="Sargent"
+            role="Senior Product Designer"
+            company="Webflow"
+            linkedin="https://www.linkedin.com/in/maryelsargent/"
+            />
+
+
+          <JudgeCard
+            img={nishatAkhtar}
+            fname="Nishat"
+            lname="Akhtar"
+            role="VP of Creative"
+            company="Intstrument"
+            linkedin="https://www.linkedin.com/in/nishatakhtar/"
+            />
+
+
+          <JudgeCard
+            img={parvanehToghiani}
+            fname="Parvaneh"
+            lname="Toghiani"
+            role="Staff Product Designer"
+            company="Uber"
+            linkedin="https://www.linkedin.com/in/parvanehtoghiani/"
+            />
+
+
+          <JudgeCard
+            img={staceyBurr}
+            fname="Stacey"
+            lname="Burr"
+            role="VP of Product"
+            company="Google"
+            linkedin="https://www.linkedin.com/in/stburr/"
+            />
+
+
+          <JudgeCard
+            img={teslimA}
+            fname="Teslim"
+            lname="A"
+            role="Product Design Lead"
+            company="Netflix"
+            linkedin="https://www.linkedin.com/in/teslimalabi/"
+            />
+
+
+          <JudgeCard
+            img={blankProfile}
+            fname="first"
+            lname="last"
+            role="role"
+            company="company"
+            linkedin="https://www.linkedin.com"
+            />
+
+
+          <JudgeCard
+            img={blankProfile}
+            fname="first"
+            lname="last"
+            role="role"
+            company="company"
+            linkedin="https://www.linkedin.com"
+            />
+
+            
+          <JudgeCard
+            img={blankProfile}
+            fname="first"
+            lname="last"
+            role="role"
+            company="company"
+            linkedin="https://www.linkedin.com"
+            />
+
+
+          <JudgeCard
+            img={blankProfile}
+            fname="first"
+            lname="last"
+            role="role"
+            company="company"
+            linkedin="https://www.linkedin.com"
+            />
+
+
+          <JudgeCard
+            img={blankProfile}
+            fname="first"
+            lname="last"
+            role="role"
+            company="company"
+            linkedin="https://www.linkedin.com"
+            />
+
+
+          <JudgeCard
+            img={blankProfile}
+            fname="first"
+            lname="last"
+            role="role"
+            company="company"
+            linkedin="https://www.linkedin.com"
+            />
+
+
+          <JudgeCard
+            img={blankProfile}
+            fname="first"
+            lname="last"
+            role="role"
+            company="company"
+            linkedin="https://www.linkedin.com"
+            />
+
+
+          <JudgeCard
+            img={blankProfile}
+            fname="first"
+            lname="last"
+            role="role"
+            company="company"
+            linkedin="https://www.linkedin.com"
+            />
+
+
+          <JudgeCard
+            img={blankProfile}
+            fname="first"
+            lname="last"
+            role="role"
+            company="company"
+            linkedin="https://www.linkedin.com"
+            />
+
 
           <JudgeCard
             img={blankProfile}
