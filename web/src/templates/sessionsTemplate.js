@@ -64,6 +64,7 @@ export const query = graphql`
         heroImage {
           asset {
             url
+            gatsbyImageData(fit: FILLMAX, placeholder: DOMINANT_COLOR)
           }
         }
         excerpt
