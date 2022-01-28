@@ -1,5 +1,6 @@
 import React, {useState, useEffect, useRef} from "react";
 import { Link, useStaticQuery, graphql } from "gatsby"
+import {GatsbyImage} from 'gatsby-plugin-image'
 
 import Beginner from "../assets/svg/schedule/difficulty/Beginner.svg"
 import Novice from "../assets/svg/schedule/difficulty/Novice.svg"
@@ -361,7 +362,8 @@ const SessionsGroup = props => {
                   }
                   return(
                     <SessionsCard 
-                      name={edge.name} 
+                      name={edge.name}
+                      imageData={edge.heroImage.asset.gatsbyImageData} 
                       imageUrl={edge.heroImage.asset.url} 
                       difficulty={edge.difficulty} 
                       slug={edge.slug}
@@ -398,7 +400,8 @@ const SessionsCard = props => {
       // <Link to={"/sessions/" + props.slug.current} className="sessionsCard">
       <div className="sessionsCard">
         <Link to={"/sessions/" + props.slug.current}>
-          <div className="heroImage" style={imageStyle}></div>
+          {/* <div className="heroImage" style={imageStyle}></div> */}
+          <GatsbyImage className="heroImage" image={props.imageData} />
         </Link>
         <div className="cardContent">
           <Link to={"/sessions/" + props.slug.current}>
