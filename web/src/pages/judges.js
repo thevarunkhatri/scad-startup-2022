@@ -369,7 +369,7 @@ const JudgesPage = props => {
 
           </div>
 
-          <div className="judgesSectionHeader">
+          <div className="mentorsSectionHeader">
             <Mentors />
             <h2>Our Enthusiastic Mentors</h2>
           </div>
