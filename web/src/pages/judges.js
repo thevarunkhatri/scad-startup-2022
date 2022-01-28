@@ -55,6 +55,26 @@ import nickDine from '../assets/img/judges/nickDine.jpeg';
 import sarahLashinsky from '../assets/img/judges/sarahLashinsky.jpeg';
 import travisNeilson from '../assets/img/judges/travisNeilson.jpeg';
 
+import bobbyBerk from '../assets/img/judges/bobbyBerk.jpeg';
+import chrisDown from '../assets/img/judges/chrisDown.jpeg';
+import deanNelson from '../assets/img/judges/deanNelson.jpeg';
+import faraiMadzima from '../assets/img/judges/faraiMadzima.jpeg';
+import jenBonnet from '../assets/img/judges/jenBonnet.jpeg';
+import lanceShields from '../assets/img/judges/lanceShields.jpeg';
+import mikeBuzzard from '../assets/img/judges/mikeBuzzard.jpeg';
+import xerxesIrani from '../assets/img/judges/xerxesIrani.jpeg';
+
+import abiLierheimer from '../assets/img/judges/abiLierheimer.jpeg';
+import angelaMartin from '../assets/img/judges/angelaMartin.jpeg';
+import devinObryan from '../assets/img/judges/devinObryan.jpeg';
+import danielleTorres from '../assets/img/judges/danielleTorres.jpeg';
+import markManalaysay from '../assets/img/judges/markManalaysay.jpeg';
+import nicolePappas from '../assets/img/judges/nicolePappas.jpeg';
+import vedikaBhasin from '../assets/img/judges/vedikaBhasin.jpeg';
+import justinKeoninh from '../assets/img/judges/justinKeoninh.jpeg';
+
+
+
 
 import '../styles/people.scss';
 import '../styles/judges.scss';
@@ -112,6 +132,80 @@ const JudgesPage = props => {
           </div>
 
           <div class="peopleContainer">
+
+            <JudgeCard
+            img={bobbyBerk}
+            fname="Bobby"
+            lname="Berk"
+            role="Founder & CEO"
+            company="Bobby Berk"
+            linkedin="https://www.linkedin.com/in/bobbyberk/"
+            />
+
+            <JudgeCard
+            img={chrisDown}
+            fname="Chris"
+            lname="Down"
+            role="Chief Design Officer"
+            company="Mattel"
+            linkedin="https://www.linkedin.com/in/chdown/"
+            />
+
+            <JudgeCard
+            img={deanNelson}
+            fname="Dean"
+            lname="Nelson"
+            role="SCADpro Professor"
+            company="SCAD"
+            linkedin="https://www.linkedin.com/in/dean-n-96b639/"
+            />
+
+            <JudgeCard
+            img={faraiMadzima}
+            fname="Farai"
+            lname="Madzima"
+            role="UX Designer"
+            company="Shopify"
+            linkedin="https://www.linkedin.com/in/farai/"
+            />
+
+            <JudgeCard
+            img={jenBonnet}
+            fname="Jen"
+            lname="Bonnet"
+            role="Executive Director"
+            company="SEDA"
+            linkedin="https://www.linkedin.com/in/jenniferbonnett/"
+            />
+
+            <JudgeCard
+            img={lanceShields}
+            fname="Lance"
+            lname="Shields"
+            role="Director of International Design"
+            company="Adobe"
+            linkedin="https://www.linkedin.com/in/lanceshields/"
+            />
+
+            <JudgeCard
+            img={mikeBuzzard}
+            fname="Mike"
+            lname="Buzzard"
+            role="Senior Design Manager"
+            company="Google"
+            linkedin="https://www.linkedin.com/in/buzzard/"
+            />
+
+            <JudgeCard
+            img={xerxesIrani}
+            fname="Xerxes"
+            lname="Irani"
+            role="Director of Equitable Design"
+            company="Facebook"
+            linkedin="https://www.linkedin.com"
+            />
+
+
 
           <JudgeCard
             img={amyMartin}
@@ -273,114 +367,6 @@ const JudgesPage = props => {
             />
 
 
-          <JudgeCard
-            img={blankProfile}
-            fname="first"
-            lname="last"
-            role="role"
-            company="company"
-            linkedin="https://www.linkedin.com"
-            />
-
-
-          <JudgeCard
-            img={blankProfile}
-            fname="first"
-            lname="last"
-            role="role"
-            company="company"
-            linkedin="https://www.linkedin.com"
-            />
-
-            
-          <JudgeCard
-            img={blankProfile}
-            fname="first"
-            lname="last"
-            role="role"
-            company="company"
-            linkedin="https://www.linkedin.com"
-            />
-
-
-          <JudgeCard
-            img={blankProfile}
-            fname="first"
-            lname="last"
-            role="role"
-            company="company"
-            linkedin="https://www.linkedin.com"
-            />
-
-
-          <JudgeCard
-            img={blankProfile}
-            fname="first"
-            lname="last"
-            role="role"
-            company="company"
-            linkedin="https://www.linkedin.com"
-            />
-
-
-          <JudgeCard
-            img={blankProfile}
-            fname="first"
-            lname="last"
-            role="role"
-            company="company"
-            linkedin="https://www.linkedin.com"
-            />
-
-
-          <JudgeCard
-            img={blankProfile}
-            fname="first"
-            lname="last"
-            role="role"
-            company="company"
-            linkedin="https://www.linkedin.com"
-            />
-
-
-          <JudgeCard
-            img={blankProfile}
-            fname="first"
-            lname="last"
-            role="role"
-            company="company"
-            linkedin="https://www.linkedin.com"
-            />
-
-
-          <JudgeCard
-            img={blankProfile}
-            fname="first"
-            lname="last"
-            role="role"
-            company="company"
-            linkedin="https://www.linkedin.com"
-            />
-
-
-          <JudgeCard
-            img={blankProfile}
-            fname="first"
-            lname="last"
-            role="role"
-            company="company"
-            linkedin="https://www.linkedin.com"
-            />
-
-
-          <JudgeCard
-            img={blankProfile}
-            fname="first"
-            lname="last"
-            role="role"
-            company="company"
-            linkedin="https://www.linkedin.com"
-            />
           </div>
 
           <div className="judgesSectionHeader">
@@ -389,6 +375,16 @@ const JudgesPage = props => {
           </div>
 
           <div class="peopleContainer">
+
+          <JudgeCard
+            img={abiLierheimer}
+            fname="Abi"
+            lname="Lierheimer"
+            role="Founder"
+            company="Bobblehaus"
+            linkedin="https://www.linkedin.com"
+            />
+
           <JudgeCard
             img={aditiVyas}
             fname="Aditi"
@@ -414,6 +410,15 @@ const JudgesPage = props => {
             role="UX Designer"
             company="Ancestry"
             linkedin="https://www.linkedin.com/in/alanrivero/"
+            />
+
+            <JudgeCard
+            img={angelaMartin}
+            fname="Angela"
+            lname="Martin"
+            role="UX Designer"
+            company="Lenovo"
+            linkedin="https://www.linkedin.com"
             />
 
             <JudgeCard
@@ -450,6 +455,24 @@ const JudgesPage = props => {
             role="Product Designer"
             company="Mailchimp"
             linkedin="https://www.linkedin.com/in/caseymharper/"
+            />
+
+<JudgeCard
+            img={devinObryan}
+            fname="Devin"
+            lname="O'Bryan"
+            role="Design Lead"
+            company="IBM"
+            linkedin="https://www.linkedin.com/in/devinobryan/"
+            />
+
+<JudgeCard
+            img={danielleTorres}
+            fname="Danielle"
+            lname="Torres"
+            role="Interaction Designer"
+            company="Google"
+            linkedin="https://www.linkedin.com/in/dtorrvis/"
             />
 
 <JudgeCard
@@ -498,7 +521,7 @@ const JudgesPage = props => {
             />
 
 <JudgeCard
-            img={blankProfile}
+            img={justinKeoninh}
             fname="Justin"
             lname="Keoninh"
             role="Product Designer"
@@ -522,6 +545,15 @@ const JudgesPage = props => {
             role="Graphic Designer"
             company="Axiom Space"
             linkedin="https://www.linkedin.com/in/marcelavillalobos22/"
+            />
+
+<JudgeCard
+            img={markManalaysay}
+            fname="Mark"
+            lname="Manalaysay"
+            role="Interactive Design Lead"
+            company="Apple"
+            linkedin="https://www.linkedin.com/in/mmanal/"
             />
 
 <JudgeCard
@@ -578,6 +610,15 @@ const JudgesPage = props => {
             linkedin="https://www.linkedin.com/in/nick-dine-a8a94375/"
             />
 
+<JudgeCard
+            img={nicolePappas}
+            fname="Nicole"
+            lname="Peppas"
+            role="Junior 2D Animator"
+            company="Buck"
+            linkedin="https://www.linkedin.com/in/nicole-pappas-a718b5169/"
+            />
+
 
           <JudgeCard
             img={sarahLashinsky}
@@ -597,6 +638,15 @@ const JudgesPage = props => {
             company="Google"
             linkedin="https://www.linkedin.com/in/travisneilson/"
             />
+
+<JudgeCard
+            img={vedikaBhasin}
+            fname="Vedika"
+            lname="Bhasin"
+            role="AR Designer"
+            company="Bare Tree Media"
+            linkedin="https://www.linkedin.com/in/vedikabhasin/"
+            />
           </div>
 
         </Container>
@@ -608,9 +658,9 @@ const JudgesPage = props => {
 function JudgeCard (props) {
   return(
 
-      <div className="entireWrapperCards">
-        <div className="profileHalf">
-          <img className="profilePic" src={props.img} />
+      <div className="entireWrapperCardsJudge">
+        <div className="profileHalfJudge">
+          <img className="profilePicJudge" src={props.img} />
         </div>
 
         <div className = "judgesCardContent" >
@@ -627,27 +677,14 @@ function JudgeCard (props) {
   );
 }
 
-// function JudgeCard (props) {
-//   return(
-
-//       <div className="judgesCardsWrapper">
-//         <div className="profileHalfJudges">
-//           <img className="profilePic" src={props.img} />
-//         </div>
-
-//         <div className = "cardContent" >
-//           <h2 className="cardFirstName">{props.fname}</h2>
-//           <h2 className="cardLastName">{props.lname}</h2>
-//           <p className="cardRole">{props.role} @ {props.company}</p>
-//           <div class="buttonWrapper">
-//             <form action={props.linkedin} target="_blank">
-//               <button className="externalButtonFaculty">LinkedIn &nbsp; {String.fromCharCode(10230)}</button>
-//             </form>
-//           </div>
-//         </div>
-//       </div>
-//   );
-// }
+{/* <JudgeCard
+img={blankProfile}
+fname="first"
+lname="last"
+role="role"
+company="company"
+linkedin="https://www.linkedin.com"
+/> */}
 
 
 
