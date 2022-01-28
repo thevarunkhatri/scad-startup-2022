@@ -85,20 +85,21 @@
 }
 
 
-.entireWrapperCards {
+.entireWrapperCardsJudge {
   display: flex;
   flex-direction: row;
 
-  .profileHalf {
-    height: 220px;
+  .profileHalfJudge {
+    height: 200px;
     width: 150px;
     overflow: hidden;
     border-radius: 15px 0px 0px 15px;
 
-      // .profilePic {
-      //   width:100%; 
-      //   height:100%;
-      // }
+      .profilePicJudge {
+        width:100%; 
+        height:100%;
+        object-fit: cover;
+      }
   }
 
   .judgesCardContent {
