@@ -57,7 +57,7 @@ import travisNeilson from '../assets/img/judges/travisNeilson.jpeg';
 
 import bobbyBerk from '../assets/img/judges/bobbyBerk.jpeg';
 import chrisDown from '../assets/img/judges/chrisDown.jpeg';
-// import deanNelson from '../assets/img/judges/deanNelson.jpeg';
+import deanNelson from '../assets/img/judges/deanNelson.jpeg';
 import faraiMadzima from '../assets/img/judges/faraiMadzima.jpeg';
 import jenBonnet from '../assets/img/judges/jenBonnet.jpeg';
 import lanceShields from '../assets/img/judges/lanceShields.jpeg';
@@ -71,6 +71,7 @@ import danielleTorres from '../assets/img/judges/danielleTorres.jpeg';
 import markManalaysay from '../assets/img/judges/markManalaysay.jpeg';
 import nicolePappas from '../assets/img/judges/nicolePappas.jpeg';
 import vedikaBhasin from '../assets/img/judges/vedikaBhasin.jpeg';
+import justinKeoninh from '../assets/img/judges/justinKeoninh.jpeg';
 
 
 
@@ -151,11 +152,11 @@ const JudgesPage = props => {
             />
 
             <JudgeCard
-            img={blankProfile}
+            img={deanNelson}
             fname="Dean"
             lname="Nelson"
-            // role="role"
-            // company="company"
+            role="SCADpro Professor"
+            company="SCAD"
             linkedin="https://www.linkedin.com/in/dean-n-96b639/"
             />
 
@@ -520,7 +521,7 @@ const JudgesPage = props => {
             />
 
 <JudgeCard
-            img={blankProfile}
+            img={justinKeoninh}
             fname="Justin"
             lname="Keoninh"
             role="Product Designer"
