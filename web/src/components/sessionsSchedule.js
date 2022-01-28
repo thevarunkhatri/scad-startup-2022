@@ -243,7 +243,7 @@ const DaySessions = ({data, activeFilters}) => {
 
 const SubjectSessions = ({data, activeFilters}) => {
   const basics = data.filter(data => data.categories == "basics");
-  const visuals = data.filter(data => data.categories == "visuals");
+  const visuals = data.filter(data => data.categories == "visual");
   const coding = data.filter(data => data.categories == "coding");
   const physical = data.filter(data => data.categories == "physical");
   const storytelling = data.filter(data => data.categories == "storytelling");

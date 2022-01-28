@@ -1,5 +1,7 @@
 import React from 'react'
 import {graphql, Link} from 'gatsby';
+import {GatsbyImage} from 'gatsby-plugin-image'
+
 import SEO from '../components/seo'
 import Layout from '../containers/layout'
 import Container from "../components/container";
@@ -64,7 +66,7 @@ export const query = graphql`
         heroImage {
           asset {
             url
-            gatsbyImageData(fit: FILLMAX, placeholder: DOMINANT_COLOR)
+            gatsbyImageData(fit: FILLMAX, placeholder: BLURRED)
           }
         }
         excerpt
@@ -115,8 +117,9 @@ const sessionsPage = props => {
         <SEO title={data.session.name + " | Startup 2022"}/>
         <main className='sessions'>
             <Container>
-                <div className='recording' style={imageStyle}>
-
+                {/* <div className='recording' style={imageStyle}> */}
+                <div className='recording'>
+                  <GatsbyImage className="heroImage" image={data.session.heroImage.asset.gatsbyImageData} />
                 </div>
                 <div className='sessionInfo'>
                     <div className='mainInfo'>

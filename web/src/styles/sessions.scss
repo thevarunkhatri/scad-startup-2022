@@ -1,4 +1,6 @@
 .sessions {
+    padding-top: 20px;
+    
     .recording {
         height: 600px;
         width: 100%;
@@ -8,6 +10,10 @@
         align-self: center;
         border-radius: 1rem;
         border: rgba(252, 233, 134, 0.6) 2px solid;
+
+        img {
+            border-radius: calc(1rem - 2px);
+        }
     }
 
     .sessionInfo {

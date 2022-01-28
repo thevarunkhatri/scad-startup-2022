@@ -1,5 +1,10 @@
 import { MdSchool } from "react-icons/md";
 
+function capitalizeFirstLetter(string) {
+  return string.charAt(0).toUpperCase() + string.slice(1);
+}
+
+
 export default {
     name: 'sessions',
     title: 'Sessions',
@@ -217,5 +222,38 @@ export default {
         description: 'Vimeo URL to embed video',
         type: 'url'
       },
+    ],
+    preview: {
+      select: {
+        title: 'name',
+        type: 'categories',
+        media: 'heroImage',
+        id: '_id'
+      },
+      prepare(selection) {
+        const {title, type, media, id} = selection
+        return {
+          title: title,
+          subtitle: capitalizeFirstLetter(type) + " | " + id,
+          media: media
+        }
+      }
+    },
+    orderings: [
+      {
+        title: 'Types',
+        name: 'types',
+        by: [
+          {field: 'categories', direction: 'desc'}
+        ]
+      },
+      {
+        title: 'Date Ascending',
+        name: 'dateAsc',
+        by: [
+          {field: 'sessionDateTime', direction: 'asc'}
+        ]
+      }
     ]
+  
 }
