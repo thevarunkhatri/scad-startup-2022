@@ -157,7 +157,7 @@ const renderer = ({ days, hours, minutes, completed }) => {
 };
 
 const Countdown = props => {
-  const countdownDate = new Date(2022, 1, 9, 10)
+  const countdownDate = new Date(2022, 1, 4, 10)
 
   return (
       <div className="countdown">
