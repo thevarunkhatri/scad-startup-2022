@@ -239,6 +239,10 @@
             flex-grow: 5;
             gap: 12px;
 
+            .mainContent {
+                flex-grow: 5;
+            }
+
             a {
                 color: white;
                 text-decoration: none;
@@ -300,9 +304,10 @@
             }
 
             .cardButtons {
-                display: flex;
-                flex-direction: row;
+                display: grid;
+                grid-template-columns: 1fr 1fr;
                 gap: 12px;
+                text-align: center;
 
                 a {
                     border: 1px solid #01AEC4;

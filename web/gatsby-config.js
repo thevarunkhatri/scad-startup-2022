@@ -27,6 +27,12 @@ module.exports = {
           include: /\.svg$/ // See below to configure properly
         }
       }
-    }
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        path: `${__dirname}/src/assets/img`,
+      },
+    },
   ],
 };

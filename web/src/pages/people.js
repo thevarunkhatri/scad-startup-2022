@@ -1,5 +1,5 @@
 import React from "react";
-import { graphql } from "gatsby";
+import { StaticQuery, graphql } from "gatsby"
 
 import {
   mapEdgesToNodes,
@@ -10,35 +10,34 @@ import Container from "../components/container";
 import GraphQLErrorList from "../components/graphql-error-list";
 import SEO from "../components/seo";
 import Layout from "../containers/layout";
-
+import { GatsbyImage, getImage } from "gatsby-plugin-image"
 
 import PeopleBackgroundSVG from "../assets/svg/people/peopleBG.svg";
 
-import amadeusProfile2 from '../assets/img/people/amadeusHeadshot.png';
-import amadeusProfile from '../assets/img/people/amadeusHeadshot.jpg';
-
-import amandaProfile from '../assets/img/people/amandaHeadshot.png';
-import andrewProfile from '../assets/img/people/andrewHeadshot.png';
-import aparnaProfile from '../assets/img/people/aparnaHeadshot.jpeg';
-import arjunProfile from '../assets/img/people/arjunHeadshot.jpeg';
-import banksProfile from '../assets/img/people/banksHeadshot.jpg';
-import desmondProfile from '../assets/img/people/desmondHeadshot.jpg';
-import ellaProfile from '../assets/img/people/ellaHeadshot.jpg';
-import laraProfile from '../assets/img/people/laraHeadshot.jpg';
-import mattProfile from '../assets/img/people/mattHeadshot.jpeg';
-import pranshuProfile from '../assets/img/people/pranshuHeadshot.jpg';
-import quintProfile from '../assets/img/people/quintHeadshot.png';
-import savannahProfile from '../assets/img/people/savannahHeadshot.jpg';
-import sethProfile from '../assets/img/people/sethHeadshot.jpeg';
-import shivaniProfile from '../assets/img/people/shivaniHeadshot.jpg';
-import varunProfile from '../assets/img/people/varunHeadshot.jpg';
-
-import briannaProfile from '../assets/img/people/briannaHeadshot.jpeg';
-import joshProfile from '../assets/img/people/joshHeadshot.jpeg';
-import jeanneProfile from '../assets/img/people/jeanneHeadshot.jpeg';
-import bcProfile from '../assets/img/people/bcHeadshot.jpeg';
-
 import '../styles/people.scss';
+
+let amadeusProfile2  = 'people/amadeusHeadshot.png';
+let amadeusProfile   = 'people/amadeusHeadshot.jpg'
+let amandaProfile    = 'people/amandaHeadshot.png';
+let andrewProfile    = 'people/andrewHeadshot.png';
+let aparnaProfile    = 'people/aparnaHeadshot.jpeg';
+let arjunProfile     = 'people/arjunHeadshot.jpeg';
+let banksProfile     = 'people/banksHeadshot.jpg';
+let desmondProfile   = 'people/desmondHeadshot.jpg';
+let ellaProfile      = 'people/ellaHeadshot.jpg';
+let laraProfile      = 'people/laraHeadshot.jpg';
+let mattProfile      = 'people/mattHeadshot.jpeg';
+let pranshuProfile   = 'people/pranshuHeadshot.jpg';
+let quintProfile     = 'people/quintHeadshot.png';
+let savannahProfile  = 'people/savannahHeadshot.jpg';
+let sethProfile      = 'people/sethHeadshot.jpeg';
+let shivaniProfile   = 'people/shivaniHeadshot.jpg';
+let varunProfile     = 'people/varunHeadshot.jpg'
+
+let briannaProfile   = 'people/briannaHeadshot.jpeg';
+let joshProfile      = 'people/joshHeadshot.jpeg';
+let jeanneProfile    = 'people/jeanneHeadshot.jpeg';
+let bcProfile        = 'people/bcHeadshot.jpeg';
 
 
 export const query = graphql`
@@ -47,6 +46,22 @@ export const query = graphql`
       title
       description
       keywords
+    }
+    photos: allFile(filter: {relativePath: {regex: "/^people/"}}) {
+      edges {
+        node {
+          id
+          relativePath
+          childImageSharp {
+            gatsbyImageData(
+              placeholder: BLURRED
+              quality: 80
+              formats: [WEBP]
+              height: 250
+              )
+          }
+        }
+      }
     }
   }
 `;
@@ -63,11 +78,32 @@ const PeoplePage = props => {
   }
 
   const site = (data || {}).site;
-  const projectNodes = (data || {}).projects
-    ? mapEdgesToNodes(data.projects)
-        .filter(filterOutDocsWithoutSlugs)
-        .filter(filterOutDocsPublishedInTheFuture)
-    : [];
+  let photosObject = data.photos;
+  let photosArray = Object.values(photosObject)[0];
+  // console.log(photosArray)
+  let laraPhoto = photosArray.find(element => element.node.relativePath == laraProfile)
+  let amadeusPhoto = photosArray.find(element => element.node.relativePath == amadeusProfile)
+  let amandaPhoto = photosArray.find(element => element.node.relativePath == amandaProfile)
+  let andrewPhoto = photosArray.find(element => element.node.relativePath == andrewProfile)
+  let aparnaPhoto = photosArray.find(element => element.node.relativePath == aparnaProfile)
+  let arjunPhoto = photosArray.find(element => element.node.relativePath == arjunProfile)
+  let banksPhoto = photosArray.find(element => element.node.relativePath == banksProfile)
+  let desmondPhoto = photosArray.find(element => element.node.relativePath == desmondProfile)
+  let ellaPhoto = photosArray.find(element => element.node.relativePath == ellaProfile)
+  let mattPhoto = photosArray.find(element => element.node.relativePath == mattProfile)
+  let pranshuPhoto = photosArray.find(element => element.node.relativePath == pranshuProfile)
+  let quintPhoto = photosArray.find(element => element.node.relativePath == quintProfile)
+  let savannahPhoto = photosArray.find(element => element.node.relativePath == savannahProfile)
+  let sethPhoto = photosArray.find(element => element.node.relativePath == sethProfile)
+  let shivaniPhoto = photosArray.find(element => element.node.relativePath == shivaniProfile)
+  let varunPhoto = photosArray.find(element => element.node.relativePath == varunProfile)
+
+  let briannaPhoto = photosArray.find(element => element.node.relativePath == briannaProfile)
+  let joshPhoto = photosArray.find(element => element.node.relativePath == joshProfile)
+  let bcPhoto = photosArray.find(element => element.node.relativePath == bcProfile)
+  let jeannePhoto = photosArray.find(element => element.node.relativePath == jeanneProfile)
+
+  // console.log(laraPhoto)
 
   if (!site) {
     throw new Error(
@@ -91,6 +127,7 @@ const PeoplePage = props => {
           <div class="peopleContainer">
 
           <Card
+            imgData={laraPhoto}
             img={laraProfile}
             fname="Lara"
             lname="Federspiel"
@@ -101,16 +138,18 @@ const PeoplePage = props => {
             />
 
             <Card
+            imgData={amadeusPhoto}
             img={amadeusProfile}
             fname="Amadeus"
             lname="Cameron"
             role="Co-Director"
             major="User Experience"
             linkedin="https://www.linkedin.com/in/amadeuscameron/"
-            portfolio="http://evanamadeus.com/"
+            portfolio="https://evanamadeus.com/"
             />
 
             <Card
+            imgData={savannahPhoto}
             img={savannahProfile}
             fname="Savannah"
             lname="Wilkinson"
@@ -121,16 +160,18 @@ const PeoplePage = props => {
             />
 
             <Card
+            imgData={andrewPhoto}
             img={andrewProfile}
             fname="Andrew"
             lname="Goodridge"
             role="Logistics Coordinator"
             major="User Experience"
             linkedin="https://www.linkedin.com/in/ndrewgood"
-            portfolio="http://ndrewgood.com/"
+            portfolio="https://ndrewgood.com/"
             />
 
             <Card
+            imgData={quintPhoto}
             img={quintProfile}
             fname="Quint"
             lname="Bailey"
@@ -141,16 +182,18 @@ const PeoplePage = props => {
             />
 
             <Card
+            imgData={aparnaPhoto}
             img={aparnaProfile}
             fname="Aparna"
             lname="Somvanshi"
             role="Outreach Coordinator"
             major="User Experience"
-            linkedin="http://www.linkedin.com/in/haloaparna"
+            linkedin="https://www.linkedin.com/in/haloaparna"
             portfolio="https://www.aparnasomvanshi.com/"
             />
 
             <Card
+            imgData={varunPhoto}
             img={varunProfile}
             fname="Varun"
             lname="Khatri"
@@ -161,6 +204,7 @@ const PeoplePage = props => {
             />
 
             <Card
+            imgData={mattPhoto}
             img={mattProfile}
             fname="Matt"
             lname="Ahrens"
@@ -171,6 +215,7 @@ const PeoplePage = props => {
             />
 
             <Card
+            imgData={sethPhoto}
             img={sethProfile}
             fname="Seth"
             lname="Stomberger"
@@ -181,6 +226,7 @@ const PeoplePage = props => {
             />
 
             <Card
+            imgData={amandaPhoto}
             img={amandaProfile}
             fname="Amanda"
             lname="Kong"
@@ -191,6 +237,7 @@ const PeoplePage = props => {
             />            
 
             <Card
+            imgData={ellaPhoto}
             img={ellaProfile}
             fname="Ella"
             lname="Reisinger"
@@ -201,26 +248,29 @@ const PeoplePage = props => {
             />
 
             <Card
+            imgData={arjunPhoto}
             img={arjunProfile}
             fname="Arjun"
             lname="Gupta"
             role="Visual Designer"
             major="User Experience"
             linkedin="https://www.linkedin.com/in/arjun-gupta-ux/"
-            portfolio="http://arjunguptadesign.com/"
+            portfolio="https://arjunguptadesign.com/"
             />
 
             <Card
+            imgData={pranshuPhoto}
             img={pranshuProfile}
             fname="Pranshu"
             lname="Agarwal"
             role="Outreach Coordinator"
             major="User Experience"
             linkedin="https://www.linkedin.com/in/pranshu-agarwal-97a41a198/"
-            portfolio="http://pranshuagarwal.com/"
+            portfolio="https://pranshuagarwal.com/"
             />
 
             <Card
+            imgData={banksPhoto}
             img={banksProfile}
             fname="Banks"
             lname="Maynard"
@@ -231,16 +281,18 @@ const PeoplePage = props => {
             />
 
             <Card
+            imgData={shivaniPhoto}
             img={shivaniProfile}
             fname="Shivani"
             lname="Varandani"
             role="Motion Media Designer"
             major="Motion Media"
             linkedin="https://www.linkedin.com/in/shivani-varandani"
-            portfolio="http://shivanivarandani.com/"
+            portfolio="https://shivanivarandani.com/"
             />
 
             <FacultyCard
+            imgData={briannaPhoto}
             img={briannaProfile}
             fname="Brianna"
             lname="Hayes"
@@ -249,6 +301,7 @@ const PeoplePage = props => {
             />
 
             <FacultyCard
+            imgData={joshPhoto}
             img={joshProfile}
             fname="Josh"
             lname="Lind"
@@ -257,6 +310,7 @@ const PeoplePage = props => {
             />
 
             <FacultyCard
+            imgData={jeannePhoto}
             img={jeanneProfile}
             fname="Jeanne"
             lname="McPhillips"
@@ -266,7 +320,8 @@ const PeoplePage = props => {
 
             <div className="centerBC"></div>
 
-            <FacultyCard 
+            <FacultyCard
+            imgData={bcPhoto} 
             img={bcProfile}
             fname="BC"
             lname="Hwang"
@@ -283,16 +338,25 @@ const PeoplePage = props => {
 
 
 function Card (props) {
+
   const imgStyles = {
     background: 'url(' + props.img + ')',
     backgroundSize: 'cover',
     backgroundPosition: 'center'
   }
 
+  if(props.imgData) {
+    console.log(props.imgData)
+    console.log(props.imgData.node.childImageSharp)
+  }
+  
+
   return(
 
       <div className="entireWrapperCards">
-        <div className="profileHalf" style={imgStyles}>
+        <div className="profileHalf">
+        {/* <div className="profileHalf" style={imgStyles}> */}
+          {props.imgData ? <GatsbyImage className="profilePic" image={props.imgData.node.childImageSharp.gatsbyImageData}/> : null}
           {/* <img className="profilePic" src={props.img} /> */}
         </div>
 
@@ -324,9 +388,11 @@ function FacultyCard (props) {
 
   return(
 
-      <div className="entireWrapperCards">
-        <div className="profileHalf" style={imgStyles}>
+      <div className="faculty entireWrapperCards">
+        <div className="profileHalf">
+        {/* <div className="profileHalf" style={imgStyles}> */}
           {/* <img className="profilePic" src={props.img} /> */}
+          {props.imgData ? <GatsbyImage className="profilePic" image={props.imgData.node.childImageSharp.gatsbyImageData}/> : null}
         </div>
 
         <div className = "facultyCard" >

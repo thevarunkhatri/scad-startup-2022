@@ -404,7 +404,7 @@ const SessionsCard = props => {
           <GatsbyImage className="heroImage" image={props.imageData} />
         </Link>
         <div className="cardContent">
-          <Link to={"/sessions/" + props.slug.current}>
+          <Link className="mainContent" to={"/sessions/" + props.slug.current}>
             <h4>{props.name}</h4>
             <div className="timeLocation">
               <span>{day + ", " + time}</span>

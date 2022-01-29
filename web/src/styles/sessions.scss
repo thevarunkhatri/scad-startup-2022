@@ -1,6 +1,6 @@
 .sessions {
     padding-top: 20px;
-    
+
     .recording {
         height: 600px;
         width: 100%;
@@ -12,6 +12,12 @@
         border: rgba(252, 233, 134, 0.6) 2px solid;
 
         img {
+            border-radius: calc(1rem - 2px);
+        }
+
+        .video {
+            height: 600px;
+            width: 100%;
             border-radius: calc(1rem - 2px);
         }
     }
@@ -48,6 +54,36 @@
             
             h3 {
                 font-size: 20px;
+            }
+
+            .people {
+                display: grid;
+                grid-template-columns: 1fr 3fr;
+                gap: 12px;
+
+                h3 {
+                    margin: 0 0 4px;
+                }
+
+                .hostGrid {
+                    display: grid;
+                    grid-template-columns: repeat(3, 1fr);
+                    gap: 12px;
+                }
+
+                .host {
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                    gap: 12px;
+                    text-decoration: none;
+                    color: white;
+
+                    img {
+                        height: 48px;
+                        border-radius: 24px;
+                    }
+                }
             }
 
             .difficulty {

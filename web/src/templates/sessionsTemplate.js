@@ -56,10 +56,10 @@ export const query = graphql`
         id
         host {
           name
-          partner {
-            partnerName
-            partnerLink
-            partnerType
+          headshot {
+            asset {
+              gatsbyImageData(fit: FILLMAX, placeholder: BLURRED)
+            }
           }
           linkedIn
         }
@@ -84,8 +84,12 @@ export const query = graphql`
           fileTitle
         }
         clubPartner {
+          partnerIcon {
+            asset {
+              gatsbyImageData(fit: FILLMAX, placeholder: BLURRED)
+            }
+          }
           partnerName
-          partnerType
           partnerLink
         }
         categories
@@ -112,6 +116,8 @@ const sessionsPage = props => {
   var timeOption =  {hour: 'numeric', minute: 'numeric'}
   const time = new Intl.DateTimeFormat('en-US', timeOption).format(date)
 
+  console.log(data.session.clubPartner.partnerLink)
+
   return (
     <Layout>
         <SEO title={data.session.name + " | Startup 2022"}/>
@@ -119,7 +125,19 @@ const sessionsPage = props => {
             <Container>
                 {/* <div className='recording' style={imageStyle}> */}
                 <div className='recording'>
-                  <GatsbyImage className="heroImage" image={data.session.heroImage.asset.gatsbyImageData} />
+                  {
+                    !data.session.videoURL ? (
+                      <GatsbyImage className="heroImage" image={data.session.heroImage.asset.gatsbyImageData} />
+                    ):(
+                      <iframe
+                        className="video" 
+                        src='https://www.youtube.com/embed/1UDHI2veFyc' 
+                        title="Session Video Player" 
+                        frameborder="0" 
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                        allowfullscreen></iframe>
+                    )
+                  }
                 </div>
                 <div className='sessionInfo'>
                     <div className='mainInfo'>
@@ -146,6 +164,30 @@ const sessionsPage = props => {
                             </span>
                         </div>
                         <p className='description'>The Gestalt Principles of Design have been around since the 1920’s. In this session, Quint Bailey (FLUX Officer) takes us through the fundamental drivers behind these principles and how to apply them to your work for better visual fidelity.</p>
+                        <div className='people'>
+                          <div className='partner'>
+                            <h3>Partner</h3>
+                            <a href={data.session.clubPartner.partnerLink} className='host'>
+                              {data.session.clubPartner.partnerIcon ? <GatsbyImage image={data.session.clubPartner.partnerIcon.asset.gatsbyImageData}/>: null}
+                              <p>{data.session.clubPartner.partnerName}</p>
+                            </a>
+                          </div>
+                          <div className='hosts'>
+                            <h3>Hosts</h3>
+                            <div className='hostGrid'>
+                              {
+                                data.session.host.map((host) => {
+                                  return(
+                                    <a href={host.linkedIn} className='host'>
+                                      {host.headshot ? <GatsbyImage image={host.headshot.asset.gatsbyImageData}/>: null}
+                                      <p>{host.name}</p>
+                                    </a>
+                                  )
+                                })
+                              }
+                            </div>
+                          </div>
+                        </div>
                         <div className='transcription'>
                             <h3>Transcription</h3>
                             <p>An auto-generated transcription will be available for this session.</p>
