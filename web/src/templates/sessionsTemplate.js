@@ -165,13 +165,18 @@ const sessionsPage = props => {
                         </div>
                         <p className='description'>The Gestalt Principles of Design have been around since the 1920’s. In this session, Quint Bailey (FLUX Officer) takes us through the fundamental drivers behind these principles and how to apply them to your work for better visual fidelity.</p>
                         <div className='people'>
-                          <div className='partner'>
-                            <h3>Partner</h3>
-                            <a href={data.session.clubPartner.partnerLink} className='host'>
-                              {data.session.clubPartner.partnerIcon ? <GatsbyImage image={data.session.clubPartner.partnerIcon.asset.gatsbyImageData}/>: null}
-                              <p>{data.session.clubPartner.partnerName}</p>
-                            </a>
-                          </div>
+                          {
+                            data.session.clubPartner ? ( 
+                              <div className='partner'>
+                                <h3>Partner</h3>
+                                <a href={data.session.clubPartner.partnerLink} className='host'>
+                                  {data.session.clubPartner.partnerIcon ? <GatsbyImage image={data.session.clubPartner.partnerIcon.asset.gatsbyImageData}/>: null}
+                                  <p>{data.session.clubPartner.partnerName}</p>
+                                </a>
+                              </div>
+                            ): null
+                          }
+                          
                           <div className='hosts'>
                             <h3>Hosts</h3>
                             <div className='hostGrid'>
