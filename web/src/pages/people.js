@@ -154,7 +154,7 @@ const PeoplePage = props => {
             img={varunProfile}
             fname="Varun"
             lname="Khatri"
-            role="Web Developer"
+            role="Lead Web Developer"
             major="User Experience"
             linkedin="https://www.linkedin.com/in/varunmk/"
             portfolio="https://www.thevarunkhatri.com/"
