@@ -116,7 +116,7 @@ const sessionsPage = props => {
   var timeOption =  {hour: 'numeric', minute: 'numeric'}
   const time = new Intl.DateTimeFormat('en-US', timeOption).format(date)
 
-  console.log(data.session.clubPartner.partnerLink)
+  // console.log(data.session.clubPartner.partnerLink)
 
   return (
     <Layout>
