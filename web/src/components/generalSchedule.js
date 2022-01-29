@@ -32,7 +32,7 @@ const ScheduleCard = (props) => {
                         <div className="content">
                             <div>
                                 <h3>{props.title}</h3>
-                                {props.day == 0 ? <h4>Every day</h4> : <h4>Day {props.day}, February {props.day + 3}</h4>}
+                                {props.day == 0 ? <h4>Every Day</h4> : <h4>Day {props.day}, February {props.day + 3}</h4>}
                                 <p>{props.description}</p>
                             </div>
                             <div className="dateButton">
@@ -74,39 +74,39 @@ const GeneralSchedule = () => {
                 graphic={<KickoffSvg/>}/>
             <ScheduleCard
                 title="Midpoint 1" 
-                day={4}
+                day={5}
                 description="Meet with mentors, practice your pitches, and get crucial feedback to hone your solution."
                 time="4:30 PM - 8:00 PM EST"
                 midpoint={true}
                 backgroundImg={TopL}/>
             <ScheduleCard
                 title="Midpoint 2" 
-                day={5}
+                day={8}
                 description="Meet with mentors, practice your pitches, and get crucial feedback to hone your solution."
                 time="4:30 PM - 8:00 PM EST"
                 midpoint={true}
                 backgroundImg={TopR}/>
             <ScheduleCard
                 title="Semi-Final" 
-                day={6}
+                day={8}
                 description="The day has come! Pitch your project to industry-professional judges and convince them to advance you to the next round: Finals."
                 time="11:00 AM - 1:30 PM EST"
                 backgroundImg={MiddleL}/>
             <ScheduleCard
                 title="Showcase" 
-                day={6}
+                day={8}
                 description="Check out StartUp Showcase on our instagram, @scadstartup! All of the projects will be posted to reels so your classmates, friends and family can see."
                 time="All Day"
                 backgroundImg={MiddleR}/>
             <ScheduleCard
                 title="Final Presentation" 
-                day={7}
+                day={8}
                 description="This is your moment. The finalists pitch their presentation to all the judges and the winners are determined. Do you have what it takes to make it to finals?"
                 time="3:30 PM - 5:00 PM EST"
                 backgroundImg={BottomL}/>
             <ScheduleCard
                 title="Celebration" 
-                day={7}
+                day={8}
                 description="You’ve made it so far. Come join us as we announce the StartUp 2022 winners and celebrate a hard, rewarding week of design and innovation."
                 time="5:00 PM - 6:30 PM EST"
                 backgroundImg={BottomR}/>
@@ -114,7 +114,7 @@ const GeneralSchedule = () => {
                 title="Startup Sessions" 
                 day={0}
                 description="Come join us for sessions covering a wide range of topics! Whether it's your first StartUp or you want to hone a new skill, we’ve got you covered. With experts from 7 different SCAD majors and a few of our friends at Adobe, there's a session for everyone."
-                time="Available Everyday"
+                time="Available Every Day"
                 bigSize={true}
                 backgroundImg={SessionsImg}
                 graphic={<SessionsSvg/>}/>
