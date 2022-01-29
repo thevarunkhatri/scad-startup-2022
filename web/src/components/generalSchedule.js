@@ -81,7 +81,11 @@ const GeneralSchedule = () => {
                 backgroundImg={TopL}/>
             <ScheduleCard
                 title="Midpoint 2" 
+<<<<<<< HEAD
                 day={8}
+=======
+                day={6}
+>>>>>>> 2e7860a46583ef236f13b27364810836b190e168
                 description="Meet with mentors, practice your pitches, and get crucial feedback to hone your solution."
                 time="4:30 PM - 8:00 PM EST"
                 midpoint={true}
