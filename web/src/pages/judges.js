@@ -139,14 +139,14 @@ const JudgesPage = props => {
 
           <div class="peopleContainer">
 
-            <JudgeCard
+            {/* <JudgeCard
             img={bobbyBerk}
             fname="Bobby"
             lname="Berk"
             role="Founder & CEO"
             company="Bobby Berk"
             linkedin="https://www.linkedin.com/in/bobbyberk/"
-            />
+            /> */}
 
             <JudgeCard
             img={chrisDown}
