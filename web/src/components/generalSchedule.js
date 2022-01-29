@@ -74,39 +74,39 @@ const GeneralSchedule = () => {
                 graphic={<KickoffSvg/>}/>
             <ScheduleCard
                 title="Midpoint 1" 
-                day={4}
+                day={5}
                 description="Meet with mentors, practice your pitches, and get crucial feedback to hone your solution."
                 time="4:30 PM - 8:00 PM EST"
                 midpoint={true}
                 backgroundImg={TopL}/>
             <ScheduleCard
                 title="Midpoint 2" 
-                day={5}
+                day={6}
                 description="Meet with mentors, practice your pitches, and get crucial feedback to hone your solution."
                 time="4:30 PM - 8:00 PM EST"
                 midpoint={true}
                 backgroundImg={TopR}/>
             <ScheduleCard
                 title="Semi-Final" 
-                day={6}
+                day={8}
                 description="The day has come! Pitch your project to industry-professional judges and convince them to advance you to the next round: Finals."
                 time="11:00 AM - 1:30 PM EST"
                 backgroundImg={MiddleL}/>
             <ScheduleCard
                 title="Showcase" 
-                day={6}
+                day={8}
                 description="Check out StartUp Showcase on our instagram, @scadstartup! All of the projects will be posted to reels so your classmates, friends and family can see."
                 time="All Day"
                 backgroundImg={MiddleR}/>
             <ScheduleCard
                 title="Final Presentation" 
-                day={7}
+                day={8}
                 description="This is your moment. The finalists pitch their presentation to all the judges and the winners are determined. Do you have what it takes to make it to finals?"
                 time="3:30 PM - 5:00 PM EST"
                 backgroundImg={BottomL}/>
             <ScheduleCard
                 title="Celebration" 
-                day={7}
+                day={8}
                 description="You’ve made it so far. Come join us as we announce the StartUp 2022 winners and celebrate a hard, rewarding week of design and innovation."
                 time="5:00 PM - 6:30 PM EST"
                 backgroundImg={BottomR}/>
