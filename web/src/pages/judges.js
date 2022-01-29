@@ -9,81 +9,76 @@ import Container from "../components/container";
 import GraphQLErrorList from "../components/graphql-error-list";
 import SEO from "../components/seo";
 import Layout from "../containers/layout";
+import { GatsbyImage, getImage } from "gatsby-plugin-image"
 
 import Checkmark from "../assets/svg/judges/checkmark.svg"
 import Mentors from "../assets/svg/judges/mentors.svg"
 
-import blankProfile from '../assets/img/judges/blankProfile.png';
-
-import amyMartin from '../assets/img/judges/amyMartin.jpeg';
-import amyMcclure from '../assets/img/judges/amyMcclure.jpeg';
-import andrewFirstenberger from '../assets/img/judges/andrewFirstenberger.jpeg';
-import annaliseLao from '../assets/img/judges/annaliseLao.jpeg';
-import cassieMcdaniel from '../assets/img/judges/cassieMcdaniel.jpeg';
-import coreyKeller from '../assets/img/judges/coreyKeller.jpeg';
-import danGrossman from '../assets/img/judges/danGrossman.jpeg';
-import fonzMorris from '../assets/img/judges/fonzMorris.jpeg';
-import hilalKoyuncu from '../assets/img/judges/hilalKoyuncu.jpeg';
-import jayFanelli from '../assets/img/judges/jayFanelli.jpeg';
-import lukeLi from '../assets/img/judges/lukeLi.jpeg';
-import marySargent from '../assets/img/judges/marySargent.jpeg';
-import nishatAkhtar from '../assets/img/judges/nishatAkhtar.jpeg';
-import parvanehToghiani from '../assets/img/judges/parvanehToghiani.jpeg';
-import staceyBurr from '../assets/img/judges/staceyBurr.jpeg';
-import teslimA from '../assets/img/judges/teslimA.jpeg';
-
-import aditiVyas from '../assets/img/judges/aditiVyas.jpeg';
-import akshayKhandelwal from '../assets/img/judges/akshayKhandelwal.jpeg';
-import alanGorinstein from '../assets/img/judges/alanGorinstein.jpeg';
-import andresSepulveda from '../assets/img/judges/andresSepulveda.jpeg';
-import annaJones from '../assets/img/judges/annaJones.jpeg';
-import brianOllison from '../assets/img/judges/brianOllison.jpeg';
-import caseyHarper from '../assets/img/judges/caseyHarper.jpeg';
-import dipaliBajaj from '../assets/img/judges/dipaliBajaj.jpeg';
-import goldieChan from '../assets/img/judges/goldieChan.jpeg';
-import jaiTudor from '../assets/img/judges/jaiTudor.jpeg';
-import jamesSpence from '../assets/img/judges/jamesSpence.jpeg';
-import joshInch from '../assets/img/judges/joshInch.jpeg';
-import leonZhang from '../assets/img/judges/leonZhang.jpeg';
-import marcelaVillalobos from '../assets/img/judges/marcelaVillalobos.jpeg';
-import mattAshwood from '../assets/img/judges/mattAshwood.jpeg';
-import mitziOkou from '../assets/img/judges/mitziOkou.jpeg';
-import nadiaLe from '../assets/img/judges/nadiaLe.jpeg';
-import nickBraver from '../assets/img/judges/nickBraver.jpeg';
-import nickCuda from '../assets/img/judges/nickCuda.jpeg';
-import nickDine from '../assets/img/judges/nickDine.jpeg';
-import sarahLashinsky from '../assets/img/judges/sarahLashinsky.jpeg';
-import travisNeilson from '../assets/img/judges/travisNeilson.jpeg';
-
-import bobbyBerk from '../assets/img/judges/bobbyBerk.jpeg';
-import chrisDown from '../assets/img/judges/chrisDown.jpeg';
-import deanNelson from '../assets/img/judges/deanNelson.jpeg';
-import faraiMadzima from '../assets/img/judges/faraiMadzima.jpeg';
-import jenBonnet from '../assets/img/judges/jenBonnet.jpeg';
-import lanceShields from '../assets/img/judges/lanceShields.jpeg';
-import mikeBuzzard from '../assets/img/judges/mikeBuzzard.jpeg';
-import xerxesIrani from '../assets/img/judges/xerxesIrani.jpeg';
-
-import abiLierheimer from '../assets/img/judges/abiLierheimer.jpeg';
-import angelaMartin from '../assets/img/judges/angelaMartin.jpeg';
-import devinObryan from '../assets/img/judges/devinObryan.jpeg';
-import danielleTorres from '../assets/img/judges/danielleTorres.jpeg';
-import markManalaysay from '../assets/img/judges/markManalaysay.jpeg';
-import nicolePappas from '../assets/img/judges/nicolePappas.jpeg';
-import vedikaBhasin from '../assets/img/judges/vedikaBhasin.jpeg';
-import justinKeoninh from '../assets/img/judges/justinKeoninh.jpeg';
-
-import druraParrish from '../assets/img/judges/druraParrish.jpeg';
-import ericaCardenas from '../assets/img/judges/ericaCardenas.jpeg';
-import gonzoGelso from '../assets/img/judges/gonzoGelso.jpeg';
-import staceyRoach from '../assets/img/judges/staceyRoach.jpeg';
-import alexWhitman from '../assets/img/judges/alexWhitman.jpeg';
-
-
-
-
 import '../styles/people.scss';
 import '../styles/judges.scss';
+
+import blankProfile from '../assets/img/judges/blankProfile.png';
+
+let amyMartin           =  'judges/amyMartin.jpeg';
+let amyMcclure          =  'judges/amyMcclure.jpeg';
+let andrewFirstenberger =  'judges/andrewFirstenberger.jpeg';
+let annaliseLao         =  'judges/annaliseLao.jpeg';
+let cassieMcdaniel      =  'judges/cassieMcdaniel.jpeg';
+let coreyKeller         =  'judges/coreyKeller.jpeg';
+let danGrossman         =  'judges/danGrossman.jpeg';
+let fonzMorris          =  'judges/fonzMorris.jpeg';
+let hilalKoyuncu        =  'judges/hilalKoyuncu.jpeg';
+let jayFanelli          =  'judges/jayFanelli.jpeg';
+let lukeLi              =  'judges/lukeLi.jpeg';
+let marySargent         =  'judges/marySargent.jpeg';
+let nishatAkhtar        =  'judges/nishatAkhtar.jpeg';
+let parvanehToghiani    =  'judges/parvanehToghiani.jpeg';
+let staceyBurr          =  'judges/staceyBurr.jpeg';
+let teslimA             =  'judges/teslimA.jpeg';
+let aditiVyas           =  'judges/aditiVyas.jpeg';
+let akshayKhandelwal    =  'judges/akshayKhandelwal.jpeg';
+let alanGorinstein      =  'judges/alanGorinstein.jpeg';
+let andresSepulveda     =  'judges/andresSepulveda.jpeg';
+let annaJones           =  'judges/annaJones.jpeg';
+let brianOllison        =  'judges/brianOllison.jpeg';
+let caseyHarper         =  'judges/caseyHarper.jpeg';
+let dipaliBajaj         =  'judges/dipaliBajaj.jpeg';
+let goldieChan          =  'judges/goldieChan.jpeg';
+let jaiTudor            =  'judges/jaiTudor.jpeg';
+let jamesSpence         =  'judges/jamesSpence.jpeg';
+let joshInch            =  'judges/joshInch.jpeg';
+let leonZhang           =  'judges/leonZhang.jpeg';
+let marcelaVillalobos   =  'judges/marcelaVillalobos.jpeg';
+let mattAshwood         =  'judges/mattAshwood.jpeg';
+let mitziOkou           =  'judges/mitziOkou.jpeg';
+let nadiaLe             =  'judges/nadiaLe.jpeg';
+let nickBraver          =  'judges/nickBraver.jpeg';
+let nickCuda            =  'judges/nickCuda.jpeg';
+let nickDine            =  'judges/nickDine.jpeg';
+let sarahLashinsky      =  'judges/sarahLashinsky.jpeg';
+let travisNeilson       =  'judges/travisNeilson.jpeg';
+let bobbyBerk           =  'judges/bobbyBerk.jpeg';
+let chrisDown           =  'judges/chrisDown.jpeg';
+let deanNelson          =  'judges/deanNelson.jpeg';
+let faraiMadzima        =  'judges/faraiMadzima.jpeg';
+let jenBonnet           =  'judges/jenBonnet.jpeg';
+let lanceShields        =  'judges/lanceShields.jpeg';
+let mikeBuzzard         =  'judges/mikeBuzzard.jpeg';
+let xerxesIrani         =  'judges/xerxesIrani.jpeg';
+let abiLierheimer       =  'judges/abiLierheimer.jpeg';
+let angelaMartin        =  'judges/angelaMartin.jpeg';
+let devinObryan         =  'judges/devinObryan.jpeg';
+let danielleTorres      =  'judges/danielleTorres.jpeg';
+let markManalaysay      =  'judges/markManalaysay.jpeg';
+let nicolePappas        =  'judges/nicolePappas.jpeg';
+let vedikaBhasin        =  'judges/vedikaBhasin.jpeg';
+let justinKeoninh       =  'judges/justinKeoninh.jpeg';
+let druraParrish        =  'judges/druraParrish.jpeg';
+let ericaCardenas       =  'judges/ericaCardenas.jpeg';
+let gonzoGelso          =  'judges/gonzoGelso.jpeg';
+let staceyRoach         =  'judges/staceyRoach.jpeg';
+let alexWhitman         =  'judges/alexWhitman.jpeg';
+
 
 
 export const query = graphql`
@@ -92,6 +87,22 @@ export const query = graphql`
       title
       description
       keywords
+    }
+    photos: allFile(filter: {relativePath: {regex: "/^judges/"}}) {
+      edges {
+        node {
+          id
+          relativePath
+          childImageSharp {
+            gatsbyImageData(
+              placeholder: BLURRED
+              quality: 80
+              formats: [WEBP]
+              height: 250
+              )
+          }
+        }
+      }
     }
   }
 `;
@@ -108,11 +119,68 @@ const JudgesPage = props => {
   }
 
   const site = (data || {}).site;
-  const projectNodes = (data || {}).projects
-    ? mapEdgesToNodes(data.projects)
-        .filter(filterOutDocsWithoutSlugs)
-        .filter(filterOutDocsPublishedInTheFuture)
-    : [];
+  let photosObject = data.photos;
+  let photosArray = Object.values(photosObject)[0];
+
+  let amyMartinPhoto = photosArray.find(element => element.node.relativePath == amyMartin)
+  let amyMcclurePhoto = photosArray.find(element => element.node.relativePath == amyMcclure)
+  let andrewFirstenbergerPhoto = photosArray.find(element => element.node.relativePath == andrewFirstenberger)
+  let annaliseLaoPhoto = photosArray.find(element => element.node.relativePath == annaliseLao)
+  let cassieMcdanielPhoto = photosArray.find(element => element.node.relativePath == cassieMcdaniel)
+  let coreyKellerPhoto = photosArray.find(element => element.node.relativePath == coreyKeller)
+  let danGrossmanPhoto = photosArray.find(element => element.node.relativePath == danGrossman)
+  let fonzMorrisPhoto = photosArray.find(element => element.node.relativePath == fonzMorris)
+  let hilalKoyuncuPhoto = photosArray.find(element => element.node.relativePath == hilalKoyuncu)
+  let jayFanelliPhoto = photosArray.find(element => element.node.relativePath == jayFanelli)
+  let lukeLiPhoto = photosArray.find(element => element.node.relativePath == lukeLi)
+  let marySargentPhoto = photosArray.find(element => element.node.relativePath == marySargent)
+  let nishatAkhtarPhoto = photosArray.find(element => element.node.relativePath == nishatAkhtar)
+  let parvanehToghianiPhoto = photosArray.find(element => element.node.relativePath == parvanehToghiani)
+  let staceyBurrPhoto = photosArray.find(element => element.node.relativePath == staceyBurr)
+  let teslimAPhoto = photosArray.find(element => element.node.relativePath == teslimA)
+  let aditiVyasPhoto = photosArray.find(element => element.node.relativePath == aditiVyas)
+  let akshayKhandelwalPhoto = photosArray.find(element => element.node.relativePath == akshayKhandelwal)
+  let alanGorinsteinPhoto = photosArray.find(element => element.node.relativePath == alanGorinstein)
+  let andresSepulvedaPhoto = photosArray.find(element => element.node.relativePath == andresSepulveda)
+  let annaJonesPhoto = photosArray.find(element => element.node.relativePath == annaJones)
+  let brianOllisonPhoto = photosArray.find(element => element.node.relativePath == brianOllison)
+  let caseyHarperPhoto = photosArray.find(element => element.node.relativePath == caseyHarper)
+  let dipaliBajajPhoto = photosArray.find(element => element.node.relativePath == dipaliBajaj)
+  let goldieChanPhoto = photosArray.find(element => element.node.relativePath == goldieChan)
+  let jaiTudorPhoto = photosArray.find(element => element.node.relativePath == jaiTudor)
+  let jamesSpencePhoto = photosArray.find(element => element.node.relativePath == jamesSpence)
+  let joshInchPhoto = photosArray.find(element => element.node.relativePath == joshInch)
+  let leonZhangPhoto = photosArray.find(element => element.node.relativePath == leonZhang)
+  let marcelaVillalobosPhoto = photosArray.find(element => element.node.relativePath == marcelaVillalobos)
+  let mattAshwoodPhoto = photosArray.find(element => element.node.relativePath == mattAshwood)
+  let mitziOkouPhoto = photosArray.find(element => element.node.relativePath == mitziOkou)
+  let nadiaLePhoto = photosArray.find(element => element.node.relativePath == nadiaLe)
+  let nickBraverPhoto = photosArray.find(element => element.node.relativePath == nickBraver)
+  let nickCudaPhoto = photosArray.find(element => element.node.relativePath == nickCuda)
+  let nickDinePhoto = photosArray.find(element => element.node.relativePath == nickDine)
+  let sarahLashinskyPhoto = photosArray.find(element => element.node.relativePath == sarahLashinsky)
+  let travisNeilsonPhoto = photosArray.find(element => element.node.relativePath == travisNeilson)
+  let bobbyBerkPhoto = photosArray.find(element => element.node.relativePath == bobbyBerk)
+  let chrisDownPhoto = photosArray.find(element => element.node.relativePath == chrisDown)
+  let deanNelsonPhoto = photosArray.find(element => element.node.relativePath == deanNelson)
+  let faraiMadzimaPhoto = photosArray.find(element => element.node.relativePath == faraiMadzima)
+  let jenBonnetPhoto = photosArray.find(element => element.node.relativePath == jenBonnet)
+  let lanceShieldsPhoto = photosArray.find(element => element.node.relativePath == lanceShields)
+  let mikeBuzzardPhoto = photosArray.find(element => element.node.relativePath == mikeBuzzard)
+  let xerxesIraniPhoto = photosArray.find(element => element.node.relativePath == xerxesIrani)
+  let abiLierheimerPhoto = photosArray.find(element => element.node.relativePath == abiLierheimer)
+  let angelaMartinPhoto = photosArray.find(element => element.node.relativePath == angelaMartin)
+  let devinObryanPhoto = photosArray.find(element => element.node.relativePath == devinObryan)
+  let danielleTorresPhoto = photosArray.find(element => element.node.relativePath == danielleTorres)
+  let markManalaysayPhoto = photosArray.find(element => element.node.relativePath == markManalaysay)
+  let nicolePappasPhoto = photosArray.find(element => element.node.relativePath == nicolePappas)
+  let vedikaBhasinPhoto = photosArray.find(element => element.node.relativePath == vedikaBhasin)
+  let justinKeoninhPhoto = photosArray.find(element => element.node.relativePath == justinKeoninh)
+  let druraParrishPhoto = photosArray.find(element => element.node.relativePath == druraParrish)
+  let ericaCardenasPhoto = photosArray.find(element => element.node.relativePath == ericaCardenas)
+  let gonzoGelsoPhoto = photosArray.find(element => element.node.relativePath == gonzoGelso)
+  let staceyRoachPhoto = photosArray.find(element => element.node.relativePath == staceyRoach)
+  let alexWhitmanPhoto = photosArray.find(element => element.node.relativePath == alexWhitman)
 
   if (!site) {
     throw new Error(
@@ -149,6 +217,7 @@ const JudgesPage = props => {
             /> */}
 
             <JudgeCard
+            imgData={chrisDownPhoto}
             img={chrisDown}
             fname="Chris"
             lname="Down"
@@ -158,6 +227,7 @@ const JudgesPage = props => {
             />
 
             <JudgeCard
+            imgData={deanNelsonPhoto}
             img={deanNelson}
             fname="Dean"
             lname="Nelson"
@@ -167,6 +237,7 @@ const JudgesPage = props => {
             />
 
             <JudgeCard
+            imgData={faraiMadzimaPhoto}
             img={faraiMadzima}
             fname="Farai"
             lname="Madzima"
@@ -176,6 +247,7 @@ const JudgesPage = props => {
             />
 
             <JudgeCard
+            imgData={jenBonnetPhoto}
             img={jenBonnet}
             fname="Jen"
             lname="Bonnet"
@@ -185,6 +257,7 @@ const JudgesPage = props => {
             />
 
             <JudgeCard
+            imgData={lanceShieldsPhoto}
             img={lanceShields}
             fname="Lance"
             lname="Shields"
@@ -194,6 +267,7 @@ const JudgesPage = props => {
             />
 
             <JudgeCard
+            imgData={mikeBuzzardPhoto}
             img={mikeBuzzard}
             fname="Mike"
             lname="Buzzard"
@@ -203,6 +277,7 @@ const JudgesPage = props => {
             />
 
             <JudgeCard
+            imgData={xerxesIraniPhoto}
             img={xerxesIrani}
             fname="Xerxes"
             lname="Irani"
@@ -214,6 +289,7 @@ const JudgesPage = props => {
 
 
           <JudgeCard
+          imgData={amyMartinPhoto}
             img={amyMartin}
             fname="Amy"
             lname="Martin"
@@ -224,6 +300,7 @@ const JudgesPage = props => {
 
 
           <JudgeCard
+          imgData={amyMcclurePhoto}
             img={amyMcclure}
             fname="Amy"
             lname="McClure"
@@ -234,6 +311,7 @@ const JudgesPage = props => {
 
 
           <JudgeCard
+          imgData={andrewFirstenbergerPhoto}
             img={andrewFirstenberger}
             fname="Andrew"
             lname="Firstenberger"
@@ -244,6 +322,7 @@ const JudgesPage = props => {
 
 
           <JudgeCard
+          imgData={annaliseLaoPhoto}
             img={annaliseLao}
             fname="Annalise"
             lname="Lao"
@@ -254,6 +333,7 @@ const JudgesPage = props => {
 
 
           <JudgeCard
+          imgData={cassieMcdanielPhoto}
             img={cassieMcdaniel}
             fname="Cassie"
             lname="McDaniel"
@@ -264,16 +344,18 @@ const JudgesPage = props => {
 
 
           <JudgeCard
+          imgData={coreyKellerPhoto}
             img={coreyKeller}
             fname="Corey"
             lname="Keller"
-            role="Senior UX Lead"
+            role="Senior UX Lead & Visual Designer"
             company="IBM"
             linkedin="https://www.linkedin.com/in/corey-keller-ba638928/"
             />
 
             
           <JudgeCard
+          imgData={danGrossmanPhoto}
             img={danGrossman}
             fname="Dan"
             lname="Grossman"
@@ -284,6 +366,7 @@ const JudgesPage = props => {
 
 
           <JudgeCard
+          imgData={fonzMorrisPhoto}
             img={fonzMorris}
             fname="Fonz"
             lname="Morris"
@@ -294,6 +377,7 @@ const JudgesPage = props => {
 
 
           <JudgeCard
+          imgData={hilalKoyuncuPhoto}
             img={hilalKoyuncu}
             fname="Hilal"
             lname="Koyuncu"
@@ -304,6 +388,7 @@ const JudgesPage = props => {
 
 
           <JudgeCard
+          imgData={jayFanelliPhoto}
             img={jayFanelli}
             fname="Jay"
             lname="Fanelli"
@@ -314,6 +399,7 @@ const JudgesPage = props => {
 
 
           <JudgeCard
+          imgData={lukeLiPhoto}
             img={lukeLi}
             fname="Luke"
             lname="Li"
@@ -324,6 +410,7 @@ const JudgesPage = props => {
 
 
           <JudgeCard
+          imgData={marySargentPhoto}
             img={marySargent}
             fname="Mary"
             lname="Sargent"
@@ -334,6 +421,7 @@ const JudgesPage = props => {
 
 
           <JudgeCard
+          imgData={nishatAkhtarPhoto}
             img={nishatAkhtar}
             fname="Nishat"
             lname="Akhtar"
@@ -344,6 +432,7 @@ const JudgesPage = props => {
 
 
           <JudgeCard
+          imgData={parvanehToghianiPhoto}
             img={parvanehToghiani}
             fname="Parvaneh"
             lname="Toghiani"
@@ -354,6 +443,7 @@ const JudgesPage = props => {
 
 
           <JudgeCard
+          imgData={staceyBurrPhoto}
             img={staceyBurr}
             fname="Stacey"
             lname="Burr"
@@ -364,6 +454,7 @@ const JudgesPage = props => {
 
 
           <JudgeCard
+          imgData={teslimAPhoto}
             img={teslimA}
             fname="Teslim"
             lname="A"
@@ -383,6 +474,7 @@ const JudgesPage = props => {
           <div class="peopleContainer">
 
           <JudgeCard
+          imgData={abiLierheimerPhoto}
             img={abiLierheimer}
             fname="Abi"
             lname="Lierheimer"
@@ -392,6 +484,7 @@ const JudgesPage = props => {
             />
 
           <JudgeCard
+          imgData={aditiVyasPhoto}
             img={aditiVyas}
             fname="Aditi"
             lname="Vyas"
@@ -401,6 +494,7 @@ const JudgesPage = props => {
             />
 
             <JudgeCard
+            imgData={akshayKhandelwalPhoto}
             img={akshayKhandelwal}
             fname="Akshay"
             lname="Khandelwal"
@@ -410,6 +504,7 @@ const JudgesPage = props => {
             />
 
             <JudgeCard
+            imgData={alanGorinsteinPhoto}
             img={alanGorinstein}
             fname="Alan"
             lname="Gorinstein"
@@ -419,6 +514,7 @@ const JudgesPage = props => {
             />
 
             <JudgeCard
+            imgData={alexWhitmanPhoto}
             img={alexWhitman}
             fname="Alex"
             lname="Whitman"
@@ -428,6 +524,7 @@ const JudgesPage = props => {
             /> 
 
             <JudgeCard
+            imgData={angelaMartinPhoto}
             img={angelaMartin}
             fname="Angela"
             lname="Martin"
@@ -437,6 +534,7 @@ const JudgesPage = props => {
             />
 
             <JudgeCard
+            imgData={andresSepulvedaPhoto}
             img={andresSepulveda}
             fname="Andrés"
             lname="Sepúlveda"
@@ -446,6 +544,7 @@ const JudgesPage = props => {
             />
 
             <JudgeCard
+            imgData={annaJonesPhoto}
             img={annaJones}
             fname="Anna"
             lname="Jones"
@@ -455,6 +554,7 @@ const JudgesPage = props => {
             />
 
 <JudgeCard
+imgData={brianOllisonPhoto}
             img={brianOllison}
             fname="Brian"
             lname="Ollison"
@@ -464,6 +564,7 @@ const JudgesPage = props => {
             />
 
 <JudgeCard
+imgData={caseyHarperPhoto}
             img={caseyHarper}
             fname="Casey"
             lname="Harper"
@@ -473,6 +574,7 @@ const JudgesPage = props => {
             />
 
 <JudgeCard
+imgData={devinObryanPhoto}
             img={devinObryan}
             fname="Devin"
             lname="O'Bryan"
@@ -482,6 +584,7 @@ const JudgesPage = props => {
             />
 
 <JudgeCard
+imgData={danielleTorresPhoto}
             img={danielleTorres}
             fname="Danielle"
             lname="Torres"
@@ -491,6 +594,7 @@ const JudgesPage = props => {
             />
 
 <JudgeCard
+imgData={dipaliBajajPhoto}
             img={dipaliBajaj}
             fname="Dipali"
             lname="Bajaj"
@@ -500,6 +604,7 @@ const JudgesPage = props => {
             />
 
             <JudgeCard
+            imgData={druraParrishPhoto}
             img={druraParrish}
             fname="Drura"
             lname="Parrish"
@@ -509,6 +614,7 @@ const JudgesPage = props => {
             /> 
 
             <JudgeCard
+            imgData={ericaCardenasPhoto}
             img={ericaCardenas}
             fname="Erica"
             lname="Cardenas"
@@ -518,6 +624,7 @@ const JudgesPage = props => {
             /> 
 
 <JudgeCard
+imgData={goldieChanPhoto}
             img={goldieChan}
             fname="Goldie"
             lname="Chan"
@@ -527,6 +634,7 @@ const JudgesPage = props => {
             />
 
             <JudgeCard
+            imgData={gonzoGelsoPhoto}
             img={gonzoGelso}
             fname="Gonzo"
             lname="Gelso"
@@ -536,6 +644,7 @@ const JudgesPage = props => {
             /> 
 
 <JudgeCard
+imgData={jaiTudorPhoto}
             img={jaiTudor}
             fname="Jai"
             lname="Tudor"
@@ -545,6 +654,7 @@ const JudgesPage = props => {
             />
 
 <JudgeCard
+imgData={jamesSpencePhoto}
             img={jamesSpence}
             fname="James"
             lname="Spence"
@@ -554,6 +664,7 @@ const JudgesPage = props => {
             />
 
 <JudgeCard
+imgData={joshInchPhoto}
             img={joshInch}
             fname="Josh"
             lname="Inch"
@@ -563,6 +674,7 @@ const JudgesPage = props => {
             />
 
 <JudgeCard
+imgData={justinKeoninhPhoto}
             img={justinKeoninh}
             fname="Justin"
             lname="Keoninh"
@@ -572,6 +684,7 @@ const JudgesPage = props => {
             />
 
 <JudgeCard
+imgData={leonZhangPhoto}
             img={leonZhang}
             fname="Leon"
             lname="Zhang"
@@ -581,6 +694,7 @@ const JudgesPage = props => {
             />
 
 <JudgeCard
+imgData={marcelaVillalobosPhoto}
             img={marcelaVillalobos}
             fname="Marcela"
             lname="Villalobos"
@@ -590,6 +704,7 @@ const JudgesPage = props => {
             />
 
 <JudgeCard
+imgData={markManalaysayPhoto}
             img={markManalaysay}
             fname="Mark"
             lname="Manalaysay"
@@ -599,6 +714,7 @@ const JudgesPage = props => {
             />
 
 <JudgeCard
+imgData={mattAshwoodPhoto}
             img={mattAshwood}
             fname="Matt"
             lname="Ashwood"
@@ -608,6 +724,7 @@ const JudgesPage = props => {
             />
 
 <JudgeCard
+imgData={mitziOkouPhoto}
             img={mitziOkou}
             fname="Mitzi"
             lname="Okou"
@@ -617,6 +734,7 @@ const JudgesPage = props => {
             />
 
             <JudgeCard
+            imgData={nadiaLePhoto}
             img={nadiaLe}
             fname="Nadia"
             lname="Le"
@@ -626,6 +744,7 @@ const JudgesPage = props => {
             />
 
             <JudgeCard
+            imgData={nickBraverPhoto}
             img={nickBraver}
             fname="Nick"
             lname="Braver"
@@ -635,6 +754,7 @@ const JudgesPage = props => {
             />
 
             <JudgeCard
+            imgData={nickCudaPhoto}
             img={nickCuda}
             fname="Nick"
             lname="Cuda"
@@ -644,6 +764,7 @@ const JudgesPage = props => {
             />
 
           <JudgeCard
+          imgData={nickDinePhoto}
             img={nickDine}
             fname="Nick"
             lname="Dine"
@@ -653,6 +774,7 @@ const JudgesPage = props => {
             />
 
 <JudgeCard
+imgData={nicolePappasPhoto}
             img={nicolePappas}
             fname="Nicole"
             lname="Peppas"
@@ -663,6 +785,7 @@ const JudgesPage = props => {
 
 
           <JudgeCard
+          imgData={sarahLashinskyPhoto}
             img={sarahLashinsky}
             fname="Sarah"
             lname="Lashinsky"
@@ -672,6 +795,7 @@ const JudgesPage = props => {
             />
 
             <JudgeCard
+            imgData={staceyRoachPhoto}
             img={staceyRoach}
             fname="Stacey"
             lname="Roach"
@@ -682,6 +806,7 @@ const JudgesPage = props => {
 
 
           <JudgeCard
+          imgData={travisNeilsonPhoto}
             img={travisNeilson}
             fname="Travis"
             lname="Neilson"
@@ -691,6 +816,7 @@ const JudgesPage = props => {
             />
 
 <JudgeCard
+imgData={vedikaBhasinPhoto}
             img={vedikaBhasin}
             fname="Vedika"
             lname="Bhasin"
@@ -707,11 +833,19 @@ const JudgesPage = props => {
 };
 
 function JudgeCard (props) {
+
+  const imgStyles = {
+    background: 'url(' + props.img + ')',
+    backgroundSize: 'cover',
+    backgroundPosition: 'center'
+  }
+
   return(
 
       <div className="entireWrapperCardsJudge">
         <div className="profileHalfJudge">
-          <img className="profilePicJudge" src={props.img} />
+          {props.imgData ? <GatsbyImage className="profilePicJudge" image={props.imgData.node.childImageSharp.gatsbyImageData}/> : null}
+          {/* <img className="profilePicJudge" src={props.img} /> */}
         </div>
 
         <div className = "judgesCardContent" >
