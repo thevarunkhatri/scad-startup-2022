@@ -32,7 +32,7 @@ const ScheduleCard = (props) => {
                         <div className="content">
                             <div>
                                 <h3>{props.title}</h3>
-                                {props.day == 0 ? <h4>Every day</h4> : <h4>Day {props.day}, February {props.day + 3}</h4>}
+                                {props.day == 0 ? <h4>Every Day</h4> : <h4>Day {props.day}, February {props.day + 3}</h4>}
                                 <p>{props.description}</p>
                             </div>
                             <div className="dateButton">
@@ -114,7 +114,7 @@ const GeneralSchedule = () => {
                 title="Startup Sessions" 
                 day={0}
                 description="Come join us for sessions covering a wide range of topics! Whether it's your first StartUp or you want to hone a new skill, we’ve got you covered. With experts from 7 different SCAD majors and a few of our friends at Adobe, there's a session for everyone."
-                time="Available Everyday"
+                time="Available Every Day"
                 bigSize={true}
                 backgroundImg={SessionsImg}
                 graphic={<SessionsSvg/>}/>
