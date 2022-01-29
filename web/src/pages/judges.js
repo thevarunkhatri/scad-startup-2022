@@ -73,6 +73,12 @@ import nicolePappas from '../assets/img/judges/nicolePappas.jpeg';
 import vedikaBhasin from '../assets/img/judges/vedikaBhasin.jpeg';
 import justinKeoninh from '../assets/img/judges/justinKeoninh.jpeg';
 
+import druraParrish from '../assets/img/judges/druraParrish.jpeg';
+import ericaCardenas from '../assets/img/judges/ericaCardenas.jpeg';
+import gonzoGelso from '../assets/img/judges/gonzoGelso.jpeg';
+import staceyRoach from '../assets/img/judges/staceyRoach.jpeg';
+import alexWhitman from '../assets/img/judges/alexWhitman.jpeg';
+
 
 
 
@@ -413,6 +419,15 @@ const JudgesPage = props => {
             />
 
             <JudgeCard
+            img={alexWhitman}
+            fname="Alex"
+            lname="Whitman"
+            role="Project Manager"
+            company="Snap-On"
+            linkedin="https://www.linkedin.com/in/alex-whitman-9b41a1185/"
+            /> 
+
+            <JudgeCard
             img={angelaMartin}
             fname="Angela"
             lname="Martin"
@@ -484,6 +499,24 @@ const JudgesPage = props => {
             linkedin="https://www.linkedin.com/in/dipali-bajaj-861a7b105/"
             />
 
+            <JudgeCard
+            img={druraParrish}
+            fname="Drura"
+            lname="Parrish"
+            role="Partner"
+            company="RSLP"
+            linkedin="https://www.linkedin.com/in/drura-parrish-b7b5bb52/"
+            /> 
+
+            <JudgeCard
+            img={ericaCardenas}
+            fname="Erica"
+            lname="Cardenas"
+            role="Senior Graphic Designer"
+            company="Iknow LLC"
+            linkedin="https://www.linkedin.com/in/ericamcardenas/"
+            /> 
+
 <JudgeCard
             img={goldieChan}
             fname="Goldie"
@@ -492,6 +525,15 @@ const JudgesPage = props => {
             company="Warm Robots"
             linkedin="https://www.linkedin.com/in/goldie/"
             />
+
+            <JudgeCard
+            img={gonzoGelso}
+            fname="Gonzo"
+            lname="Gelso"
+            role="Product & UX Designer"
+            company="NYC"
+            linkedin="https://www.linkedin.com/in/gonzalogelso/"
+            /> 
 
 <JudgeCard
             img={jaiTudor}
@@ -629,6 +671,15 @@ const JudgesPage = props => {
             linkedin="https://www.linkedin.com/in/sarah-lashinsky/"
             />
 
+            <JudgeCard
+            img={staceyRoach}
+            fname="Stacey"
+            lname="Roach"
+            role="Chief Operating Officer"
+            company="Inventure IT"
+            linkedin="https://www.linkedin.com/in/staceyroach"
+            /> 
+
 
           <JudgeCard
             img={travisNeilson}
@@ -684,7 +735,7 @@ lname="last"
 role="role"
 company="company"
 linkedin="https://www.linkedin.com"
-/> */}
+/>  */}
 
 
 
