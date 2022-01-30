@@ -177,8 +177,8 @@ const TeamPage = props => {
             lname="Bailey"
             role="Sessions Coordinator"
             major="User Experience"
-            linkedin=""
-            portfolio=""
+            linkedin="https://www.linkedin.com/in/quintbailey/"
+            portfolio="https://www.quint.design/"
             />
 
             <Card
@@ -221,8 +221,8 @@ const TeamPage = props => {
             lname="Stomberger"
             role="Visual Designer"
             major="User Experience"
-            linkedin=""
-            portfolio=""
+            linkedin="http://www.linkedin.com/in/seth-stomberger-56a6601a9"
+            portfolio="https://sethstomberger.com/"
             />
 
             <Card
@@ -232,8 +232,8 @@ const TeamPage = props => {
             lname="Kong"
             role="Visual Designer"
             major="User Experience"
-            linkedin=""
-            portfolio=""
+            linkedin="https://www.linkedin.com/in/amandakkong/"
+            portfolio="https://amandakongakk.wixsite.com/amandakong"
             />            
 
             <Card
