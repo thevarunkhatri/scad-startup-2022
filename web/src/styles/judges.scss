@@ -2,215 +2,184 @@
 //   outline: 1px solid red;
 // }
 
-.peopleHeader {
-  text-align: center;
-  margin-top: 32px;
-  padding-bottom: 64px;
+#judgesPageBG {
+  .peopleHeader {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 32px;
+    padding-bottom: 64px;
+  
+    h1 {
+      font-size: 56px;
+      font-weight: 600;
+      margin: 0px;
+      color: var(--light-yellow);
 
-  h1 {
-    font-size: 56px;
-    font-weight: 600;
-    margin: 0px;
-    color: var(--light-yellow);
-  }
-
-  h3 {
-    font-size: 24px;
-    font-weight: 400;
-    color: #959595;
-    margin: 0px;
-  }
-}
-
-.peopleContainer {
-  display: grid;
-
-  gap: 26px;
-  grid-template-columns: repeat(3, 1fr);
-}
-
-@media only screen and (max-width: 1150px) {
-  .peopleContainer {
-    grid-template-columns: repeat(2, 1fr);
-    align-items: stretch;
-    // align-items: space-between;
-    // justify-content: space-between;
-  }
-}
-
-@media only screen and (max-width: 800px) {
-  .peopleContainer {
-    grid-template-columns: repeat(1, 1fr);
-    align-self: center;
-    justify-self: center;
-  }
-}
-
-
-.judgeHeader {
-  text-align: center;
-  margin-top: 32px;
-  padding-bottom: 64px;
-
-  h1 {
-    font-size: 56px;
-    font-weight: 600;
-    margin: 0px;
-    color: var(--light-yellow);
-  }
-
-  h3 {
-    font-size: 24px;
-    font-weight: 400;
-    color: #959595;
-    margin: 0px;
-  }
-}
-
-.judgesSectionHeader {
-  display: flex;
-  align-items: center;
-  margin: 16px;
-  padding-right: 32px;
-
-  img {
-    width: 10px;
-  }
-
-  h2 {
-    padding-left: 32px;
-    color: white;
-    font-size: 40px;
-    font-weight: 500;  
-  }
-
-}
-
-.mentorsSectionHeader {
-  padding-top: 32px;
-  display: flex;
-  align-items: center;
-  margin: 16px;
-  padding-right: 32px;
-
-  img {
-    width: 10px;
-  }
-
-  h2 {
-    padding-left: 32px;
-    color: white;
-    font-size: 40px;
-    font-weight: 500;  
-  }
-
-}
-
-
-.entireWrapperCardsJudge {
-  display: flex;
-  flex-direction: row;
-
-  .profileHalfJudge {
-    height: 200px;
-    width: 150px;
-    overflow: hidden;
-    border-radius: 15px 0px 0px 15px;
-
-      .profilePicJudge {
-        width:100%; 
-        height:100%;
-        object-fit: cover;
+      @media only screen and (max-width: 720px) {
+        max-width: 500px;
       }
-  }
-
-  .judgesCardContent {
-    
-    padding-left: 8px;
-    width: 204px;
-    border-radius: 0px 15px 15px 0px;
-    background-color: #161616;
-    // display: flex;
-    // flex-direction: column;
-    height: 200px;
-    backdrop-filter: blur(6px);
-    margin: 0px;
-    // display: flex;
-    // flex-direction: column;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    // align-items: start;
-    
-
-  }
-
-  h2 {
-    font-size: 24px;
-    font-weight: 500;
-    color: #fff;
-  }
-
-  p {
-    font-size: 16px;
-    font-weight: 300;
-    opacity: 100%;
-    // padding-bottom: 0%;
-  }
-
-  .judgesFirstName {
-    margin-top: 4px;
-    margin-bottom: -28px;
-  }
+    }
   
-  .judgesLastName {
-    margin-bottom: -4px;
+    h3 {
+      font-size: 24px;
+      font-weight: 400;
+      color: #959595;
+      margin: 0px;
+    }
   }
 
-  .judgesRole {
-    font-size: 15px;
-    font-weight: 400;
-    color: var(--electric-blue);
-    // margin-bottom: -12px;
-  }
-  
-  .cardMajor {
-    font-size: 14px;
-    font-weight: 300;
-    color: var(--electric-blue);
-    // margin-bottom:  12px;
-  }
+  .peopleContainer {
+    display: grid;
+    gap: 24px;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: stretch;
 
-  .buttonWrapperJudges {
-    padding-bottom: 16px;
-    display: flex;
-    flex-direction: column;
-    width: 100%;
+    @media only screen and (max-width: 1000px) {
+      grid-template-columns: repeat(2, 1fr);
+    }
 
+    @media only screen and (max-width: 720px) {
+      display: flex;
+      flex-direction: column;
+      margin: 0 auto;
+      max-width: 425px;
+    }
 
-    .externalButtonFaculty {
-        background: none;
-        border: 1px solid var(--electric-blue);
-        border-radius: 8px;
+    .entireWrapperCardsJudge {
+      display: flex;
+      flex-direction: row;
+    
+      .profileHalfJudge {
+        align-self: stretch;
+        flex-shrink: 0;
+        width: 150px;
+        overflow: hidden;
+        border-radius: 15px 0px 0px 15px;
+    
+          .profilePicJudge {
+            width:100%; 
+            height:100%;
+          }
+      }
+    
+      .judgesCardContent {
+        padding: 16px 16px 16px 16px;
+        border-radius: 0px 15px 15px 0px;
+        background-color: #161616;
+        margin: 0;
+        flex-grow: 5;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: start;
+
+        .textContent {
+          margin-bottom: 12px;
+          justify-self: stretch;
+        }
+      }
+    
+      h2 {
+        font-size: 24px;
+        font-weight: 500;
+        color: #fff;
+        margin: 0;
+        line-height: 30px;
+      }
+    
+      p {
+        font-size: 16px;
+        font-weight: 300;
+        opacity: 100%;
+        margin: 0
+      }
+
+      .judgesRole {
+        font-size: 15px;
+        font-weight: 400;
         color: var(--electric-blue);
-        text-transform: uppercase;
-        font-size: 11px;
-        text-align: left;
-        padding: 8px 8px;
-        margin-right: 8px;
-        transition: all 300ms ease-in-out;
-        width: 95%;
-        margin-bottom: 6px;
+      }
+      
+      .cardMajor {
+        font-size: 14px;
+        font-weight: 300;
+        color: var(--electric-blue);
+      }
+    
+      .buttonWrapperJudges {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
 
-      &:hover {
-        color:white;
-        background-color: var(--electric-blue);
-        cursor: pointer;
-        transition: all 300ms ease-in-out;
+        .externalButtonFaculty {
+          background: none;
+          border: 1px solid var(--electric-blue);
+          border-radius: 8px;
+          color: var(--electric-blue);
+          text-transform: uppercase;
+          font-size: 11px;
+          text-align: left;
+          padding: 8px 8px;
+          transition: all 300ms ease-in-out;
+          width: 100%;
+    
+          &:hover {
+            color:white;
+            background-color: var(--electric-blue);
+            cursor: pointer;
+            transition: all 300ms ease-in-out;
+          }
+        }
+      }
     }
+  }
+
+  .judgesSectionHeader {
+    display: flex;
+    align-items: center;
+    margin: 16px;
+    padding-right: 32px;
+  
+    img {
+      width: 10px;
     }
+  
+    h2 {
+      padding-left: 32px;
+      color: white;
+      font-size: 40px;
+      font-weight: 500;  
+    }
+  }
+
+  .mentorsSectionHeader {
+    padding-top: 32px;
+    display: flex;
+    align-items: center;
+    margin: 16px;
+    padding-right: 32px;
+  
+    img {
+      width: 10px;
+    }
+  
+    h2 {
+      padding-left: 32px;
+      color: white;
+      font-size: 40px;
+      font-weight: 500;  
+    }
+  
   }
 }
+
+
+
+
+
 @media only screen and (max-width: 1150px) {
   .entireWrapperCardsJudge {
     align-self: center;

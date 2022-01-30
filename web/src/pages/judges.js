@@ -848,10 +848,12 @@ function JudgeCard (props) {
           {/* <img className="profilePicJudge" src={props.img} /> */}
         </div>
 
-        <div className = "judgesCardContent" >
-          <h2 className="judgesFirstName">{props.fname}</h2>
-          <h2 className="judgesLastName">{props.lname}</h2>
-          <p className="judgesRole">{props.role} @ <strong>{props.company}</strong></p>
+        <div className="judgesCardContent">
+          <div className="textContent">
+            <h2 className="judgesFirstName">{props.fname}</h2>
+            <h2 className="judgesLastName">{props.lname}</h2>
+            <p className="judgesRole">{props.role} @ <strong>{props.company}</strong></p>
+          </div>
           <div class="buttonWrapperJudges">
             <form action={props.linkedin} target="_blank">
               <button className="externalButtonFaculty">LinkedIn <strong> &nbsp; {String.fromCharCode(10230)}</strong></button>

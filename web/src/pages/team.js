@@ -10,7 +10,7 @@ import Container from "../components/container";
 import GraphQLErrorList from "../components/graphql-error-list";
 import SEO from "../components/seo";
 import Layout from "../containers/layout";
-import { GatsbyImage, getImage } from "gatsby-plugin-image"
+import { GatsbyImage } from "gatsby-plugin-image"
 
 import PeopleBackgroundSVG from "../assets/svg/people/peopleBG.svg";
 
@@ -58,7 +58,7 @@ export const query = graphql`
               quality: 80
               formats: [WEBP]
               height: 250
-              )
+            )
           }
         }
       }
@@ -66,7 +66,7 @@ export const query = graphql`
   }
 `;
 
-const PeoplePage = props => {
+const TeamPage = props => {
   const { data, errors } = props;
 
   if (errors) {
@@ -119,7 +119,7 @@ const PeoplePage = props => {
         <Container>
 
           <div class="peopleHeader">
-            <h3>The people that brought Startup to life, the</h3>
+            <h3>The People That Brought StartUp to Life</h3>
             <h1>Startup 2022 Core Team</h1>
           </div>
 
@@ -352,29 +352,30 @@ function Card (props) {
   
 
   return(
+    <div className="entireWrapperCards">
+      <div className="profileHalf">
+      {/* <div className="profileHalf" style={imgStyles}> */}
+        {props.imgData ? <GatsbyImage className="profilePic" image={props.imgData.node.childImageSharp.gatsbyImageData}/> : null}
+        {/* <img className="profilePic" src={props.img} /> */}
+      </div>
 
-      <div className="entireWrapperCards">
-        <div className="profileHalf">
-        {/* <div className="profileHalf" style={imgStyles}> */}
-          {props.imgData ? <GatsbyImage className="profilePic" image={props.imgData.node.childImageSharp.gatsbyImageData}/> : null}
-          {/* <img className="profilePic" src={props.img} /> */}
-        </div>
-
-        <div className="cardContent" >
+      <div className="cardContent" >
+        <div className="textContent">
           <h2 className="cardFirstName">{props.fname}</h2>
           <h2 className="cardLastName">{props.lname}</h2>
           <p className="cardRole">{props.role}</p>
           <p className="cardMajor">{props.major}</p>
-          <div class="buttonWrapper">
-            <form action={props.linkedin} target="_blank">
-              <button className="externalButton">LinkedIn <strong> &nbsp; {String.fromCharCode(10230)}</strong></button>
-            </form>
-            <form action={props.portfolio} target="_blank">
-              <button className="externalButton">Portfolio <strong> &nbsp; {String.fromCharCode(10230)}</strong></button>
-            </form>
-          </div>
+        </div>
+        <div class="buttonWrapper">
+          <form action={props.linkedin} target="_blank">
+            <button className="externalButton">LinkedIn <strong> &nbsp; {String.fromCharCode(10230)}</strong></button>
+          </form>
+          <form action={props.portfolio} target="_blank">
+            <button className="externalButton">Portfolio <strong> &nbsp; {String.fromCharCode(10230)}</strong></button>
+          </form>
         </div>
       </div>
+    </div>
   );
 }
 
@@ -395,11 +396,13 @@ function FacultyCard (props) {
           {props.imgData ? <GatsbyImage className="profilePic" image={props.imgData.node.childImageSharp.gatsbyImageData}/> : null}
         </div>
 
-        <div className = "facultyCard" >
-          <h2 className="cardFirstName">{props.fname}</h2>
-          <h2 className="cardLastName">{props.lname}</h2>
-          <p className="cardRole">{props.role}</p>
-          <p className="cardMajor">{props.major}</p>
+        <div className="facultyCard cardContent">
+          <div className="textContent">
+            <h2 className="cardFirstName">{props.fname}</h2>
+            <h2 className="cardLastName">{props.lname}</h2>
+            <p className="cardRole">{props.role}</p>
+            <p className="cardMajor">{props.major}</p>
+          </div>
           <div class="buttonWrapper">
             <form action={props.linkedin} target="_blank">
               <button className="externalButtonFaculty">LinkedIn <strong> &nbsp; {String.fromCharCode(10230)}</strong> </button>
@@ -410,4 +413,4 @@ function FacultyCard (props) {
   );
 }
 
-export default PeoplePage;
+export default TeamPage;

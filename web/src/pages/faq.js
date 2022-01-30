@@ -77,8 +77,8 @@ const FaqPage = props => {
                 </div>
 
                 <div class="faqCard">
-                  <h2>Specific To Startup 2022</h2>
-                  <h4>Is Startup fully on ground?</h4>
+                  <h2>Specific To StartUp 2022</h2>
+                  <h4>Is StartUp fully on ground?</h4>
                   <p>Semi-final and final presentations will be on-ground. All presenters must be on-ground in order to present. Due to the ongoing pandemic, some of our judges are unable to travel to Savannah, so you may be presenting to hybrid judges. Midpoint checks will be done virtually. Your team will receive an email with your unique zoom link and time to join your zoom meeting after Kickoff.</p>
                   <h4>Do I need to follow COVID guidelines?</h4>
                   <p>For any event held on SCAD property, you must follow the university COVID guidelines. Failure to follow these guidelines will result in immediate elimination.</p>
