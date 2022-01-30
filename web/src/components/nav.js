@@ -19,9 +19,16 @@ const Nav = () => {
                     <Link to="/deliverables"><li>
                         Deliverables
                     </li></Link>
-                    <Link to="/people"><li>
+                    {/* <Link to="/team"><li>
                         People
-                    </li></Link>
+                    </li></Link> */}
+                    <li className="subNavOption">
+                        <span>People</span>
+                        <ul className="subNav">
+                            <Link to="/team"><li>Team</li></Link>
+                            <Link to="/judges"><li>Judges</li></Link>
+                        </ul>
+                    </li>
                 </ul>
 
                 <div className="center">
