@@ -399,12 +399,14 @@ const SessionsCard = props => {
   return (
       // <Link to={"/sessions/" + props.slug.current} className="sessionsCard">
       <div className="sessionsCard">
-        <Link to={"/sessions/" + props.slug.current}>
+        <Link>
+        {/* <Link to={"/sessions/" + props.slug.current}> */}
           {/* <div className="heroImage" style={imageStyle}></div> */}
           <GatsbyImage className="heroImage" image={props.imageData} />
         </Link>
         <div className="cardContent">
-          <Link className="mainContent" to={"/sessions/" + props.slug.current}>
+          {/* <Link className="mainContent" to={"/sessions/" + props.slug.current}> */}
+          <Link className="mainContent">
             <h4>{props.name}</h4>
             <div className="timeLocation">
               <span>{day + ", " + time}</span>
@@ -430,10 +432,10 @@ const SessionsCard = props => {
             </div>
             <p className="description">{props.excerpt}</p>
           </Link>
-          <div className="cardButtons">
+          {/* <div className="cardButtons">
             <a href={props.registrationLink}>Register</a>
             <a href={props.zoomLink}>Zoom</a>
-          </div>
+          </div> */}
         </div>
       </div>
   );

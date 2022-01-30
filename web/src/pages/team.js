@@ -120,7 +120,7 @@ const TeamPage = props => {
 
           <div class="peopleHeader">
             <h3>The People That Brought StartUp to Life</h3>
-            <h1>Startup 2022 Core Team</h1>
+            <h1>StartUp 2022 Core Team</h1>
           </div>
 
 
