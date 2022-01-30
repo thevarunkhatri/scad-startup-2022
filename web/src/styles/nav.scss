@@ -138,7 +138,7 @@
                 text-transform: uppercase;
                 font-size: 14px;
                 transition: all 300ms ease-in-out;
-                border-radius: 8px 8px 0 0;
+                border-radius: 8px;
                 position: relative;
 
                 span {
@@ -148,6 +148,15 @@
                     height: 56px;
                     position: absolute;
                     width: 100%;
+
+                    @media only screen and (max-width: 1200px) {
+                        font-size: 13px;
+                    } 
+
+                    @media only screen and (max-width: 1000px) {
+                        height: 48px;
+                        font-size: 12px;
+                    }
                 }
 
                 &:hover {
@@ -172,21 +181,14 @@
                 }
 
                 ul {
-                    // display: none;
                     display: flex;
                     visibility: hidden;
                     opacity: 0;
                     position: absolute;
                     flex-direction: column;
                     top: 56px;
-                    gap: 0;
-                    // padding-top: 8px;
-                    height: 92px;
-                    box-sizing: border-box;
-                    border-bottom: 2px solid var(--color-yellow);
-                    border-left: 2px solid var(--color-yellow);
-                    border-right: 2px solid var(--color-yellow);
-                    border-radius: 0 0 8px 8px;
+                    gap: 6px;
+                    padding-top: 8px;
                     transition: all 300ms ease-in-out;
 
                     @media only screen and (max-width: 1000px) {
@@ -194,35 +196,30 @@
                     } 
 
                     a {
-                        background: #0a0a0a;
-                        border-radius: 0;
-                        &:last-child {
-                            border-radius: 0 0 6px 6px;
-                        }
-
-                        &:hover {
-                            background: var(--color-yellow);
-                        }
-                    }
-
-                    li {
+                        height: 100%;
+                        padding: 12px 0;
+                        border: 2px solid var(--color-yellow);
+                        color: white;
+                        border-radius: 8px;
                         width: 140px;
+                        background: #0a0a0a;
 
                         @media only screen and (max-width: 1200px) {
-                            width: 116px
+                            width: 116px;
+                            font-size: 13px;
                         } 
 
                         @media only screen and (max-width: 1000px) {
-                            width: 96px
+                            width: 96px;
+                            font-size: 12px;
                         } 
 
-                        box-sizing: border-box;
-                        // border: 2px solid var(--color-teal);
-                        // border-radius: 8px;
-                        padding: 12px 0;
-                        
-                        
-                    }
+                        &:hover {
+                            background: var(--color-yellow);
+                            color: black;
+                            transition: all 300ms ease-in-out
+                        }
+                    }               
                 }
             }
 
