@@ -51,6 +51,7 @@
     .entireWrapperCardsJudge {
       display: flex;
       flex-direction: row;
+      align-self: stretch;
     
       .profileHalfJudge {
         align-self: stretch;
