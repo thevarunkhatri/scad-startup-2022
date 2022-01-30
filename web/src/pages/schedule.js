@@ -136,7 +136,7 @@ const SchedulePage = props => {
         .filter(filterOutDocsPublishedInTheFuture)
     : [];
 
-  console.log(sessionNodes)
+  // console.log(sessionNodes)
 
   if (!site) {
     throw new Error(
