@@ -1,10 +1,5 @@
 import { MdSchool } from "react-icons/md";
 
-function capitalizeFirstLetter(string) {
-  return string.charAt(0).toUpperCase() + string.slice(1);
-}
-
-
 export default {
     name: 'sessions',
     title: 'Sessions',
@@ -35,7 +30,7 @@ export default {
       {
         title: 'Category', 
         name: 'categories',
-        description: 'Add one or more categories', 
+        description: 'Add one or more categories', //momelove was here O.O
         type: 'string',
                 options: {
                     list: [
@@ -223,37 +218,27 @@ export default {
         type: 'url'
       },
     ],
+    orderings:[
+      {
+        title: 'Date',
+        name: 'date',
+        by: [
+          {field: 'sessionDateTime', direction: "desc"}
+        ]
+      },
+      {
+        title: 'Category',
+        name: 'category',
+        by: [
+          {field: 'categories', direction: "asc"}
+        ]
+      }
+    ],
     preview: {
       select: {
         title: 'name',
-        type: 'categories',
+        subtitle: 'categories',
         media: 'heroImage',
-        id: '_id'
-      },
-      prepare(selection) {
-        const {title, type, media, id} = selection
-        return {
-          title: title,
-          subtitle: capitalizeFirstLetter(type) + " | " + id,
-          media: media
-        }
       }
-    },
-    orderings: [
-      {
-        title: 'Types',
-        name: 'types',
-        by: [
-          {field: 'categories', direction: 'desc'}
-        ]
-      },
-      {
-        title: 'Date Ascending',
-        name: 'dateAsc',
-        by: [
-          {field: 'sessionDateTime', direction: 'asc'}
-        ]
-      }
-    ]
-  
+    }
 }
