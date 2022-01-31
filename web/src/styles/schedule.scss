@@ -387,6 +387,10 @@
                         background: #01AEC4;
                         color: #fff;
                     }
+
+                    &:not([href]) {
+                        cursor: not-allowed
+                    }
                 }
             }
         }
