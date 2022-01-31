@@ -99,7 +99,7 @@ export const query = graphql`
 
 const sessionsPage = props => {
   const { data } = props;
-  console.log(data);
+  // console.log(data);
 
   let imageStyle ={}
   

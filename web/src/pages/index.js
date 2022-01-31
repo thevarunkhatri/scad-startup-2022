@@ -368,7 +368,7 @@ const IndexPage = props => {
     );
   }
 
-  console.log(pageWidth)
+  // console.log(pageWidth)
 
   return (
     <Layout>

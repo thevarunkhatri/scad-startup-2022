@@ -345,10 +345,10 @@ function Card (props) {
     backgroundPosition: 'center'
   }
 
-  if(props.imgData) {
-    console.log(props.imgData)
-    console.log(props.imgData.node.childImageSharp)
-  }
+  // if(props.imgData) {
+  //   console.log(props.imgData)
+  //   console.log(props.imgData.node.childImageSharp)
+  // }
   
 
   return(
