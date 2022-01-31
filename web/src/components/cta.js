@@ -20,7 +20,7 @@ const CTA = () => {
             <div className="ctaCard contact">
                 <h4>Questions? Reach out!</h4>
                 <div className="links">
-                    <a href="https://forms.gle/x3XDcaPtxvhrPmGk6" target="_blank">
+                    <a href="https://www.instagram.com/scadstartup/" target="_blank">
                         <Instagram/>
                     </a>
                     <a href="https://discord.gg/D4AFxAwwp6" target="_blank">
