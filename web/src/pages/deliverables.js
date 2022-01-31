@@ -59,7 +59,7 @@ const DeliverablesPage = props => {
           <div class="deliverablesContainer">
             <div class="deliverablesCard" id="content1">
               <h2>Presentation Deck</h2>
-              <p> No pitch is perfect without a slide deck! Craft your presentation and make it STAND OUT. This is how you introduce others to your BRILLIANT IDEAS, so make it count! </p>
+              <p> No pitch is perfect without a slide deck! Craft your presentation and make it stand out. This is how you introduce others to your brilliant ideas, so make it count!</p>
               <form action={"https://drive.google.com/drive/folders/1CVVK8T1B0IfzghZCd0mNnlp0SHWke1Oi"} target="_blank">
                 <button class="pastExamplesButton">Past Examples &nbsp; {String.fromCharCode(10230)}</button>
               </form>
@@ -67,7 +67,7 @@ const DeliverablesPage = props => {
 
             <div class="deliverablesCard" id="content2">
               <h2>30 Second Video</h2>
-              <p> We want your idea to be SHOUTED FROM THE ROOFTOP (virtually) so we will post YOUR 30 second video to @scadstartup on instagram! Inspiring the future of StartUp. </p>
+              <p> We’re proud of the work you do during StartUp week, and want your ideas to be spread far as possible. So, we’re posting a 30-second video from each team to the official StartUp Instagram (@scadstartup). </p>
               <form action={"https://drive.google.com/drive/folders/1b2cZnGUzNoVYMyGBxxbSu4yPX39-gUK0?usp=sharing"} target="_blank">
                 <button class="pastExamplesButton">Past Examples &nbsp; {String.fromCharCode(10230)}</button>
               </form>
@@ -75,7 +75,7 @@ const DeliverablesPage = props => {
 
             <div class="deliverablesCard" id="content3">
               <h2>Business Model</h2>
-              <p> A business model keeps it real. Shoot for the stars and see your idea come to life in the real world. A business model can help you answer the hard questions (like “who’s it for?” and “how does it make $$$$”)! </p>
+              <p> Your business model keeps it real. Shoot for the stars and show how your idea would be an attractive offer for customers and investors alike. A business model helps you answer the hard questions, like “who’s it for?” and “how does it make money?” </p>
               <form action={"https://drive.google.com/drive/folders/1G0QeWDSDzxmwOBA5rpWWF7jDLoa2pp01"} target="_blank">
                 <button class="pastExamplesButton">Past Examples &nbsp; {String.fromCharCode(10230)}</button>
               </form>
@@ -83,7 +83,7 @@ const DeliverablesPage = props => {
 
             <div class="deliverablesCard" id="content4" >
               <h2>WOW FACTOR!!</h2>
-              <p> What makes an idea stand out? What makes the audience gasp? Flex your team’s skillset and make your idea SHAKE THE ROOM (even if it’s virtual ;)). </p>
+              <p> What makes an idea stand out? What makes the audience gasp? Flex your team’s skills and blow us away with your project. </p>
               <form action={"https://drive.google.com/drive/folders/1G0QeWDSDzxmwOBA5rpWWF7jDLoa2pp01"} target="_blank">
                 <button class="pastExamplesButton">Past Examples &nbsp; {String.fromCharCode(10230)} </button>
               </form>
