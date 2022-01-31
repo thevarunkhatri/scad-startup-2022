@@ -286,7 +286,9 @@ const sessionsPage = props => {
                             {data.session.difficulty == 5 ? "Expert" : null}
                         </span>
                     </div>
-                    <p className='description'>The Gestalt Principles of Design have been around since the 1920’s. In this session, Quint Bailey (FLUX Officer) takes us through the fundamental drivers behind these principles and how to apply them to your work for better visual fidelity.</p>
+                    {/* <p className='description'>
+                      {}
+                    </p> */}
                     <div className='people'>
                       {
                         data.session.clubPartner ? ( 
