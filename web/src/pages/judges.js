@@ -533,7 +533,7 @@ const JudgesPage = props => {
             linkedin="https://www.linkedin.com"
             />
 
-            <JudgeCard
+            {/* <JudgeCard
             imgData={andresSepulvedaPhoto}
             img={andresSepulveda}
             fname="Andrés"
@@ -541,7 +541,7 @@ const JudgesPage = props => {
             role="UX Researcher"
             company="Lowe's"
             linkedin="https://www.linkedin.com/in/andresfelipegalvis/"
-            />
+            /> */}
 
             <JudgeCard
             imgData={annaJonesPhoto}
