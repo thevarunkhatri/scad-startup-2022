@@ -578,7 +578,7 @@ imgData={devinObryanPhoto}
             img={devinObryan}
             fname="Devin"
             lname="O'Bryan"
-            role="Design Lead"
+            role="Sr. Design Lead"
             company="IBM"
             linkedin="https://www.linkedin.com/in/devinobryan/"
             />
