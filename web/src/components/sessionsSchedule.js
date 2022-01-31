@@ -449,7 +449,7 @@ const SessionsCard = props => {
 const FilterTab = props => {
   return (
       <div className="filterTab">
-        {props.label}
+        <p>{props.label}</p>
       </div>
   );
 };
@@ -513,7 +513,7 @@ const SessionsSchedule = props => {
                   filterType == "day" ? dayOptions.map((day) => {
                     return(
                       <div className={activeFilters.includes(day) ? "filterTab active": "filterTab"} onClick={() => toggleFilter(day)}>
-                        {day}
+                        <p>{day}</p>
                       </div>
                     )
                   }): null
@@ -522,7 +522,7 @@ const SessionsSchedule = props => {
                   filterType == "difficulty" ? difficultyOptions.map((difficulty) => {
                     return(
                       <div className={activeFilters.includes(difficulty) ? "filterTab active": "filterTab"} onClick={() => toggleFilter(difficulty)}>
-                        {difficulty}
+                        <p>{difficulty}</p>
                       </div>
                     )
                   }): null
@@ -531,7 +531,7 @@ const SessionsSchedule = props => {
                   filterType == "subject" ? subjectOptions.map((subject) => {
                     return(
                       <div className={activeFilters.includes(subject) ? "filterTab active": "filterTab"} onClick={() => toggleFilter(subject)}>
-                        {subject}
+                        <p>{subject}</p>
                       </div>
                     )
                   }): null
