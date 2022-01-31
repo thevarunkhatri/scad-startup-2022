@@ -22,7 +22,7 @@ export const query = graphql`
       description
       keywords
     }
-    sessions: allSanitySessions {
+    sessions: allSanitySessions(sort: {fields: sessionDateTime}) {
       edges {
         node {
           zoomURL

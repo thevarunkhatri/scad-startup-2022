@@ -226,17 +226,72 @@
         &:hover {
             transition: all 300ms ease-out;
             transform: scale(1.02);
-        }
 
-        .heroImage {
-            height: 200px;
-            background-size: cover;
-            border-radius: 12px 12px 0 0;
+            .sessionsHero {
+                .imageHover {
+                    visibility: visible;
+                    opacity: 1;
+                    transition: all 300ms ease-out;
 
-            img {
-                border-radius: 12px 12px 0 0;
+                    .imageButton {
+                        visibility: visible;
+                        opacity: 1;
+                        transition: all 300ms ease-out;
+                        transition-delay: 150ms;
+
+                    }
+                }
             }
         }
+
+        .sessionsHero {
+            position: relative;
+
+            &:hover {
+                cursor: pointer;
+
+                .imageButton {
+                    color: black !important;
+                    background: var(--color-yellow);
+                    transition: all 300ms ease-in-out;
+                }
+            }
+
+            .imageHover {
+                visibility: hidden;
+                opacity: 0;
+                position: absolute;
+                width: 100%;
+                height: 200px;
+                z-index: 20;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                background: rgba(0,0,0,0.6);
+                transition: all 300ms ease-out;
+
+                .imageButton {
+                    visibility: hidden;
+                    opacity: 0;
+                    color: var(--color-yellow);
+                    border: solid 2px var(--color-yellow);
+                    padding: 8px 32px;
+                    border-radius: 12px;
+                    transition: all 300ms ease-in-out;
+                }
+            }
+
+            .heroImage {
+                height: 200px;
+                background-size: cover;
+                border-radius: 12px 12px 0 0;
+    
+                img {
+                    border-radius: 12px 12px 0 0;
+                }
+            }
+        }
+        
 
         .cardContent {
             padding: 20px;

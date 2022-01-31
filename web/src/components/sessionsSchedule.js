@@ -399,9 +399,14 @@ const SessionsCard = props => {
   return (
       // <Link to={"/sessions/" + props.slug.current} className="sessionsCard">
       <div className="sessionsCard">
-        <Link>
-        {/* <Link to={"/sessions/" + props.slug.current}> */}
+        {/* <Link className="sessionsHero"> */}
+        <Link className="sessionsHero" to={"/sessions/" + props.slug.current}>
           {/* <div className="heroImage" style={imageStyle}></div> */}
+          <div className="imageHover">
+            <div className="imageButton">
+              Learn More
+            </div>
+          </div>
           <GatsbyImage className="heroImage" image={props.imageData} />
         </Link>
         <div className="cardContent">
@@ -432,10 +437,10 @@ const SessionsCard = props => {
             </div>
             <p className="description">{props.excerpt}</p>
           </Link>
-          {/* <div className="cardButtons">
-            <a href={props.registrationLink}>Register</a>
-            <a href={props.zoomLink}>Zoom</a>
-          </div> */}
+          <div className="cardButtons">
+            <a href={props.registrationLink} target="_blank">Register</a>
+            <a href={props.zoomLink} target="_blank">Zoom</a>
+          </div>
         </div>
       </div>
   );
