@@ -1,6 +1,7 @@
 import React from 'react'
 import {graphql, Link} from 'gatsby';
 import {GatsbyImage} from 'gatsby-plugin-image'
+import PortableText from "@sanity/block-content-to-react"
 
 import SEO from '../components/seo'
 import Layout from '../containers/layout'
@@ -72,6 +73,7 @@ export const query = graphql`
         excerpt
         duration
         difficulty
+        _rawDetailedDescription
         detailedDescription {
           _key
           _type
@@ -117,6 +119,7 @@ const sessionsPage = props => {
   const time = new Intl.DateTimeFormat('en-US', timeOption).format(date)
 
   // console.log(data.session.clubPartner.partnerLink)
+  // console.log(data.session._rawDetailedDescription)
 
   return (
     <Layout>
@@ -163,7 +166,8 @@ const sessionsPage = props => {
                               {data.session.difficulty == 5 ? "Expert" : null}
                           </span>
                       </div>
-                      <p className='description'>The Gestalt Principles of Design have been around since the 1920’s. In this session, Quint Bailey (FLUX Officer) takes us through the fundamental drivers behind these principles and how to apply them to your work for better visual fidelity.</p>
+                      <PortableText className='description' blocks={data.session._rawDetailedDescription}/>
+                      {/* <p className='description'>The Gestalt Principles of Design have been around since the 1920’s. In this session, Quint Bailey (FLUX Officer) takes us through the fundamental drivers behind these principles and how to apply them to your work for better visual fidelity.</p> */}
                       <div className='people'>
                         {
                           data.session.clubPartner ? ( 
@@ -286,6 +290,7 @@ const sessionsPage = props => {
                             {data.session.difficulty == 5 ? "Expert" : null}
                         </span>
                     </div>
+                    <PortableText className='description' blocks={data.session._rawDetailedDescription}/>
                     {/* <p className='description'>
                       {}
                     </p> */}
