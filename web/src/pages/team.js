@@ -134,7 +134,7 @@ const TeamPage = props => {
             role="Co-Director"
             major="User Experience"
             linkedin="https://www.linkedin.com/in/larafederspiel"
-            portfolio="http://larafederspiel.com/"
+            portfolio="https://larafederspiel.com/"
             />
 
             <Card
@@ -221,7 +221,7 @@ const TeamPage = props => {
             lname="Stomberger"
             role="Visual Designer"
             major="User Experience"
-            linkedin="http://www.linkedin.com/in/seth-stomberger-56a6601a9"
+            linkedin="https://www.linkedin.com/in/seth-stomberger-56a6601a9"
             portfolio="https://sethstomberger.com/"
             />
 
@@ -368,10 +368,10 @@ function Card (props) {
         </div>
         <div class="buttonWrapper">
           <form action={props.linkedin} target="_blank">
-            <button className="externalButton">LinkedIn <strong> &nbsp; {String.fromCharCode(10230)}</strong></button>
+            <button type="submit" className="externalButton">LinkedIn <strong> &nbsp; {String.fromCharCode(10230)}</strong></button>
           </form>
           <form action={props.portfolio} target="_blank">
-            <button className="externalButton">Portfolio <strong> &nbsp; {String.fromCharCode(10230)}</strong></button>
+            <button type="submit" className="externalButton">Portfolio <strong> &nbsp; {String.fromCharCode(10230)}</strong></button>
           </form>
         </div>
       </div>
