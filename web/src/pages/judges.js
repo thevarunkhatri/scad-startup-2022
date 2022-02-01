@@ -247,6 +247,16 @@ const JudgesPage = props => {
             />
 
             <JudgeCard
+            imgData={fonzMorrisPhoto}
+            img={fonzMorris}
+            fname="Fonz"
+            lname="Morris"
+            role="Lead Product Designer"
+            company="Netflix"
+            linkedin="https://www.linkedin.com/in/fonzmorris/"
+            />            
+
+            <JudgeCard
             imgData={jenBonnetPhoto}
             img={jenBonnet}
             fname="Jen"
@@ -364,16 +374,6 @@ const JudgesPage = props => {
             linkedin="https://www.linkedin.com/in/dancgrossman/"
             />
 
-
-          <JudgeCard
-          imgData={fonzMorrisPhoto}
-            img={fonzMorris}
-            fname="Fonz"
-            lname="Morris"
-            role="Lead Product Designer"
-            company="Netflix"
-            linkedin="https://www.linkedin.com/in/fonzmorris/"
-            />
 
 
           <JudgeCard
@@ -683,7 +683,7 @@ imgData={justinKeoninhPhoto}
             linkedin="https://www.linkedin.com/in/justin-keoninh/"
             />
 
-<JudgeCard
+{/* <JudgeCard
 imgData={leonZhangPhoto}
             img={leonZhang}
             fname="Leon"
@@ -691,7 +691,7 @@ imgData={leonZhangPhoto}
             role="UX Designer"
             company="Expedia"
             linkedin="https://www.linkedin.com/in/zhangleondesign/"
-            />
+            /> */}
 
 <JudgeCard
 imgData={marcelaVillalobosPhoto}
@@ -794,7 +794,7 @@ imgData={nicolePappasPhoto}
             linkedin="https://www.linkedin.com/in/sarah-lashinsky/"
             />
 
-            <JudgeCard
+            {/* <JudgeCard
             imgData={staceyRoachPhoto}
             img={staceyRoach}
             fname="Stacey"
@@ -802,7 +802,7 @@ imgData={nicolePappasPhoto}
             role="Chief Operating Officer"
             company="Inventure IT"
             linkedin="https://www.linkedin.com/in/staceyroach"
-            /> 
+            />  */}
 
 
           <JudgeCard
