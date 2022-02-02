@@ -17,78 +17,78 @@ import Mentors from "../assets/svg/judges/mentors.svg"
 import '../styles/people.scss';
 import '../styles/judges.scss';
 
-import blankProfile from '../assets/img/judges/blankProfile.png';
+// import blankProfile from '../assets/img/judges/blankProfile.png';
 
-let amyMartin           =  'judges/amyMartin.jpeg';
-let amyMcclure          =  'judges/amyMcclure.jpeg';
-let andrewFirstenberger =  'judges/andrewFirstenberger.jpeg';
-let annaliseLao         =  'judges/annaliseLao.jpeg';
-let cassieMcdaniel      =  'judges/cassieMcdaniel.jpeg';
-let coreyKeller         =  'judges/coreyKeller.jpeg';
-let danGrossman         =  'judges/danGrossman.jpeg';
-let fonzMorris          =  'judges/fonzMorris.jpeg';
-let hilalKoyuncu        =  'judges/hilalKoyuncu.jpeg';
-let jayFanelli          =  'judges/jayFanelli.jpeg';
-let lukeLi              =  'judges/lukeLi.jpeg';
-let marySargent         =  'judges/marySargent.jpeg';
-let nishatAkhtar        =  'judges/nishatAkhtar.jpeg';
-let parvanehToghiani    =  'judges/parvanehToghiani.jpeg';
-let staceyBurr          =  'judges/staceyBurr.jpeg';
-let teslimA             =  'judges/teslimA.jpeg';
-let aditiVyas           =  'judges/aditiVyas.jpeg';
-let akshayKhandelwal    =  'judges/akshayKhandelwal.jpeg';
-let alanGorinstein      =  'judges/alanGorinstein.jpeg';
-let andresSepulveda     =  'judges/andresSepulveda.jpeg';
-let annaJones           =  'judges/annaJones.jpeg';
-let brianOllison        =  'judges/brianOllison.jpeg';
-let caseyHarper         =  'judges/caseyHarper.jpeg';
-let dipaliBajaj         =  'judges/dipaliBajaj.jpeg';
-let goldieChan          =  'judges/goldieChan.jpeg';
-let jaiTudor            =  'judges/jaiTudor.jpeg';
-let jamesSpence         =  'judges/jamesSpence.jpeg';
-let joshInch            =  'judges/joshInch.jpeg';
-let leonZhang           =  'judges/leonZhang.jpeg';
-let marcelaVillalobos   =  'judges/marcelaVillalobos.jpeg';
-let mattAshwood         =  'judges/mattAshwood.jpeg';
-let mitziOkou           =  'judges/mitziOkou.jpeg';
-let nadiaLe             =  'judges/nadiaLe.jpeg';
-let nickBraver          =  'judges/nickBraver.jpeg';
-let nickCuda            =  'judges/nickCuda.jpeg';
-let nickDine            =  'judges/nickDine.jpeg';
-let sarahLashinsky      =  'judges/sarahLashinsky.jpeg';
-let travisNeilson       =  'judges/travisNeilson.jpeg';
-let bobbyBerk           =  'judges/bobbyBerk.jpeg';
-let chrisDown           =  'judges/chrisDown.jpeg';
-let deanNelson          =  'judges/deanNelson.jpeg';
-let faraiMadzima        =  'judges/faraiMadzima.jpeg';
-let jenBonnet           =  'judges/jenBonnet.jpeg';
-let lanceShields        =  'judges/lanceShields.jpeg';
-let mikeBuzzard         =  'judges/mikeBuzzard.jpeg';
-let xerxesIrani         =  'judges/xerxesIrani.jpeg';
-let abiLierheimer       =  'judges/abiLierheimer.jpeg';
-let angelaMartin        =  'judges/angelaMartin.jpeg';
-let devinObryan         =  'judges/devinObryan.jpeg';
-let danielleTorres      =  'judges/danielleTorres.jpeg';
-let markManalaysay      =  'judges/markManalaysay.jpeg';
-let nicolePappas        =  'judges/nicolePappas.jpeg';
-let vedikaBhasin        =  'judges/vedikaBhasin.jpeg';
-let justinKeoninh       =  'judges/justinKeoninh.jpeg';
-let druraParrish        =  'judges/druraParrish.jpeg';
-let ericaCardenas       =  'judges/ericaCardenas.jpeg';
-let gonzoGelso          =  'judges/gonzoGelso.jpeg';
-let staceyRoach         =  'judges/staceyRoach.jpeg';
-let alexWhitman         =  'judges/alexWhitman.jpeg';
+let amyMartin           =  'industryGuests/amyMartin.jpeg';
+let amyMcclure          =  'industryGuests/amyMcclure.jpeg';
+let andrewFirstenberger =  'industryGuests/andrewFirstenberger.jpeg';
+let annaliseLao         =  'industryGuests/annaliseLao.jpeg';
+let cassieMcdaniel      =  'industryGuests/cassieMcdaniel.jpeg';
+let coreyKeller         =  'industryGuests/coreyKeller.jpeg';
+let danGrossman         =  'industryGuests/danGrossman.jpeg';
+let fonzMorris          =  'industryGuests/fonzMorris.jpeg';
+let hilalKoyuncu        =  'industryGuests/hilalKoyuncu.jpeg';
+let jayFanelli          =  'industryGuests/jayFanelli.jpeg';
+let lukeLi              =  'industryGuests/lukeLi.jpeg';
+let marySargent         =  'industryGuests/marySargent.jpeg';
+let nishatAkhtar        =  'industryGuests/nishatAkhtar.jpeg';
+let parvanehToghiani    =  'industryGuests/parvanehToghiani.jpeg';
+let staceyBurr          =  'industryGuests/staceyBurr.jpeg';
+let teslimA             =  'industryGuests/teslimA.jpeg';
+let aditiVyas           =  'industryGuests/aditiVyas.jpeg';
+let akshayKhandelwal    =  'industryGuests/akshayKhandelwal.jpeg';
+let alanGorinstein      =  'industryGuests/alanGorinstein.jpeg';
+let andresSepulveda     =  'industryGuests/andresSepulveda.jpeg';
+let annaJones           =  'industryGuests/annaJones.jpeg';
+let brianOllison        =  'industryGuests/brianOllison.jpeg';
+let caseyHarper         =  'industryGuests/caseyHarper.jpeg';
+let dipaliBajaj         =  'industryGuests/dipaliBajaj.jpeg';
+let goldieChan          =  'industryGuests/goldieChan.jpeg';
+let jaiTudor            =  'industryGuests/jaiTudor.jpeg';
+let jamesSpence         =  'industryGuests/jamesSpence.jpeg';
+let joshInch            =  'industryGuests/joshInch.jpeg';
+let leonZhang           =  'industryGuests/leonZhang.jpeg';
+let marcelaVillalobos   =  'industryGuests/marcelaVillalobos.jpeg';
+let mattAshwood         =  'industryGuests/mattAshwood.jpeg';
+let mitziOkou           =  'industryGuests/mitziOkou.jpeg';
+let nadiaLe             =  'industryGuests/nadiaLe.jpeg';
+let nickBraver          =  'industryGuests/nickBraver.jpeg';
+let nickCuda            =  'industryGuests/nickCuda.jpeg';
+let nickDine            =  'industryGuests/nickDine.jpeg';
+let sarahLashinsky      =  'industryGuests/sarahLashinsky.jpeg';
+let travisNeilson       =  'industryGuests/travisNeilson.jpeg';
+let bobbyBerk           =  'industryGuests/bobbyBerk.jpeg';
+let chrisDown           =  'industryGuests/chrisDown.jpeg';
+let deanNelson          =  'industryGuests/deanNelson.jpeg';
+let faraiMadzima        =  'industryGuests/faraiMadzima.jpeg';
+let jenBonnet           =  'industryGuests/jenBonnet.jpeg';
+let lanceShields        =  'industryGuests/lanceShields.jpeg';
+let mikeBuzzard         =  'industryGuests/mikeBuzzard.jpeg';
+let xerxesIrani         =  'industryGuests/xerxesIrani.jpeg';
+let abiLierheimer       =  'industryGuests/abiLierheimer.jpeg';
+let angelaMartin        =  'industryGuests/angelaMartin.jpeg';
+let devinObryan         =  'industryGuests/devinObryan.jpeg';
+let danielleTorres      =  'industryGuests/danielleTorres.jpeg';
+let markManalaysay      =  'industryGuests/markManalaysay.jpeg';
+let nicolePappas        =  'industryGuests/nicolePappas.jpeg';
+let vedikaBhasin        =  'industryGuests/vedikaBhasin.jpeg';
+let justinKeoninh       =  'industryGuests/justinKeoninh.jpeg';
+let druraParrish        =  'industryGuests/druraParrish.jpeg';
+let ericaCardenas       =  'industryGuests/ericaCardenas.jpeg';
+let gonzoGelso          =  'industryGuests/gonzoGelso.jpeg';
+let staceyRoach         =  'industryGuests/staceyRoach.jpeg';
+let alexWhitman         =  'industryGuests/alexWhitman.jpeg';
 
 
 
 export const query = graphql`
-  query JudgesPageQuery {
+  query industryGuestsPageQuery {
     site: sanitySiteSettings(_id: { regex: "/(drafts.|)siteSettings/" }) {
       title
       description
       keywords
     }
-    photos: allFile(filter: {relativePath: {regex: "/^judges/"}}) {
+    photos: allFile(filter: {relativePath: {regex: "/^industryGuests/"}}) {
       edges {
         node {
           id
@@ -107,7 +107,7 @@ export const query = graphql`
   }
 `;
 
-const JudgesPage = props => {
+const IndustryGuestsPage = props => {
   const { data, errors } = props;
 
   if (errors) {
@@ -197,7 +197,7 @@ const JudgesPage = props => {
 
           <div class="peopleHeader">
             <h3>A big thank you to our</h3>
-            <h1>Judges & Mentors</h1>
+            <h1>Industry Guests</h1>
           </div>
 
           <div className="judgesSectionHeader">
@@ -763,7 +763,7 @@ imgData={mitziOkouPhoto}
             linkedin="https://www.linkedin.com/in/nickcuda/"
             />
 
-          <JudgeCard
+          {/* <JudgeCard
           imgData={nickDinePhoto}
             img={nickDine}
             fname="Nick"
@@ -771,7 +771,7 @@ imgData={mitziOkouPhoto}
             role="SCADpro Professor"
             company="SCAD"
             linkedin="https://www.linkedin.com/in/nick-dine-a8a94375/"
-            />
+            /> */}
 
 <JudgeCard
 imgData={nicolePappasPhoto}
@@ -875,4 +875,4 @@ linkedin="https://www.linkedin.com"
 
 
 
-export default JudgesPage;
+export default IndustryGuestsPage;

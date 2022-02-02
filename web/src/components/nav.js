@@ -26,7 +26,7 @@ const Nav = () => {
                         <span>People</span>
                         <ul className="subNav">
                             <Link to="/team"><li>Team</li></Link>
-                            <Link to="/judges"><li>Judges</li></Link>
+                            <Link to="/industryGuests"><li>Industry Guests</li></Link>
                         </ul>
                     </li>
                 </ul>
