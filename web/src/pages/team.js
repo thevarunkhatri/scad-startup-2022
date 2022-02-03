@@ -12,6 +12,7 @@ import SEO from "../components/seo";
 import Layout from "../containers/layout";
 import { GatsbyImage } from "gatsby-plugin-image"
 
+import Arrow from"../assets/svg/arrow.svg"
 import PeopleBackgroundSVG from "../assets/svg/people/peopleBG.svg";
 
 import '../styles/people.scss';
@@ -368,10 +369,10 @@ function Card (props) {
         </div>
         <div class="buttonWrapper">
           <form action={props.linkedin} target="_blank">
-            <button type="submit" className="externalButton">LinkedIn <strong> &nbsp; {String.fromCharCode(10230)}</strong></button>
+            <button type="submit" className="externalButton">LinkedIn <Arrow/></button>
           </form>
           <form action={props.portfolio} target="_blank">
-            <button type="submit" className="externalButton">Portfolio <strong> &nbsp; {String.fromCharCode(10230)}</strong></button>
+            <button type="submit" className="externalButton">Portfolio <Arrow/></button>
           </form>
         </div>
       </div>
@@ -405,7 +406,7 @@ function FacultyCard (props) {
           </div>
           <div class="buttonWrapper">
             <form action={props.linkedin} target="_blank">
-              <button className="externalButtonFaculty">LinkedIn <strong> &nbsp; {String.fromCharCode(10230)}</strong> </button>
+              <button className="externalButtonFaculty">LinkedIn <Arrow/></button>
             </form>
           </div>
         </div>

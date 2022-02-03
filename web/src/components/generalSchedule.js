@@ -9,6 +9,8 @@ import BottomL from "../assets/img/schedule/BottomL.png"
 import BottomR from "../assets/img/schedule/BottomR.png"
 import SessionsImg from "../assets/img/schedule/Sessions.png"
 
+import Arrow from"../assets/svg/arrow.svg"
+
 import SessionsSvg from "../assets/svg/schedule/sessions.svg"
 import KickoffSvg from "../assets/svg/schedule/kickoff.svg"
 
@@ -32,12 +34,17 @@ const ScheduleCard = (props) => {
                         <div className="content">
                             <div>
                                 <h3>{props.title}</h3>
-                                {props.day == 0 ? <h4>Every Day</h4> : <h4>Day {props.day}, February {props.day + 3}</h4>}
+                                { props.day == 0 ? (
+                                    <h4>Every Day</h4>
+                                ):( 
+                                    <h4>Day {props.day}, February {props.day + 3} {props.link ? " | " + props.time : null} </h4>
+                                )}
                                 <p>{props.description}</p>
                             </div>
-                            <div className="dateButton">
-                                {props.time}
-                            </div>
+                            <a href={props.link} target="_blank" className="dateButton">
+                                {props.link ? "Join Now" : props.time}
+                                <Arrow/>
+                            </a>
                         </div>
                         <div className="graphic">
                             {props.graphic}
@@ -47,13 +54,18 @@ const ScheduleCard = (props) => {
                     <>
                         <div>
                             <h3>{props.title}</h3>
-                            <h4>Day {props.day}, February {props.day + 3}</h4>
+                            { props.day == 0 ? (
+                                <h4>Every Day</h4>
+                            ):( 
+                                <h4>Day {props.day}, February {props.day + 3} {props.link ? " | " + props.time : null} </h4>
+                            )}
                             <p>{props.description}</p>
                             {props.midpoint ? <p className="midpoint">Your team will be assigned to Midpoint 1 or Midpoint 2 after Kickoff.</p> : null}
                         </div>
-                        <div className="dateButton">
-                            {props.time}
-                        </div>
+                        <a href={props.link} target="_blank" className="dateButton">
+                            {props.link ? "Join Now" : props.time}
+                            <Arrow/>
+                        </a>
                     </>
                 )
             }
@@ -71,7 +83,8 @@ const GeneralSchedule = () => {
                 description="Come join us for our theme reveal, sessions announcements, and lightning talks by subject matter experts and industry professionals. We’ll also walk through the schedule and explain how StartUp is going to run."
                 time="10:00 AM - 11:30 AM EST"
                 bigSize={true}
-                graphic={<KickoffSvg/>}/>
+                graphic={<KickoffSvg/>}
+                link="https://scad.zoom.us/j/96850254911"/>
             <ScheduleCard
                 title="Midpoint 1" 
                 day={5}

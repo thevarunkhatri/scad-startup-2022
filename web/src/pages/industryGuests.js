@@ -13,6 +13,7 @@ import { GatsbyImage, getImage } from "gatsby-plugin-image"
 
 import Checkmark from "../assets/svg/judges/checkmark.svg"
 import Mentors from "../assets/svg/judges/mentors.svg"
+import Arrow from"../assets/svg/arrow.svg"
 
 import '../styles/people.scss';
 import '../styles/judges.scss';
@@ -1050,7 +1051,7 @@ function JudgeCard (props) {
           </div>
           <div class="buttonWrapperJudges">
             <form action={props.linkedin} target="_blank">
-              <button className="externalButtonFaculty">LinkedIn <strong> &nbsp; {String.fromCharCode(10230)}</strong></button>
+              <button className="externalButtonFaculty">LinkedIn <Arrow/></button>
             </form>
           </div>
         </div>
@@ -1083,7 +1084,7 @@ function JudgeCardAnon (props) {
           </div>
           <div class="buttonWrapperJudges">
             <form action={props.linkedin} target="_blank">
-              <button className="externalButtonFaculty">LinkedIn <strong> &nbsp; {String.fromCharCode(10230)}</strong></button>
+              <button className="externalButtonFaculty">LinkedIn <Arrow/></button>
             </form>
           </div>
         </div>

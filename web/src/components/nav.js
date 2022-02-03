@@ -16,19 +16,22 @@ const Nav = () => {
                     <Link to="/schedule"><li>
                         Schedule
                     </li></Link>
+                    <Link to="/sessions"><li>
+                        Sessions
+                    </li></Link>
                     <Link to="/deliverables"><li>
                         Deliverables
                     </li></Link>
                     {/* <Link to="/team"><li>
                         People
                     </li></Link> */}
-                    <li className="subNavOption">
+                    {/* <li className="subNavOption">
                         <span>People</span>
                         <ul className="subNav">
                             <Link to="/team"><li>Team</li></Link>
                             <Link to="/industryGuests"><li>Industry Guests</li></Link>
                         </ul>
-                    </li>
+                    </li> */}
                 </ul>
 
                 <div className="center">
@@ -49,15 +52,22 @@ const Nav = () => {
                 </div>
 
                 <ul className="navRight">
+                    <li className="subNavOption">
+                        <span>People</span>
+                        <ul className="subNav">
+                            <Link to="/team"><li>Team</li></Link>
+                            <Link to="/industryGuests"><li>Industry Guests</li></Link>
+                        </ul>
+                    </li>
                     <Link to="/faq"><li>
                         FAQ
                     </li></Link>
                     <a href="https://www.instagram.com/scadstartup/" target="_blank"><li>
                         Instagram
                     </li></a>
-                    <a href="https://forms.gle/x3XDcaPtxvhrPmGk6" target="_blank" className="signupButton"><li>
+                    {/* <a href="https://forms.gle/x3XDcaPtxvhrPmGk6" target="_blank" className="signupButton"><li>
                         Sign Up
-                    </li></a>
+                    </li></a> */}
                 </ul>
             </div>
         </nav>

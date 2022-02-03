@@ -95,6 +95,7 @@ const MobileNav = () => {
                             </div>
                             <ul className="webLinks">
                                 <Link to="/schedule"><li>Schedule <ChevronRight/></li></Link>
+                                <Link to="/sessions"><li>Sessions <ChevronRight/></li></Link>
                                 <Link to="/deliverables"><li>Deliverables <ChevronRight/></li></Link>
                                 <Link to="/team"><li>Team <ChevronRight/></li></Link>
                                 <Link to="/industryGuests"><li>Industry Guests <ChevronRight/></li></Link>
