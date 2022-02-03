@@ -78,6 +78,9 @@ let ericaCardenas       =  'industryGuests/ericaCardenas.jpeg';
 let gonzoGelso          =  'industryGuests/gonzoGelso.jpeg';
 let staceyRoach         =  'industryGuests/staceyRoach.jpeg';
 let alexWhitman         =  'industryGuests/alexWhitman.jpeg';
+let quintinWilliams         =  'industryGuests/quintinWilliams.jpeg';
+let biancaRivera         =  'industryGuests/biancaRivera.jpeg';
+let anaDominguez         =  'industryGuests/anaDominguez.jpeg';
 
 
 
@@ -181,6 +184,9 @@ const IndustryGuestsPage = props => {
   let gonzoGelsoPhoto = photosArray.find(element => element.node.relativePath == gonzoGelso)
   let staceyRoachPhoto = photosArray.find(element => element.node.relativePath == staceyRoach)
   let alexWhitmanPhoto = photosArray.find(element => element.node.relativePath == alexWhitman)
+  let quintinWilliamsPhoto = photosArray.find(element => element.node.relativePath == quintinWilliams)
+  let biancaRiveraPhoto = photosArray.find(element => element.node.relativePath == biancaRivera)
+  let anaDominguezPhoto = photosArray.find(element => element.node.relativePath == anaDominguez)
 
   if (!site) {
     throw new Error(
@@ -441,6 +447,16 @@ const IndustryGuestsPage = props => {
             linkedin="https://www.linkedin.com/in/parvanehtoghiani/"
             />
 
+<JudgeCard
+          imgData={quintinWilliamsPhoto}
+            img={quintinWilliams}
+            fname="Quintin"
+            lname="Williams"
+            role="Founder"
+            company="Q4 Sports"
+            linkedin="https://www.linkedin.com/in/creativeastronautventures/"
+            />
+
 
           <JudgeCard
           imgData={staceyBurrPhoto}
@@ -488,7 +504,7 @@ const IndustryGuestsPage = props => {
             img={aditiVyas}
             fname="Aditi"
             lname="Vyas"
-            role="Industrial Designerr"
+            role="Industrial Designer"
             company="Clear"
             linkedin="https://www.linkedin.com/in/vyasaditi/"
             />
@@ -533,6 +549,16 @@ const IndustryGuestsPage = props => {
             linkedin="https://www.linkedin.com"
             />
 
+          <JudgeCard
+          imgData={anaDominguezPhoto}
+            img={anaDominguez}
+            fname="Ana"
+            lname="Dominguez"
+            role="Staff Designer"
+            company="Visa Innovation Center"
+            linkedin="https://www.linkedin.com/in/ana-karina-dominguez-0bb701a3/"
+            />
+
             {/* <JudgeCard
             imgData={andresSepulvedaPhoto}
             img={andresSepulveda}
@@ -551,6 +577,16 @@ const IndustryGuestsPage = props => {
             role="Sr. UX Designer"
             company="Calendly"
             linkedin="https://www.linkedin.com/in/anna-jones-21471b36/"
+            />
+
+<JudgeCard
+          imgData={biancaRiveraPhoto}
+            img={biancaRivera}
+            fname="Bianca"
+            lname="Rivera"
+            role="Service and Business Design Senior Analyst"
+            company="Fjord"
+            linkedin="https://www.linkedin.com/in/biancariveraalvelo/"
             />
 
 <JudgeCard
@@ -753,7 +789,7 @@ imgData={mitziOkouPhoto}
             linkedin="https://www.linkedin.com/in/nickbraver/"
             />
 
-            <JudgeCard
+            {/* <JudgeCard
             imgData={nickCudaPhoto}
             img={nickCuda}
             fname="Nick"
@@ -761,9 +797,9 @@ imgData={mitziOkouPhoto}
             role="Sr. Product Designer"
             company="Mailchimp"
             linkedin="https://www.linkedin.com/in/nickcuda/"
-            />
+            /> */}
 
-          {/* <JudgeCard
+          <JudgeCard
           imgData={nickDinePhoto}
             img={nickDine}
             fname="Nick"
@@ -771,7 +807,7 @@ imgData={mitziOkouPhoto}
             role="SCADpro Professor"
             company="SCAD"
             linkedin="https://www.linkedin.com/in/nick-dine-a8a94375/"
-            /> */}
+            />
 
 <JudgeCard
 imgData={nicolePappasPhoto}
