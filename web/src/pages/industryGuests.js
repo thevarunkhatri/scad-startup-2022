@@ -87,12 +87,14 @@ let daneGalbraith         =  'industryGuests/daneGalbraith.jpeg';
 let eliskaSkarolkova         =  'industryGuests/eliskaSkarolkova.jpeg';
 let erinImhof         =  'industryGuests/erinImhof.jpeg';
 let fatenAlMukhtar         =  'industryGuests/fatenAlMukhtar.jpeg';
-// let jackieSabillon         =  'industryGuests/jackieSabillon.jpeg';
 let joeKennedy         =  'industryGuests/joeKennedy.jpeg';
 let justinBarber         =  'industryGuests/justinBarber.jpeg';
 let nehaTadepalli         =  'industryGuests/nehaTadepalli.jpeg';
 let payalVaidya         =  'industryGuests/payalVaidya.jpeg';
 let zackWhite         =  'industryGuests/zackWhite.jpeg';
+let kylieTimpani         =  'industryGuests/kylieTimpani.jpeg';
+let leighDyess         =  'industryGuests/leighDyess.jpeg';
+let jackieSabillon         =  'industryGuests/jackieSabillon.jpeg';
 
 
 
@@ -205,12 +207,14 @@ const IndustryGuestsPage = props => {
   let eliskaSkarolkovaPhoto = photosArray.find(element => element.node.relativePath == eliskaSkarolkova)
   let erinImhofPhoto = photosArray.find(element => element.node.relativePath == erinImhof)
   let fatenAlMukhtarPhoto = photosArray.find(element => element.node.relativePath == fatenAlMukhtar)
-  // let jackieSabillonPhoto = photosArray.find(element => element.node.relativePath == jackieSabillon)
   let joeKennedyPhoto = photosArray.find(element => element.node.relativePath == joeKennedy)
   let justinBarberPhoto = photosArray.find(element => element.node.relativePath == justinBarber)
   let nehaTadepalliPhoto = photosArray.find(element => element.node.relativePath == nehaTadepalli)
   let payalVaidyaPhoto = photosArray.find(element => element.node.relativePath == payalVaidya)
   let zackWhitePhoto = photosArray.find(element => element.node.relativePath == zackWhite)
+  let leighDyessPhoto = photosArray.find(element => element.node.relativePath == leighDyess)
+  let kylieTimpaniPhoto = photosArray.find(element => element.node.relativePath == kylieTimpani)
+  let jackieSabillonPhoto = photosArray.find(element => element.node.relativePath == jackieSabillon)
 
   if (!site) {
     throw new Error(
@@ -755,7 +759,7 @@ imgData={goldieChanPhoto}
             linkedin="https://www.linkedin.com/in/gonzalogelso/"
             /> 
 
-{/* <JudgeCard
+<JudgeCard
             imgData={jackieSabillonPhoto}
             img={jackieSabillon}
             fname="Jackie"
@@ -763,7 +767,7 @@ imgData={goldieChanPhoto}
             role="UX Designer"
             company="MIT Media Lab"
             linkedin="https://www.linkedin.com/in/jnsabillon/"
-            />  */}
+            /> 
 
 <JudgeCard
 imgData={jaiTudorPhoto}
@@ -834,6 +838,24 @@ imgData={leonZhangPhoto}
             company="Expedia"
             linkedin="https://www.linkedin.com/in/zhangleondesign/"
             /> */}
+
+<JudgeCardAnon
+imgData={kylieTimpaniPhoto}
+            img={kylieTimpani}
+            fname="Kylie"
+            lname="Timpani"
+            role="Sr. Product Designer"
+            linkedin="https://www.linkedin.com/in/kylietimpani/"
+            />
+
+<JudgeCardAnon
+imgData={leighDyessPhoto}
+            img={leighDyess}
+            fname="Leigh Ann"
+            lname="Dyess"
+            role="Creative Director"
+            linkedin="https://www.linkedin.com/in/ldyess/#experience-section"
+            />
 
 <JudgeCard
 imgData={marcelaVillalobosPhoto}
@@ -1025,6 +1047,39 @@ function JudgeCard (props) {
             <h2 className="judgesFirstName">{props.fname}</h2>
             <h2 className="judgesLastName">{props.lname}</h2>
             <p className="judgesRole">{props.role} @ <strong>{props.company}</strong></p>
+          </div>
+          <div class="buttonWrapperJudges">
+            <form action={props.linkedin} target="_blank">
+              <button className="externalButtonFaculty">LinkedIn <strong> &nbsp; {String.fromCharCode(10230)}</strong></button>
+            </form>
+          </div>
+        </div>
+      </div>
+  );
+}
+
+
+function JudgeCardAnon (props) {
+
+  const imgStyles = {
+    background: 'url(' + props.img + ')',
+    backgroundSize: 'cover',
+    backgroundPosition: 'center'
+  }
+
+  return(
+
+      <div className="entireWrapperCardsJudge">
+        <div className="profileHalfJudge">
+          {props.imgData ? <GatsbyImage className="profilePicJudge" image={props.imgData.node.childImageSharp.gatsbyImageData}/> : null}
+          {/* <img className="profilePicJudge" src={props.img} /> */}
+        </div>
+
+        <div className="judgesCardContent">
+          <div className="textContent">
+            <h2 className="judgesFirstName">{props.fname}</h2>
+            <h2 className="judgesLastName">{props.lname}</h2>
+            <p className="judgesRole">{props.role}</p>
           </div>
           <div class="buttonWrapperJudges">
             <form action={props.linkedin} target="_blank">
