@@ -81,6 +81,18 @@ let alexWhitman         =  'industryGuests/alexWhitman.jpeg';
 let quintinWilliams         =  'industryGuests/quintinWilliams.jpeg';
 let biancaRivera         =  'industryGuests/biancaRivera.jpeg';
 let anaDominguez         =  'industryGuests/anaDominguez.jpeg';
+let baileyWitt         =  'industryGuests/baileyWitt.jpeg';
+let coreyHerbert         =  'industryGuests/coreyHerbert.jpeg';
+let daneGalbraith         =  'industryGuests/daneGalbraith.jpeg';
+let eliskaSkarolkova         =  'industryGuests/eliskaSkarolkova.jpeg';
+let erinImhof         =  'industryGuests/erinImhof.jpeg';
+let fatenAlMukhtar         =  'industryGuests/fatenAlMukhtar.jpeg';
+// let jackieSabillon         =  'industryGuests/jackieSabillon.jpeg';
+let joeKennedy         =  'industryGuests/joeKennedy.jpeg';
+let justinBarber         =  'industryGuests/justinBarber.jpeg';
+let nehaTadepalli         =  'industryGuests/nehaTadepalli.jpeg';
+let payalVaidya         =  'industryGuests/payalVaidya.jpeg';
+let zackWhite         =  'industryGuests/zackWhite.jpeg';
 
 
 
@@ -187,6 +199,18 @@ const IndustryGuestsPage = props => {
   let quintinWilliamsPhoto = photosArray.find(element => element.node.relativePath == quintinWilliams)
   let biancaRiveraPhoto = photosArray.find(element => element.node.relativePath == biancaRivera)
   let anaDominguezPhoto = photosArray.find(element => element.node.relativePath == anaDominguez)
+  let baileyWittPhoto = photosArray.find(element => element.node.relativePath == baileyWitt)
+  let coreyHerbertPhoto = photosArray.find(element => element.node.relativePath == coreyHerbert)
+  let daneGalbraithPhoto = photosArray.find(element => element.node.relativePath == daneGalbraith)
+  let eliskaSkarolkovaPhoto = photosArray.find(element => element.node.relativePath == eliskaSkarolkova)
+  let erinImhofPhoto = photosArray.find(element => element.node.relativePath == erinImhof)
+  let fatenAlMukhtarPhoto = photosArray.find(element => element.node.relativePath == fatenAlMukhtar)
+  // let jackieSabillonPhoto = photosArray.find(element => element.node.relativePath == jackieSabillon)
+  let joeKennedyPhoto = photosArray.find(element => element.node.relativePath == joeKennedy)
+  let justinBarberPhoto = photosArray.find(element => element.node.relativePath == justinBarber)
+  let nehaTadepalliPhoto = photosArray.find(element => element.node.relativePath == nehaTadepalli)
+  let payalVaidyaPhoto = photosArray.find(element => element.node.relativePath == payalVaidya)
+  let zackWhitePhoto = photosArray.find(element => element.node.relativePath == zackWhite)
 
   if (!site) {
     throw new Error(
@@ -546,7 +570,7 @@ const IndustryGuestsPage = props => {
             lname="Martin"
             role="UX Designer"
             company="Lenovo"
-            linkedin="https://www.linkedin.com"
+            linkedin="https://www.linkedin.com/in/angelamartin98/"
             />
 
           <JudgeCard
@@ -580,6 +604,17 @@ const IndustryGuestsPage = props => {
             />
 
 <JudgeCard
+            imgData={baileyWittPhoto}
+            img={baileyWitt}
+            fname="Bailey"
+            lname="Witt"
+            role="Senior Graphic Designer"
+            company="Gulfstream Aerospace"
+            linkedin="https://www.linkedin.com/in/lapointbailey/"
+            />
+
+
+<JudgeCard
           imgData={biancaRiveraPhoto}
             img={biancaRivera}
             fname="Bianca"
@@ -599,14 +634,24 @@ imgData={brianOllisonPhoto}
             linkedin="https://www.linkedin.com/in/brian-ollison-924a7248/"
             />
 
-<JudgeCard
-imgData={caseyHarperPhoto}
+            <JudgeCard
+            imgData={caseyHarperPhoto}
             img={caseyHarper}
             fname="Casey"
             lname="Harper"
             role="Product Designer"
             company="Mailchimp"
             linkedin="https://www.linkedin.com/in/caseymharper/"
+            />
+
+<JudgeCard
+            imgData={daneGalbraithPhoto}
+            img={daneGalbraith}
+            fname="Dane"
+            lname="Galbraith"
+            role="Visual Designer"
+            company="Google"
+            linkedin="https://www.linkedin.com/in/danegalbraith/"
             />
 
 <JudgeCard
@@ -649,6 +694,16 @@ imgData={dipaliBajajPhoto}
             linkedin="https://www.linkedin.com/in/drura-parrish-b7b5bb52/"
             /> 
 
+<JudgeCard
+            imgData={eliskaSkarolkovaPhoto}
+            img={eliskaSkarolkova}
+            fname="Erica"
+            lname="Cardenas"
+            role="User Experience Designer"
+            company="IBM"
+            linkedin="https://www.linkedin.com/in/eliskaskarolkova/"
+            /> 
+
             <JudgeCard
             imgData={ericaCardenasPhoto}
             img={ericaCardenas}
@@ -658,6 +713,27 @@ imgData={dipaliBajajPhoto}
             company="Iknow LLC"
             linkedin="https://www.linkedin.com/in/ericamcardenas/"
             /> 
+
+
+            <JudgeCard
+            imgData={erinImhofPhoto}
+            img={erinImhof}
+            fname="Erica"
+            lname="Cardenas"
+            role="UX Designer"
+            company="Visual Logic"
+            linkedin="https://www.linkedin.com/in/erin-imhof-298a04183/"
+            /> 
+
+<           JudgeCard
+            imgData={fatenAlMukhtarPhoto}
+            img={fatenAlMukhtar}
+            fname="Faten"
+            lname="AlMukhtar"
+            role="Creative"
+            company="TikTok Creative Lab"
+            linkedin="https://www.linkedin.com/in/fatenalmukhtar/"
+            />          
 
 <JudgeCard
 imgData={goldieChanPhoto}
@@ -679,6 +755,16 @@ imgData={goldieChanPhoto}
             linkedin="https://www.linkedin.com/in/gonzalogelso/"
             /> 
 
+{/* <JudgeCard
+            imgData={jackieSabillonPhoto}
+            img={jackieSabillon}
+            fname="Jackie"
+            lname="Sabillon"
+            role="UX Designer"
+            company="MIT Media Lab"
+            linkedin="https://www.linkedin.com/in/jnsabillon/"
+            />  */}
+
 <JudgeCard
 imgData={jaiTudorPhoto}
             img={jaiTudor}
@@ -697,6 +783,26 @@ imgData={jamesSpencePhoto}
             role="Principal Design Program Manager"
             company="Zillow"
             linkedin="https://www.linkedin.com/in/jspence1/"
+            />
+
+<JudgeCard
+imgData={joeKennedyPhoto}
+            img={joeKennedy}
+            fname="Joe"
+            lname="Kennedy"
+            role="Co-Founder & Designer"
+            company="Apex"
+            linkedin="https://www.linkedin.com/in/joekndy/detail/contact-info/"
+            />
+
+<JudgeCard
+imgData={justinBarberPhoto}
+            img={justinBarber}
+            fname="Justin"
+            lname="Barber"
+            role="Design Lead"
+            company="Applied Intuition"
+            linkedin="https://www.linkedin.com/in/jstnbrbr/"
             />
 
 <JudgeCard
@@ -779,6 +885,16 @@ imgData={mitziOkouPhoto}
             linkedin="https://www.linkedin.com/in/nadiahle/"
             />
 
+<JudgeCard
+            imgData={nehaTadepalliPhoto}
+            img={nehaTadepalli}
+            fname="Neha"
+            lname="Tadepalli"
+            role="Strategic Designer"
+            company="Round Feather, Inc."
+            linkedin="https://www.linkedin.com/in/neha-tadepalli/"
+            />
+
             <JudgeCard
             imgData={nickBraverPhoto}
             img={nickBraver}
@@ -817,6 +933,16 @@ imgData={nicolePappasPhoto}
             role="Junior 2D Animator"
             company="Buck"
             linkedin="https://www.linkedin.com/in/nicole-pappas-a718b5169/"
+            />
+
+            <JudgeCard
+            imgData={payalVaidyaPhoto}
+            img={payalVaidya}
+            fname="Nick"
+            lname="Dine"
+            role="SCADpro Professor"
+            company="SCAD"
+            linkedin="https://www.linkedin.com/in/nick-dine-a8a94375/"
             />
 
 
@@ -859,6 +985,16 @@ imgData={vedikaBhasinPhoto}
             role="AR Designer"
             company="Bare Tree Media"
             linkedin="https://www.linkedin.com/in/vedikabhasin/"
+            />
+
+            <JudgeCard
+             imgData={zackWhitePhoto}
+            img={zackWhite}
+            fname="Zack"
+            lname="White"
+            role="Senior Experience Designer"
+            company="Boston Consulting Group"
+            linkedin="https://www.linkedin.com/in/linkzackwhite/"
             />
           </div>
 
