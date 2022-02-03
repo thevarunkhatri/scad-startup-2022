@@ -697,8 +697,8 @@ imgData={dipaliBajajPhoto}
 <JudgeCard
             imgData={eliskaSkarolkovaPhoto}
             img={eliskaSkarolkova}
-            fname="Erica"
-            lname="Cardenas"
+            fname="Eliska"
+            lname="Skarolkiva"
             role="User Experience Designer"
             company="IBM"
             linkedin="https://www.linkedin.com/in/eliskaskarolkova/"
@@ -718,8 +718,8 @@ imgData={dipaliBajajPhoto}
             <JudgeCard
             imgData={erinImhofPhoto}
             img={erinImhof}
-            fname="Erica"
-            lname="Cardenas"
+            fname="Erin"
+            lname="Imhof"
             role="UX Designer"
             company="Visual Logic"
             linkedin="https://www.linkedin.com/in/erin-imhof-298a04183/"
@@ -938,11 +938,11 @@ imgData={nicolePappasPhoto}
             <JudgeCard
             imgData={payalVaidyaPhoto}
             img={payalVaidya}
-            fname="Nick"
-            lname="Dine"
-            role="SCADpro Professor"
-            company="SCAD"
-            linkedin="https://www.linkedin.com/in/nick-dine-a8a94375/"
+            fname="Payal"
+            lname="Vaidya"
+            role="Experience Designer"
+            company="VMLY&R"
+            linkedin="https://www.linkedin.com/in/vaidyapayal/"
             />
 
 
@@ -951,7 +951,7 @@ imgData={nicolePappasPhoto}
             img={sarahLashinsky}
             fname="Sarah"
             lname="Lashinsky"
-            role="Product Designer"
+            role="Senior Product Designer"
             company="Mailchimp"
             linkedin="https://www.linkedin.com/in/sarah-lashinsky/"
             />
