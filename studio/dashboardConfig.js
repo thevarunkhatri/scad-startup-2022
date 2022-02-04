@@ -22,7 +22,7 @@ export default {
             title: 'Website',
             apiId: '9b8f39ab-6acb-4a5f-b65a-fd0625cff1d4',
             buildHookId: '61fd400d1771a11ef44b1a10',
-            name: 'scad-startup-2022-web'
+            name: 'scadstartup2022'
           }
         ]
       }
