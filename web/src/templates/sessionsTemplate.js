@@ -7,6 +7,7 @@ import SEO from '../components/seo'
 import Layout from '../containers/layout'
 import Container from "../components/container";
 import Map from '../components/map';
+import Arrow from"../assets/svg/arrow.svg"
 
 import "../styles/sessions.scss"
 
@@ -118,6 +119,11 @@ const sessionsPage = props => {
   var timeOption =  {hour: 'numeric', minute: 'numeric'}
   const time = new Intl.DateTimeFormat('en-US', timeOption).format(date)
 
+  // let currentTime =  Date.now()
+
+  // console.log(currentTime)
+  // console.log(date.getTime())
+
   // console.log(data.session.clubPartner.partnerLink)
   // console.log(data.session._rawDetailedDescription)
 
@@ -215,6 +221,9 @@ const sessionsPage = props => {
                       </div>
                   </div>
                   <div className='secondaryInfo'> 
+                      { 
+                        Date.now() > date.getTime() ? null : <a href={data.session.registrationURL} target="_blank" className='registrationButton'>Register <Arrow/></a>
+                      }
                       <div className='dateTime secondaryItem'>
                         <span>{day}</span>
                         <span>{time} EST</span>
@@ -268,6 +277,9 @@ const sessionsPage = props => {
                       <h1>{data.session.name}</h1>
                       <h2>{data.session.excerpt}</h2>
                     </div>
+                    { 
+                      Date.now() > date.getTime() ? null : <a href={data.session.registrationURL} target="_blank" className='registrationButton'>Register <Arrow/></a>
+                    }
                     <div className='dateTime secondaryItem'>
                       <span>{day}</span>
                       <span>{time} EST</span>

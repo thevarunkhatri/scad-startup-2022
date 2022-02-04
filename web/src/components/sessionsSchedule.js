@@ -471,8 +471,6 @@ const SessionsSchedule = props => {
       filterRef.current.value = window.localStorage.getItem('filterType')
     }, []);
   
-    
-
     const toggleFilter = (filterToToggle) => {
       console.log("hello")
       // check if in array already     
