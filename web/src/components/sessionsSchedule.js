@@ -460,15 +460,18 @@ const SessionsSchedule = props => {
     const [activeFilters, setActiveFilters] = useState([])
 
     useEffect(() => {
-      setFilterType(window.localStorage.getItem('filterType'));
-      console.log(filterRef.current.value)
-      filterRef.current.value = window.localStorage.getItem('filterType')
-      console.log(filterRef.current.value)
-    }, []);
-  
-    useEffect(() => {
       window.localStorage.setItem('filterType', filterType);
     }, [filterType]);
+
+    useEffect(() => {
+      setFilterType(window.localStorage.getItem('filterType'));
+    }, []);
+
+    useEffect(() => {
+      filterRef.current.value = window.localStorage.getItem('filterType')
+    }, []);
+  
+    
 
     const toggleFilter = (filterToToggle) => {
       console.log("hello")
