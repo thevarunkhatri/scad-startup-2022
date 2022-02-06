@@ -378,6 +378,25 @@
                 font-weight: 300;
             }
 
+            .watchRecordingButton {
+                border: 1px solid #01AEC4;
+                color: #01AEC4;
+                font-weight: 300;
+                background: none;
+                border-radius: 8px;
+                padding: 12px 20px;
+                text-decoration: none;
+                transition: all 350ms ease-in-out;
+                z-index: 20;
+                text-align: center;
+
+                &:hover {
+                    transition: all 350ms ease-in-out;
+                    background: #01AEC4;
+                    color: #fff;
+                }
+            }
+
             .cardButtons {
                 display: grid;
                 grid-template-columns: 1fr 1fr;

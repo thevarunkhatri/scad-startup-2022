@@ -357,7 +357,8 @@ const SessionsGroup = props => {
                         duration={edge.duration}
                         excerpt={edge.excerpt}
                         registrationLink={edge.registrationURL}
-                        zoomLink={edge.zoomURL}/>
+                        zoomLink={edge.zoomURL}
+                        videoLink={edge.videoURL}/>
                     )
                   }
                   return(
@@ -372,7 +373,8 @@ const SessionsGroup = props => {
                       duration={edge.duration}
                       excerpt={edge.excerpt}
                       registrationLink={edge.registrationURL}
-                      zoomLink={edge.zoomURL}/>
+                      zoomLink={edge.zoomURL}
+                      videoLink={edge.videoURL}/>
                     //
                   )       
                 }
@@ -395,6 +397,8 @@ const SessionsCard = props => {
   const day = new Intl.DateTimeFormat('en-US', dayOption).format(date)
   var timeOption =  {hour: 'numeric', minute: 'numeric'}
   const time = new Intl.DateTimeFormat('en-US', timeOption).format(date)
+
+  console.log()
 
   return (
       // <Link to={"/sessions/" + props.slug.current} className="sessionsCard">
@@ -437,10 +441,25 @@ const SessionsCard = props => {
             </div>
             <p className="description">{props.excerpt}</p>
           </Link>
-          <div className="cardButtons">
+          {
+            props.videoLink ? (
+              <Link className="watchRecordingButton" to={"/sessions/" + props.slug.current}>
+                Watch Recording
+              </Link>
+            ) : (
+              <div className="cardButtons">
+                <a href={props.registrationLink} target="_blank">Register</a>
+                <a href={Date.now() > date.getTime() - 600000 ? props.zoomLink : null} target="_blank">Zoom</a>
+              </div>
+            )
+          }
+          {/* <Link className="watchRecordingButton" to={"/sessions/" + props.slug.current}>
+            Watch Recording
+          </Link> */}
+          {/* <div className="cardButtons">
             <a href={props.registrationLink} target="_blank">Register</a>
             <a href={props.zoomLink} target="_blank">Zoom</a>
-          </div>
+          </div> */}
         </div>
       </div>
   );

@@ -234,7 +234,7 @@ const sessionsPage = props => {
                         {/* <Map location={data.session.location}/> */}
                         <div className='locationLabel'>
                             {data.session.locationName} |&nbsp;
-                            <a href={data.session.zoomURL}>
+                            <a href={Date.now() > date.getTime() - 600000 ? data.session.zoomURL : null}>
                               Zoom Link
                             </a>
                         </div>
@@ -344,7 +344,7 @@ const sessionsPage = props => {
                       {/* <Map location={data.session.location}/> */}
                       <div className='locationLabel'>
                           {data.session.locationName} |&nbsp;
-                          <a href={data.session.zoomURL}>
+                          <a href={Date.now() > date.getTime() - 600000 ? data.session.zoomURL : null}>
                             Zoom Link
                           </a>
                       </div>
