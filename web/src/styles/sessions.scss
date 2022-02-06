@@ -36,7 +36,21 @@
             width: 100%;
             border-radius: calc(1rem - 2px);
 
-            
+            @media only screen and (max-width: 1000px) {
+                height: 500px; 
+            }
+    
+            @media only screen and (max-width: 800px) {
+                height: 400px; 
+            }
+    
+            @media only screen and (max-width: 600px) {
+                height: 325px; 
+            }
+    
+            @media only screen and (max-width: 450px) {
+                height: 275px; 
+            }
         }
     }
 
