@@ -97,6 +97,11 @@ let kylieTimpani         =  'industryGuests/kylieTimpani.jpeg';
 let leighDyess         =  'industryGuests/leighDyess.jpeg';
 let jackieSabillon         =  'industryGuests/jackieSabillon.jpeg';
 
+let austinWebster         =  'industryGuests/austinWebster.jpeg';
+let chrissyGlover         =  'industryGuests/chrissyGlover.jpeg';
+let jonGosier         =  'industryGuests/jonGosier.jpeg';
+let brianAhmes         =  'industryGuests/brianAhmes.jpeg';
+
 
 
 export const query = graphql`
@@ -216,6 +221,11 @@ const IndustryGuestsPage = props => {
   let leighDyessPhoto = photosArray.find(element => element.node.relativePath == leighDyess)
   let kylieTimpaniPhoto = photosArray.find(element => element.node.relativePath == kylieTimpani)
   let jackieSabillonPhoto = photosArray.find(element => element.node.relativePath == jackieSabillon)
+
+  let austinWebsterPhoto = photosArray.find(element => element.node.relativePath == austinWebster)
+  let chrissyGloverPhoto = photosArray.find(element => element.node.relativePath == chrissyGlover)
+  let jonGosierPhoto = photosArray.find(element => element.node.relativePath == jonGosier)
+  let brianAhmesPhoto = photosArray.find(element => element.node.relativePath == brianAhmes)
 
   if (!site) {
     throw new Error(
@@ -376,6 +386,25 @@ const IndustryGuestsPage = props => {
             linkedin="https://www.linkedin.com/in/annaliselao/"
             />
 
+          <JudgeCard
+          imgData={austinWebsterPhoto}
+            img={austinWebster}
+            fname="Austin"
+            lname="Webster"
+            role="Founder & CEO"
+            company="Deepr"
+            linkedin="https://www.linkedin.com/in/austinwebster/"
+            />
+
+          <JudgeCard
+          imgData={brianAhmesPhoto}
+            img={brianAhmes}
+            fname="Brian"
+            lname="Ahmes"
+            role="Co-Founder"
+            company="Parafin"
+            linkedin="https://www.linkedin.com/in/brian-ahmes/"
+            />
 
           <JudgeCard
           imgData={cassieMcdanielPhoto}
@@ -398,7 +427,16 @@ const IndustryGuestsPage = props => {
             linkedin="https://www.linkedin.com/in/corey-keller-ba638928/"
             />
 
-            
+          <JudgeCard
+          imgData={chrissyGloverPhoto}
+            img={chrissyGlover}
+            fname="Chrissy"
+            lname="Glover"
+            role="Co-Founder & CEO"
+            company="Imago Rehab"
+            linkedin="https://www.linkedin.com/in/christinamglover/"
+            />
+
           <JudgeCard
           imgData={danGrossmanPhoto}
             img={danGrossman}
@@ -430,6 +468,16 @@ const IndustryGuestsPage = props => {
             role="Senior Design Manager"
             company="Duolingo"
             linkedin="https://www.linkedin.com/in/jay-fanelli-25602b158/"
+            />
+
+          <JudgeCard
+          imgData={jonGosierPhoto}
+            img={jonGosier}
+            fname="Jon"
+            lname="Gosier"
+            role="Founder & CEO"
+            company="FilmHedge"
+            linkedin="https://www.linkedin.com/in/jongos/"
             />
 
 
