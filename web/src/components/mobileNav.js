@@ -110,9 +110,12 @@ const MobileNav = () => {
                                 <Link to="https://discord.gg/D4AFxAwwp6" target="_blank" ><li>
                                     <Discord/>
                                 </li></Link>
-                                <Link to="https://forms.gle/x3XDcaPtxvhrPmGk6" target="_blank">
-                                    <button class="footerButton">Sign up &nbsp; {String.fromCharCode(10230)}</button>
+                                <Link to="https://forms.gle/wi1fjdRWZVZVwVUJA" target="_blank">
+                                    <button class="footerButton">Vote &nbsp; {String.fromCharCode(10230)}</button>
                                 </Link>
+                                {/* <Link to="https://forms.gle/x3XDcaPtxvhrPmGk6" target="_blank">
+                                    <button class="footerButton">Sign up &nbsp; {String.fromCharCode(10230)}</button>
+                                </Link> */}
                             </ul>
                         </div>
                         <div className="tint" style={{
